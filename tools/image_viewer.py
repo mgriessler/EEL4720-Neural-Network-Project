@@ -7,6 +7,14 @@ import numpy
 # http://stackoverflow.com/questions/11305790/pickle-incompatability-of-numpy-arrays-between-python-2-and-3
 # http://stackoverflow.com/questions/24906126/how-to-unpack-pkl-file
 
+isize = 16;
+fsize = 16;
+
+class fixy(object):
+    def __init__(self, num):
+        self.ipart = floor(num)
+        self.fpart
+
 filename = "../data/mnist.pkl.gz"
 with gzip.open(filename, 'rb') as f:
     train_set, valid_set, test_set = pickle.load(f, encoding='latin1')

@@ -1,0 +1,40 @@
+Unable to capture context for thread 40204 in process 39352, can not generate back trace
+Unable to capture context for thread 34192 in process 39352, can not generate back trace
+Unable to capture context for thread 41396 in process 39352, can not generate back trace
+Exception at PC 0x00007FF96B197788
+Unable to capture context for thread 41396 in process 39352, can not generate back trace
+Exception at PC 0x00007FF90436BB93
+Printing stacktrace...
+
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+[0]  [0x00007FF90436BB93]
+[1]  [0x00007FF90436BB93]
+[2]  [0x00007FF90436B4A1]
+[3]  [0x00007FF90436B3EF]
+[4]  [0x00007FF9043519FE]
+[5]  [0x00007FF904350ED1]
+[6]  [0x00007FF904350D76]
+[7]  [0x00007FF9042F79F6]
+[8]  [0x00007FF9042E7AFB]
+[9]  [0x00007FF90440E90A]
+[10]  [0x00007FF904429F87]
+[11]  [0x00007FF90442A05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FF96BBB8364]
+[13] (RtlUserThreadStart+0x21) [0x00007FF96E1370D1]
+Done
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788
+Exception at PC 0x00007FF96B197788

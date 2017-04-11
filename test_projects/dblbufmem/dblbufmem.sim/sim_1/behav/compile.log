@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.ip_user_files/bd/design_1/hdl/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.srcs/sources_1/imports/fib/mux_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_2_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.srcs/sources_1/imports/new/dblbufswitch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dblbufswitch
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.srcs/sources_1/new/dbl_mem_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dbl_mem_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.srcs/sim_1/new/dbl_mem_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dbl_mem_top_tb

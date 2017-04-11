@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 10 21:12:12 2017
+# Process ID: 39240
+# Current directory: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.sim/sim_1/behav/xsim.dir/dbl_mem_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/dblbufmem/dblbufmem.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Matthew/SkyDrive/_school/spring -notrace

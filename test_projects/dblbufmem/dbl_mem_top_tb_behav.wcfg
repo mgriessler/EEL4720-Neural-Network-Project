@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dbl_mem_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dbl_mem_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="90500001fs"></ZoomEndTime>
+      <Cursor1Time time="14100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/dbl_mem_top_tb/in_addr" type="array">
+      <obj_property name="ElementShortName">in_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/out_addr" type="array">
+      <obj_property name="ElementShortName">out_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/wren" type="logic">
+      <obj_property name="ElementShortName">wren</obj_property>
+      <obj_property name="ObjectShortName">wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/sim_done" type="logic">
+      <obj_property name="ElementShortName">sim_done</obj_property>
+      <obj_property name="ObjectShortName">sim_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMA_PORTA_din" type="array">
+      <obj_property name="ElementShortName">MEMA_PORTA_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMA_PORTA_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMA_PORTA_dout" type="array">
+      <obj_property name="ElementShortName">MEMA_PORTA_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMA_PORTA_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMB_PORTA_din" type="array">
+      <obj_property name="ElementShortName">MEMB_PORTA_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMB_PORTA_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMB_PORTA_dout" type="array">
+      <obj_property name="ElementShortName">MEMB_PORTA_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMB_PORTA_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMA_PORTA_we" type="array">
+      <obj_property name="ElementShortName">MEMA_PORTA_we[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMA_PORTA_we[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dbl_mem_top_tb/UUT/U_MEM/design_1_i/MEMB_PORTA_we" type="array">
+      <obj_property name="ElementShortName">MEMB_PORTA_we[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMB_PORTA_we[3:0]</obj_property>
+   </wvobject>
+</wave_config>

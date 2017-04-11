@@ -1,0 +1,6 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Note: *********************TESTING DOUBLE BUFFER SWITCH*********************
+Time: 0 ps  Iteration: 0  Process: /tb/line__24  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/DblBufSwitch/DblBufSwitch.srcs/sim_1/new/tb.vhd
+Note: *********************TEST OVER DOUBLE BUFFER SWITCH*********************
+Time: 80 ns  Iteration: 0  Process: /tb/line__24  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/DblBufSwitch/DblBufSwitch.srcs/sim_1/new/tb.vhd
