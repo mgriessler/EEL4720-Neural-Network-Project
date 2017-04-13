@@ -1,0 +1,416 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 12 21:23:57 2017
+# Process ID: 41028
+# Current directory: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.runs/nn_wrapper_0_synth_1
+# Command line: vivado.exe -log nn_wrapper_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nn_wrapper_0.tcl
+# Log file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.runs/nn_wrapper_0_synth_1/nn_wrapper_0.vds
+# Journal file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.runs/nn_wrapper_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source nn_wrapper_0.tcl -notrace
+Command: synth_design -top nn_wrapper_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34688 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 290.609 ; gain = 80.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nn_wrapper_0' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/synth/nn_wrapper_0.vhd:72]
+INFO: [Synth 8-3491] module 'nn_wrapper' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/nn_wrapper.vhd:10' bound to instance 'U0' of component 'nn_wrapper' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/synth/nn_wrapper_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'nn_wrapper' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/nn_wrapper.vhd:26]
+INFO: [Synth 8-3491] module 'neural_network_top' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network_top.vhd:10' bound to instance 'nn' of component 'neural_network_top' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/nn_wrapper.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'neural_network_top' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network_top.vhd:76]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_network' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network_top.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network.vhd:30]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'hidden_layer' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MAC' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/MAC.vhd:19]
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MAC' (1#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/MAC.vhd:19]
+INFO: [Synth 8-3491] module 'sigmablock' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sigmablock' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/sigmablock.vhd:19]
+INFO: [Synth 8-3491] module 'absfixed' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/sigmablock.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'absfixed' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'absfixed' (2#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sigmablock' (3#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/sigmablock.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (4#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (5#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_layer' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'neural_layer' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'neural_layer' (6#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_layer.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (7#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (8#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/neural_network_top.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'nn_wrapper' (9#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/nn_wrapper.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'nn_wrapper_0' (10#1) [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/synth/nn_wrapper_0.vhd:72]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 331.852 ; gain = 121.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 331.852 ; gain = 121.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 331.852 ; gain = 121.688
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 375.434 ; gain = 165.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |neuron              |           7|     16639|
+|2     |neural_network__GC0 |           1|       176|
++------+--------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 7     
+	   2 Input     52 Bit       Adders := 14    
+	   2 Input     50 Bit       Adders := 14    
+	   2 Input     49 Bit       Adders := 7     
+	   2 Input     34 Bit       Adders := 7     
+	   2 Input     17 Bit       Adders := 42    
+	   4 Input     16 Bit       Adders := 7     
++---Registers : 
+	               16 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 7     
+	   2 Input     52 Bit        Muxes := 14    
+	   2 Input     50 Bit        Muxes := 14    
+	   2 Input     49 Bit        Muxes := 14    
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 196   
+	   3 Input     16 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+Module absfixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sigmablock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     52 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 2     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 2     
+	   2 Input     50 Bit        Muxes := 2     
+	   2 Input     49 Bit        Muxes := 2     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module neuron 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module neural_network 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sources_1/ip/nn_wrapper_0/work/src/fixed_pkg_c.vhd:2418]
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 503.727 ; gain = 293.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sigmablock  | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |neuron              |           1|      3134|
+|2     |neural_network__GC0 |           1|       176|
+|3     |neuron__1           |           1|      3134|
+|4     |neuron__2           |           1|      3134|
+|5     |neuron__3           |           2|      3134|
+|6     |neuron__4           |           1|      3134|
+|7     |neuron__5           |           1|      3134|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 503.727 ; gain = 293.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |neuron              |           1|      3134|
+|2     |neural_network__GC0 |           1|       176|
+|3     |neuron__1           |           1|      3134|
+|4     |neuron__2           |           1|      3134|
+|5     |neuron__3           |           2|      3134|
+|6     |neuron__4           |           1|      3134|
+|7     |neuron__5           |           1|      3134|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  2289|
+|2     |DSP48E1 |    28|
+|3     |LUT1    |   777|
+|4     |LUT2    |  1043|
+|5     |LUT3    |   651|
+|6     |LUT4    |   532|
+|7     |LUT5    |  6237|
+|8     |LUT6    |   707|
+|9     |FDRE    |    77|
+|10    |FDSE    |    35|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   | 12376|
+|2     |  U0                    |nn_wrapper         | 12376|
+|3     |    nn                  |neural_network_top | 12376|
+|4     |      neu               |neural_network     | 12376|
+|5     |        hid_layer       |hidden_layer       |  6924|
+|6     |          \GEN2[0].neu  |neuron_6           |  1731|
+|7     |            MC          |MAC_16             |   539|
+|8     |            sig         |sigmablock_17      |  1192|
+|9     |          \GEN2[1].neu  |neuron_7           |  1731|
+|10    |            MC          |MAC_14             |   539|
+|11    |            sig         |sigmablock_15      |  1192|
+|12    |          \GEN2[2].neu  |neuron_8           |  1731|
+|13    |            MC          |MAC_12             |   539|
+|14    |            sig         |sigmablock_13      |  1192|
+|15    |          \GEN2[3].neu  |neuron_9           |  1731|
+|16    |            MC          |MAC_10             |   539|
+|17    |            sig         |sigmablock_11      |  1192|
+|18    |        out_layer       |neural_layer       |  5193|
+|19    |          \GEN2[0].neu  |neuron             |  1731|
+|20    |            MC          |MAC_4              |   539|
+|21    |            sig         |sigmablock_5       |  1192|
+|22    |          \GEN2[1].neu  |neuron_0           |  1731|
+|23    |            MC          |MAC_2              |   539|
+|24    |            sig         |sigmablock_3       |  1192|
+|25    |          \GEN2[2].neu  |neuron_1           |  1731|
+|26    |            MC          |MAC                |   539|
+|27    |            sig         |sigmablock         |  1192|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 567.215 ; gain = 357.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 567.215 ; gain = 351.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 567.215 ; gain = 357.051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2317 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 595.242 ; gain = 379.883
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.runs/nn_wrapper_0_synth_1/nn_wrapper_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1062.508 ; gain = 467.266
+INFO: [Coretcl 2-1174] Renamed 26 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.runs/nn_wrapper_0_synth_1/nn_wrapper_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1065.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 12 21:25:39 2017...

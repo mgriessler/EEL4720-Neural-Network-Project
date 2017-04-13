@@ -1,0 +1,15 @@
+vhdl xil_defaultlib "../../../ipstatic/work/src/fixed_float_types_c.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/fixed_pkg_c.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/heap_arr_pkg.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/absfixed.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/MAC.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/sigmablock.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/neuron.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/neural_layer.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/hidden_layer.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/neural_network.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/neural_network_top.vhd" 
+vhdl xil_defaultlib "../../../ipstatic/work/src/nn_wrapper.vhd" 
+vhdl xil_defaultlib "../../../../wrapper.srcs/sources_1/ip/nn_wrapper_0/sim/nn_wrapper_0.vhd" 
+
+nosort
