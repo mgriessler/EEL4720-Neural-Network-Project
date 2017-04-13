@@ -1,0 +1,9 @@
+design_1_blk_mem_gen_0_1.v,verilog,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v,
+design_1_blk_mem_gen_1_0.v,verilog,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v,
+design_1.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1.vhd,
+mux_2_1.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/mux_2_1.vhd,
+dblbufswitch.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/dblbufswitch.vhd,
+design_1_wrapper.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1_wrapper.vhd,
+dbl_mem_top.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/dbl_mem_top.vhd,
+dbl_mem_0.vhd,vhdl,xil_defaultlib,../../../../wrapper.srcs/sources_1/ip/dbl_mem_0/sim/dbl_mem_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v
