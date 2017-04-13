@@ -32,30 +32,42 @@ int main(int argc, char* argv[]) {
     cerr << "Usage: " << argv[0] << " bitfile" << endl;
     return -1;
   }
+  
+  vector<float> clocks(Board::NUM_FPGA_CLOCKS);
+  clocks[0] = 100.0;
+  clocks[1] = 0.0;
+  clocks[2] = 0.0;
+  clocks[3] = 0.0;
 
   // initialize board
   Board *board;
   try {
-    board = new Board(argv[1]);
+    board = new Board(argv[1], clocks);
   }
   catch(...) {
     exit(-1);
   }
-  int output[3];
-  board->read(&output[0], C_OUTPUT_0_ADDR, 1);
-  board->read(&output[1], C_OUTPUT_1_ADDR, 1);
-  board->read(&output[2], C_OUTPUT_2_ADDR, 1);
+  unsigned output0;
+  unsigned output1;
+  unsigned output2;
+  board->read(&output0, C_OUTPUT_0_ADDR, 1);
+  board->read(&output1, C_OUTPUT_1_ADDR, 1);
+  board->read(&output2, C_OUTPUT_2_ADDR, 1);
 
-  for (int i = 0; i < 3; i++){
-   std::cout<<"Output "<<i<<" is: ";
-   std::cout<<std::hex<<output[i]<<std::endl;
-  }
 
-  int write_value = 42;
+   std::cout<<"Output 1 is: ";
+   std::cout<<std::hex<<output0<<std::endl;
+   std::cout<<"Output 2 is: ";
+   std::cout<<std::hex<<output1<<std::endl;
+   std::cout<<"Output 3 is: ";
+   std::cout<<std::hex<<output2<<std::endl;
+  
+
+  /*int write_value = 42;
   int read_value;
   board->write(&write_value, C_MEMTEST_START_ADDR + 42, 1);
   board->read(&read_value, C_MEMTEST_START_ADDR + 42, 1);
-  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
+  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;*/
   
 
   return 1;
