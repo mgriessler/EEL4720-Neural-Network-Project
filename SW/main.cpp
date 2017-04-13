@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
   int output[3];
   board->read(&output[0], C_OUTPUT_0_ADDR, 1);
   board->read(&output[1], C_OUTPUT_1_ADDR, 1);
-  board->read(&output[2], C_OUTPUT_1_ADDR, 1);
+  board->read(&output[2], C_OUTPUT_2_ADDR, 1);
 
   for (int i = 0; i < 3; i++){
    std::cout<<"Output "<<i<<" is: ";
