@@ -33,7 +33,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zed"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="3"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -82,14 +82,28 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/user_app_tb.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="user_app"/>
+        <Option Name="TopModule" Val="user_app_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -104,24 +118,24 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.xml"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.vho"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.veo"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dbl_mem_top_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="synth/dbl_mem_0.vhd"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.v"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_stub.vhdl"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_stub.v"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/mux_2_1.vhd"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.vho"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="synth/dbl_mem_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.v"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="sim/dbl_mem_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dbl_mem_top.vhd"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_wrapper.vhd"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dblbufswitch.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/mux_2_1.vhd"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dbl_mem_top_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.vhdl"/>
         <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1.vhd"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.veo"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.xml"/>
+        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0.xci"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="dbl_mem_0"/>
@@ -135,41 +149,53 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_layer_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neuron_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="sim/nn_wrapper_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/nn_wrapper.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/absfixed_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/MAC_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/hidden_layer.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_layer.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neuron.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/MAC.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/sigmablock_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network_top.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/heap_arr_pkg.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_float_types_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_pkg_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="synth/nn_wrapper_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/sigmablock.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/absfixed.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/heap_arr_pkg.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_pkg_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_float_types_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_top_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.veo"/>
         <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.xml"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.vho"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/MAC_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="synth/nn_wrapper_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/sigmablock_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_tb.vhd"/>
         <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_sim_netlist.vhdl"/>
         <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_sim_netlist.v"/>
         <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_float_types_c.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/nn_wrapper.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="sim/nn_wrapper_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_layer.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neuron_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/absfixed_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_pkg_c.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_top_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_layer_tb.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/heap_arr_pkg.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/hidden_layer.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/absfixed.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/heap_arr_pkg.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_pkg_c.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neuron.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.veo"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.vho"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/sigmablock.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/MAC.vhd"/>
+        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_float_types_c.vhd"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="nn_wrapper_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_2" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+      <File Path="$PSRCDIR/constrs_2/new/constraints.xdc">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -192,11 +218,9 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" ConstrsSet="constrs_2" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -204,9 +228,7 @@
     </Run>
     <Run Id="dbl_mem_0_synth_1" Type="Ft3:Synth" SrcSet="dbl_mem_0" Part="xc7z020clg484-1" ConstrsSet="dbl_mem_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dbl_mem_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -214,19 +236,15 @@
     </Run>
     <Run Id="nn_wrapper_0_synth_1" Type="Ft3:Synth" SrcSet="nn_wrapper_0" Part="xc7z020clg484-1" ConstrsSet="nn_wrapper_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/nn_wrapper_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_2" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -237,13 +255,12 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="dbl_mem_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="dbl_mem_0" Description="Default settings for Implementation." SynthRun="dbl_mem_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -258,9 +275,7 @@
     </Run>
     <Run Id="nn_wrapper_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="nn_wrapper_0" Description="Default settings for Implementation." SynthRun="nn_wrapper_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

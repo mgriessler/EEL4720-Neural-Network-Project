@@ -1,0 +1,92 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Block Memory Generator module user_app_tb.UUT.U_MEMTEST.U0.U_MEM.design_1_i.memoryA.inst.native_mem_mapped_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module user_app_tb.UUT.U_MEMTEST.U0.U_MEM.design_1_i.memoryB.inst.native_mem_mapped_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__32  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: :fixed_pkg:">": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/abso/line__22  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigma

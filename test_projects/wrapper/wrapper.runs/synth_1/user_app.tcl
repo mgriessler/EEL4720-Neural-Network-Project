@@ -18,6 +18,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_repo_paths {
+  {c:/users/matthew/skydrive/_school/spring 2017 uf/eel4720 09bc reconfig/project/eel4720-neural-network-project/ip/wrapper.srcs}
   {c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/ip/dblbufmem.srcs}
   {c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/ip/nn_wrapper.srcs}
 } [current_project]
@@ -35,6 +36,9 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/constrs_2/new/constraints.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/constrs_2/new/constraints.xdc}}]
+
 
 synth_design -top user_app -part xc7z020clg484-1
 

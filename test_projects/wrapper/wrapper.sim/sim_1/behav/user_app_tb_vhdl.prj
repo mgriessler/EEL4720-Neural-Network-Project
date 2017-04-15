@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/new/config_pkg.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/fixed_float_types_c.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/fixed_pkg_c.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/heap_arr_pkg.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/absfixed.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/MAC.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/neuron.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/neural_layer.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/hidden_layer.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/neural_network.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/neural_network_top.vhd"
+vhdl xil_defaultlib  "../../../wrapper.ip_user_files/ipstatic/work/src/nn_wrapper.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/nn_wrapper_0/sim/nn_wrapper_0.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/mux_2_1.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/dblbufswitch.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/design_1_wrapper.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/src/dbl_mem_top.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/ip/dbl_mem_0/sim/dbl_mem_0.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/new/mem_map.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sources_1/new/user_app.vhd"
+vhdl xil_defaultlib  "../../../wrapper.srcs/sim_1/new/user_app_tb.vhd"
+
+# Do not sort compile order
+nosort

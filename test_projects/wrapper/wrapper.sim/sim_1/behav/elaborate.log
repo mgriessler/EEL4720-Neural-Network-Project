@@ -1,0 +1,49 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto ce696cf0f27e41629a9e887af043ec46 --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_3_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot user_app_tb_behav xil_defaultlib.user_app_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.config_pkg
+Compiling package ieee_proposed.fixed_float_types
+Compiling package xil_defaultlib.fixed_pkg
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.heap_arr_pkg
+Compiling package unisim.vcomponents
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture bhv of entity xil_defaultlib.mem_map [mem_map_default]
+Compiling architecture arch of entity xil_defaultlib.MAC [\MAC(input_size=4)\]
+Compiling architecture ab of entity xil_defaultlib.absfixed [absfixed_default]
+Compiling architecture sig of entity xil_defaultlib.sigmablock [sigmablock_default]
+Compiling architecture arch of entity xil_defaultlib.neuron [neuron_default]
+Compiling architecture hid of entity xil_defaultlib.hidden_layer [\hidden_layer(num_outputs=4)\]
+Compiling architecture lay of entity xil_defaultlib.neural_layer [\neural_layer(num_inputs=4)\]
+Compiling architecture net of entity xil_defaultlib.neural_network [\neural_network(num_inputs=4,num...]
+Compiling architecture top of entity xil_defaultlib.neural_network_top [neural_network_top_default]
+Compiling architecture wrap of entity xil_defaultlib.nn_wrapper [nn_wrapper_default]
+Compiling architecture nn_wrapper_0_arch of entity xil_defaultlib.nn_wrapper_0 [nn_wrapper_0_default]
+Compiling architecture bhv of entity xil_defaultlib.dblbufswitch [dblbufswitch_default]
+Compiling architecture bhv of entity xil_defaultlib.mux_2_1 [mux_2_1_default]
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="zyn...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_1_0
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_1
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper [design_1_wrapper_default]
+Compiling architecture str of entity xil_defaultlib.dbl_mem_top [dbl_mem_top_default]
+Compiling architecture dbl_mem_0_arch of entity xil_defaultlib.dbl_mem_0 [dbl_mem_0_default]
+Compiling architecture default of entity xil_defaultlib.user_app [user_app_default]
+Compiling architecture tb of entity xil_defaultlib.user_app_tb
+Built simulation snapshot user_app_tb_behav
