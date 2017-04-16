@@ -74,6 +74,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/component.xml">
+        <FileInfo SFType="IPXACT"/>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="user_app"/>
@@ -118,24 +121,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_stub.v"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.vho"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="synth/dbl_mem_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="sim/dbl_mem_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dbl_mem_top.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_wrapper.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dblbufswitch.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/mux_2_1.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/dbl_mem_top_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1.vhd"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.veo"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="dbl_mem_0.xml"/>
-        <CompFileExtendedInfo CompFileName="dbl_mem_0.xci" FileRelPathName="src/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0.xci"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="dbl_mem_0"/>
@@ -149,37 +134,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.xml"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/MAC_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="synth/nn_wrapper_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/sigmablock_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0_stub.v"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_float_types_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/nn_wrapper.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network_top.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_network.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="sim/nn_wrapper_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neural_layer.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neuron_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/absfixed_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/fixed_pkg_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_network_top_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/neural_layer_tb.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="src/heap_arr_pkg.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/hidden_layer.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/absfixed.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/heap_arr_pkg.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_pkg_c.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/neuron.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.veo"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="nn_wrapper_0.vho"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/sigmablock.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/MAC.vhd"/>
-        <CompFileExtendedInfo CompFileName="nn_wrapper_0.xci" FileRelPathName="work/src/fixed_float_types_c.vhd"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="nn_wrapper_0"/>

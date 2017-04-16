@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Apr 15 20:00:36 2017
+# Process ID: 2636
+# Current directory: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent76808 C:\Users\Matthew\SkyDrive\_school\spring 2017 UF\EEL4720 09BC Reconfig\project\EEL4720-Neural-Network-Project\test_projects\wrapper\wrapper.xpr
+# Log file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/vivado.log
+# Journal file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.xpr}
+ipx::package_project -root_dir {c:/users/matthew/skydrive/_school/spring 2017 uf/eel4720 09bc reconfig/project/eel4720-neural-network-project/test_projects/wrapper/wrapper.srcs} -vendor xilinx.com -library user -taxonomy /UserIP

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Apr 15 20:00:36 2017
+# Process ID: 2636
+# Current directory: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent76808 C:\Users\Matthew\SkyDrive\_school\spring 2017 UF\EEL4720 09BC Reconfig\project\EEL4720-Neural-Network-Project\test_projects\wrapper\wrapper.xpr
+# Log file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/vivado.log
+# Journal file: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/matthew/skydrive/_school/spring 2017 uf/eel4720 09bc reconfig/project/eel4720-neural-network-project/ip/wrapper.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/ip/dblbufmem.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/ip/nn_wrapper.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 774.055 ; gain = 112.680
+ipx::package_project -root_dir {c:/users/matthew/skydrive/_school/spring 2017 uf/eel4720 09bc reconfig/project/eel4720-neural-network-project/test_projects/wrapper/wrapper.srcs} -vendor xilinx.com -library user -taxonomy /UserIP
+WARNING: [IP_Flow 19-4963] dbl_mem_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.3'
+WARNING: [IP_Flow 19-4963] nn_wrapper_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.3'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'C_MMAP_ADDR_WIDTH' by 18 for port or parameter 'mmap_wr_addr'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'C_MMAP_DATA_WIDTH' by 32 for port or parameter 'mmap_wr_data'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'C_MMAP_ADDR_WIDTH' by 18 for port or parameter 'mmap_rd_addr'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'C_MMAP_DATA_WIDTH' by 32 for port or parameter 'mmap_rd_data'
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 15 20:01:57 2017...

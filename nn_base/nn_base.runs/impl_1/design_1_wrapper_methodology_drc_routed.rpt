@@ -1,0 +1,350 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 15 22:50:31 2017
+| Host         : matt-samsung running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 63
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 63         |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -133.188 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -133.241 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -133.327 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -133.333 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -133.339 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -133.342 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -133.350 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -133.356 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -133.398 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -133.451 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -133.473 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -133.504 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -133.534 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -133.534 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -133.617 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -133.635 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -134.093 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -134.104 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -134.108 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -134.111 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -134.114 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -134.156 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -134.245 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -134.271 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -134.277 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -134.290 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -134.291 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -134.364 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -134.391 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -134.404 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -134.417 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -134.437 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -134.440 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -134.452 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -134.548 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -134.553 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -134.557 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -134.597 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -134.603 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -134.607 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -134.659 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -134.678 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -134.686 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -134.687 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -134.791 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -134.793 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -134.886 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][5]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -134.904 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][3]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -134.904 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][4]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -134.937 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][2]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -135.025 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[0][1]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -135.302 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -135.333 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -135.444 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][1]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -135.493 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][4]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -135.493 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][5]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -135.494 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][3]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -135.494 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][4]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -135.549 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][1]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -135.549 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][2]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -135.549 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][7]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[1][3]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -135.682 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][2]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -135.682 ns between design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/hid_vector_reg[1][15]/C (clocked by clk_fpga_0) and design_1_i/nn_axi_0/U0/nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN/nn/neu/out_vector_reg[2][5]/S (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

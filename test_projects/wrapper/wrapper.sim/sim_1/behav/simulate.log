@@ -89,4 +89,26 @@ Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GE
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigma
+Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/U0/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__31  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.ip_user_files/ipstatic/work/src/sigmablock.vhd
+Note: Output 0 is 233
+Time: 435 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
+Note: Output 1 is 35
+Time: 455 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
+Note: Output 2 is 60
+Time: 475 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
+Note: Output 0 is 233
+Time: 915 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
+Note: Output 1 is 35
+Time: 935 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
+Note: Output 2 is 60
+Time: 955 ns  Iteration: 0  Process: /user_app_tb/line__35  File: C:/Users/Matthew/SkyDrive/_school/spring 2017 UF/EEL4720 09BC Reconfig/project/EEL4720-Neural-Network-Project/test_projects/wrapper/wrapper.srcs/sim_1/new/user_app_tb.vhd
