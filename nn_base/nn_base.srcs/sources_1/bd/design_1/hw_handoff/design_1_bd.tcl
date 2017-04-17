@@ -280,7 +280,7 @@ CONFIG.PCW_FCLK_CLK2_BUF {FALSE} \
 CONFIG.PCW_FCLK_CLK3_BUF {FALSE} \
 CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100.000000} \
 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {150.000000} \
-CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50.000000} \
+CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA_FCLK0_ENABLE {1} \
 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
@@ -605,7 +605,7 @@ CONFIG.PCW_QSPI_GRP_SS1_IO {<Select>} \
 CONFIG.PCW_QSPI_PERIPHERAL_CLKSRC {IO PLL} \
 CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0 {5} \
 CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} \
-CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200.000000} \
+CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200} \
 CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} \
 CONFIG.PCW_SD0_GRP_CD_ENABLE {1} \
 CONFIG.PCW_SD0_GRP_CD_IO {MIO 47} \
@@ -1464,21 +1464,21 @@ CONFIG.NUM_MI {1} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y -290 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y -270 -defaultsOSRD
-preplace inst nn_axi_0 -pg 1 -lvl 1 -y -450 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y -420 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -460 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -y -210 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 2 5 NJ -290 NJ -290 NJ -290 NJ -290 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 NJ -230 930
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 30 -360 NJ -360 NJ -360 920
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 600
-preplace netloc processing_system7_0_FIXED_IO 1 2 5 NJ -270 NJ -270 NJ -270 NJ -270 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 -350 210 -350 590 -350 940
-preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 10 -340 NJ -340 NJ -340 920J -300 1200
+preplace port DDR -pg 1 -y 230 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 250 -defaultsOSRD
+preplace inst nn_axi_0 -pg 1 -lvl 1 -y -120 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y 30 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 6 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 N 290 840J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 -90 130 NJ 130 NJ 130 830
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 500
+preplace netloc processing_system7_0_FIXED_IO 1 2 6 NJ 250 NJ 250 NJ 250 NJ 250 NJ 250 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -100 180 90 180 490 180 850
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 -100 -190 NJ -190 NJ -190 NJ -190 1140
 preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 1 N
-levelinfo -pg 1 -10 120 400 760 1070 1220 1270 1310 -top -560 -bot 170
+levelinfo -pg 1 -120 0 294 670 1006 1160 1210 1260 1300 -top -200 -bot 1200
 ",
 }
 

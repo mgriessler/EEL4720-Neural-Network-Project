@@ -18,8 +18,9 @@ using namespace std;
 #define C_OUTPUT_0_ADDR 1
 #define C_OUTPUT_1_ADDR 2
 #define C_OUTPUT_2_ADDR 3
-#define C_MEMTEST_START_ADDR 400
-#define C_MEMTEST_END_ADDR 500
+#define C_MEMTEST_START_ADDR 50
+#define C_MEMTEST_END_ADDR 200
+#define SHIFT_VAL 256.0
 
 //#define DEBUG
 
@@ -62,12 +63,32 @@ int main(int argc, char* argv[]) {
    std::cout<<"Output 3 is: ";
    std::cout<<std::hex<<output2<<std::endl;
   
+   std::cout<<"Output 1 is: ";
+   std::cout<<output0/SHIFT_VAL<<std::endl;
+   std::cout<<"Output 2 is: ";
+   std::cout<<output1/SHIFT_VAL<<std::endl;
+   std::cout<<"Output 3 is: ";
+   std::cout<<output2/SHIFT_VAL<<std::endl;
+  
 
-  /*int write_value = 42;
-  int read_value;
+  unsigned int write_value = 42;
+  unsigned int read_value;
   board->write(&write_value, C_MEMTEST_START_ADDR + 42, 1);
   board->read(&read_value, C_MEMTEST_START_ADDR + 42, 1);
-  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;*/
+  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value << std::endl;
+  
+  write_value = 43;
+  board->write(&write_value, C_MEMTEST_START_ADDR + 42, 1);
+  board->read(&read_value, C_MEMTEST_START_ADDR + 42, 1);
+  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value << std::endl;
+  
+  write_value = 12;
+  board->write(&write_value, C_MEMTEST_START_ADDR + 12, 1);
+  board->read(&read_value, C_MEMTEST_START_ADDR + 12, 1);
+  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value << std::endl;
   
 
   return 1;

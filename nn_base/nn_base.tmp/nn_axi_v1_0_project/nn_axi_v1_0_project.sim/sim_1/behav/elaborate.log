@@ -1,0 +1,32 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto e507fd5a09704a2698dc0b532aa1c852 --debug typical --relax --mt 2 -L work -L secureip --snapshot user_app_tb_behav work.user_app_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package work.config_pkg
+Compiling package ieee_proposed.fixed_float_types
+Compiling package work.fixed_pkg
+Compiling package ieee.math_real
+Compiling package work.heap_arr_pkg
+Compiling architecture bhv of entity work.mem_map [mem_map_default]
+Compiling architecture arch of entity work.MAC [\MAC(input_size=4)\]
+Compiling architecture ab of entity work.absfixed [absfixed_default]
+Compiling architecture sig of entity work.sigmablock [sigmablock_default]
+Compiling architecture arch of entity work.neuron [neuron_default]
+Compiling architecture hid of entity work.hidden_layer [\hidden_layer(num_outputs=4)\]
+Compiling architecture lay of entity work.neural_layer [\neural_layer(num_inputs=4)\]
+Compiling architecture net of entity work.neural_network [\neural_network(num_inputs=4,num...]
+Compiling architecture top of entity work.neural_network_top [neural_network_top_default]
+Compiling architecture wrap of entity work.nn_wrapper [nn_wrapper_default]
+Compiling architecture sync_read of entity work.ram [\ram(num_words=32768,word_width=...]
+Compiling architecture default of entity work.user_app [user_app_default]
+Compiling architecture tb of entity work.user_app_tb
+Built simulation snapshot user_app_tb_behav

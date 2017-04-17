@@ -55,15 +55,15 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/NN-Project/nn_base/nn_base.cache/wt [current_project]
   set_property parent.project_path C:/NN-Project/nn_base/nn_base.xpr [current_project]
-  set_property ip_repo_paths C:/NN-Project/ip_repo/nn_axi_1.0 [current_project]
+  set_property ip_repo_paths c:/NN-Project/ip_repo/nn_axi_1.0 [current_project]
   set_property ip_output_repo C:/NN-Project/nn_base/nn_base.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet C:/NN-Project/nn_base/nn_base.runs/synth_1/design_1_wrapper.dcp
-  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp
-  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
-  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_0/design_1_nn_axi_0_0.dcp
-  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_0/design_1_nn_axi_0_0.dcp]
+  add_files -quiet C:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp
+  set_property netlist_only true [get_files C:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
+  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp
+  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp]
   add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp
   set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp]
   add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp

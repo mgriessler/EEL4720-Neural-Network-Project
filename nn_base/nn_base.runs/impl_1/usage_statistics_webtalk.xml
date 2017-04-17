@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Sat Apr 15 22:51:14 2017'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Sun Apr 16 22:08:17 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1756540" description="" />
-  <keyValuePair key="date_generated" value="Sat Apr 15 22:51:13 2017" description="" />
+  <keyValuePair key="date_generated" value="Sun Apr 16 22:08:17 2017" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2016.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="1bb4ccf8ff984d5cafa9212a4f9c4234" description="" />
-  <keyValuePair key="project_iteration" value="2" description="" />
+  <keyValuePair key="project_iteration" value="5" description="" />
   <keyValuePair key="random_id" value="28ab7830-f6cc-4c34-ac5a-e0b0f643bf5d" description="" />
   <keyValuePair key="registration_id" value="28ab7830-f6cc-4c34-ac5a-e0b0f643bf5d" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -30,8 +30,7 @@
   <section name="IP_Integrator/1" level="2" order="1" description="">
    <keyValuePair key="bdsource" value="USER" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
-   <keyValuePair key="da_axi4_cnt" value="1" description="" />
-   <keyValuePair key="da_ps7_cnt" value="1" description="" />
+   <keyValuePair key="da_axi4_cnt" value="5" description="" />
    <keyValuePair key="iptotal" value="1" description="" />
    <keyValuePair key="maxhierdepth" value="0" description="" />
    <keyValuePair key="numblks" value="6" description="" />
@@ -82,7 +81,7 @@
    <keyValuePair key="c_s00_axi_data_width" value="32" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
    <keyValuePair key="iptotal" value="1" description="" />
-   <keyValuePair key="x_ipcorerevision" value="2" description="" />
+   <keyValuePair key="x_ipcorerevision" value="3" description="" />
    <keyValuePair key="x_iplanguage" value="VHDL" description="" />
    <keyValuePair key="x_iplibrary" value="user" description="" />
    <keyValuePair key="x_ipname" value="nn_axi" description="" />
@@ -162,7 +161,7 @@
    <keyValuePair key="pcw_fclk3_peripheral_clksrc" value="IO PLL" description="" />
    <keyValuePair key="pcw_fpga0_peripheral_freqmhz" value="100.000000" description="" />
    <keyValuePair key="pcw_fpga1_peripheral_freqmhz" value="150.000000" description="" />
-   <keyValuePair key="pcw_fpga2_peripheral_freqmhz" value="50.000000" description="" />
+   <keyValuePair key="pcw_fpga2_peripheral_freqmhz" value="50" description="" />
    <keyValuePair key="pcw_fpga3_peripheral_freqmhz" value="50" description="" />
    <keyValuePair key="pcw_fpga_fclk0_enable" value="1" description="" />
    <keyValuePair key="pcw_fpga_fclk1_enable" value="0" description="" />
@@ -250,7 +249,7 @@
    <keyValuePair key="pcw_qspi_internal_highaddress" value="0xFCFFFFFF" description="" />
    <keyValuePair key="pcw_qspi_peripheral_clksrc" value="IO PLL" description="" />
    <keyValuePair key="pcw_qspi_peripheral_enable" value="1" description="" />
-   <keyValuePair key="pcw_qspi_peripheral_freqmhz" value="200.000000" description="" />
+   <keyValuePair key="pcw_qspi_peripheral_freqmhz" value="200" description="" />
    <keyValuePair key="pcw_qspi_qspi_io" value="MIO 1 .. 6" description="" />
    <keyValuePair key="pcw_s_axi_acp_freqmhz" value="10" description="" />
    <keyValuePair key="pcw_s_axi_gp0_freqmhz" value="10" description="" />
@@ -974,10 +973,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:33s" description="" />
+   <keyValuePair key="elapsed" value="00:00:32s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="387.492MB" description="" />
-   <keyValuePair key="memory_peak" value="624.449MB" description="" />
+   <keyValuePair key="memory_gain" value="387.621MB" description="" />
+   <keyValuePair key="memory_peak" value="624.992MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="10" description="">
@@ -1022,13 +1021,21 @@
  </section>
  <section name="vivado_usage" level="1" order="11" description="">
   <section name="java_command_handlers" level="2" order="1" description="">
+   <keyValuePair key="coreview" value="1" description="" />
    <keyValuePair key="createblockdesign" value="1" description="" />
    <keyValuePair key="createtophdl" value="1" description="" />
+   <keyValuePair key="customizersbblock" value="1" description="" />
+   <keyValuePair key="editdelete" value="4" description="" />
+   <keyValuePair key="editinippackagerhandler" value="1" description="" />
    <keyValuePair key="newproject" value="1" description="" />
-   <keyValuePair key="runbitgen" value="2" description="" />
+   <keyValuePair key="openproject" value="1" description="" />
+   <keyValuePair key="reportipstatus" value="1" description="" />
+   <keyValuePair key="runbitgen" value="7" description="" />
+   <keyValuePair key="saversbdesign" value="1" description="" />
+   <keyValuePair key="upgradeip" value="3" description="" />
   </section>
   <section name="other_data" level="2" order="2" description="">
-   <keyValuePair key="guimode" value="1" description="" />
+   <keyValuePair key="guimode" value="8" description="" />
   </section>
   <section name="project_data" level="2" order="3" description="">
    <keyValuePair key="constraintsetcount" value="0" description="" />
@@ -1037,13 +1044,13 @@
    <keyValuePair key="currentsynthesisrun" value="synth_1" description="" />
    <keyValuePair key="default_library" value="xil_defaultlib" description="" />
    <keyValuePair key="designmode" value="RTL" description="" />
-   <keyValuePair key="export_simulation_activehdl" value="0" description="" />
-   <keyValuePair key="export_simulation_ies" value="0" description="" />
-   <keyValuePair key="export_simulation_modelsim" value="0" description="" />
-   <keyValuePair key="export_simulation_questa" value="0" description="" />
-   <keyValuePair key="export_simulation_riviera" value="0" description="" />
-   <keyValuePair key="export_simulation_vcs" value="0" description="" />
-   <keyValuePair key="export_simulation_xsim" value="0" description="" />
+   <keyValuePair key="export_simulation_activehdl" value="3" description="" />
+   <keyValuePair key="export_simulation_ies" value="3" description="" />
+   <keyValuePair key="export_simulation_modelsim" value="3" description="" />
+   <keyValuePair key="export_simulation_questa" value="3" description="" />
+   <keyValuePair key="export_simulation_riviera" value="3" description="" />
+   <keyValuePair key="export_simulation_vcs" value="3" description="" />
+   <keyValuePair key="export_simulation_xsim" value="3" description="" />
    <keyValuePair key="implstrategy" value="Vivado Implementation Defaults" description="" />
    <keyValuePair key="launch_simulation_activehdl" value="0" description="" />
    <keyValuePair key="launch_simulation_ies" value="0" description="" />
@@ -1057,8 +1064,8 @@
    <keyValuePair key="synthesisstrategy" value="Vivado Synthesis Defaults" description="" />
    <keyValuePair key="target_language" value="VHDL" description="" />
    <keyValuePair key="target_simulator" value="XSim" description="" />
-   <keyValuePair key="totalimplruns" value="5" description="" />
-   <keyValuePair key="totalsynthesisruns" value="5" description="" />
+   <keyValuePair key="totalimplruns" value="3" description="" />
+   <keyValuePair key="totalsynthesisruns" value="3" description="" />
   </section>
  </section>
 </section>

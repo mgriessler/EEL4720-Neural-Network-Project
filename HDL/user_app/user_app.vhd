@@ -49,19 +49,6 @@ architecture default of user_app is
     );
     end component;
 
---    component dbl_mem_0 is
---    port (
---        in_addr : in DBL_ADDR;
---        out_addr : in DBL_ADDR;
---        in_data : in DBL_DATA;
---        trigger : in std_logic;
---        rst : in std_logic;
---        clk : in std_logic;
---        wren : in std_logic;
---        out_data : out DBL_DATA
---    );
---    end component;
-
 begin
 
     U_MEM_MAP : entity work.mem_map(BHV)
@@ -103,17 +90,20 @@ begin
         final_1 => output1,
         final_2 => output2
     );
-   
---    U_MEMTEST : dbl_mem_0
---    port map (
---        in_addr => memtest_in_addr,
---        out_addr => memtest_out_addr,
---        in_data => memtest_in_data,
---        trigger => '0',
---        rst => '0',
---        clk => clk,
---        wren => memtest_wr_en,
---        out_data => memtest_out_data
---    );
+    
+    U_MEMTEST : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => memtest_wr_en,
+        waddr => memtest_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => memtest_in_data,
+        raddr => memtest_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => memtest_out_data
+    );
 
 end default;

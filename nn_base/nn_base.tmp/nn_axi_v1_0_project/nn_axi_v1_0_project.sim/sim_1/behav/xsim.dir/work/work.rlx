@@ -1,0 +1,21 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+c:/nn-project/HDL/nn_dp/MAC.vhd,1492046223,vhdl,,,,mac,,,,,,,,
+c:/nn-project/HDL/nn_dp/absfixed.vhd,1492046223,vhdl,,,,absfixed,,,,,,,,
+c:/nn-project/HDL/nn_dp/hidden_layer.vhd,1492046223,vhdl,,,,hidden_layer,,,,,,,,
+c:/nn-project/HDL/nn_dp/lib/fixed_float_types_c.vhd,1492046223,vhdl,,,,fixed_float_types,,,,,,,,
+c:/nn-project/HDL/nn_dp/lib/fixed_pkg_c.vhd,1492046223,vhdl,c:/nn-project/HDL/nn_dp/MAC.vhd;c:/nn-project/HDL/nn_dp/absfixed.vhd;c:/nn-project/HDL/nn_dp/hidden_layer.vhd;c:/nn-project/HDL/nn_dp/lib/heap_arr_pkg.vhd;c:/nn-project/HDL/nn_dp/neural_layer.vhd;c:/nn-project/HDL/nn_dp/neural_network.vhd;c:/nn-project/HDL/nn_dp/neural_network_top.vhd;c:/nn-project/HDL/nn_dp/neuron.vhd;c:/nn-project/HDL/nn_dp/nn_wrapper.vhd;c:/nn-project/HDL/nn_dp/sigmablock.vhd,,,fixed_pkg,,,,,,,,
+c:/nn-project/HDL/nn_dp/lib/heap_arr_pkg.vhd,1492046223,vhdl,c:/nn-project/HDL/nn_dp/MAC.vhd;c:/nn-project/HDL/nn_dp/absfixed.vhd;c:/nn-project/HDL/nn_dp/hidden_layer.vhd;c:/nn-project/HDL/nn_dp/neural_layer.vhd;c:/nn-project/HDL/nn_dp/neural_network.vhd;c:/nn-project/HDL/nn_dp/neural_network_top.vhd;c:/nn-project/HDL/nn_dp/neuron.vhd;c:/nn-project/HDL/nn_dp/nn_wrapper.vhd;c:/nn-project/HDL/nn_dp/sigmablock.vhd,,,heap_arr_pkg,,,,,,,,
+c:/nn-project/HDL/nn_dp/neural_layer.vhd,1492046223,vhdl,,,,neural_layer,,,,,,,,
+c:/nn-project/HDL/nn_dp/neural_network.vhd,1492046223,vhdl,,,,neural_network,,,,,,,,
+c:/nn-project/HDL/nn_dp/neural_network_top.vhd,1492046223,vhdl,,,,neural_network_top,,,,,,,,
+c:/nn-project/HDL/nn_dp/neuron.vhd,1492046223,vhdl,,,,neuron,,,,,,,,
+c:/nn-project/HDL/nn_dp/nn_wrapper.vhd,1492046634,vhdl,,,,nn_wrapper,,,,,,,,
+c:/nn-project/HDL/nn_dp/sigmablock.vhd,1492046223,vhdl,,,,sigmablock,,,,,,,,
+c:/nn-project/HDL/user_app/config_pkg.vhd,1492391383,vhdl,c:/nn-project/HDL/user_app/mem_map.vhd;c:/nn-project/HDL/user_app/user_app.vhd;c:/nn-project/HDL/user_app/user_app_tb.vhd,,,config_pkg,,,,,,,,
+c:/nn-project/HDL/user_app/mem_map.vhd,1492391831,vhdl,c:/nn-project/HDL/user_app/user_app.vhd,,,mem_map,,,,,,,,
+c:/nn-project/HDL/user_app/ram.vhd,1489261047,vhdl,c:/nn-project/HDL/user_app/user_app.vhd,,,ram,,,,,,,,
+c:/nn-project/HDL/user_app/user_app.vhd,1492391426,vhdl,c:/nn-project/HDL/user_app/user_app_tb.vhd,,,user_app,,,,,,,,
+c:/nn-project/HDL/user_app/user_app_tb.vhd,1492387310,vhdl,,,,user_app_tb,,,,,,,,

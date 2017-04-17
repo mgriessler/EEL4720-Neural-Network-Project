@@ -54,19 +54,22 @@ begin
                     memtest_in_data <= (others => '0');
                     memtest_wr_en <= '0';
                 end if;
-			    --map inputs
-			    --4 inputs
+            else
+                memtest_wr_en <= '0';
 			end if;
 			
 			if(rd_en='1') then
 			    --map outputs
 				if(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT0_ADDR,C_MMAP_ADDR_WIDTH))) then
+                    memtest_out_addr <= (others => '0');
                     rd_data <= "0000000000000000" & output0;
                 elsif(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT1_ADDR,C_MMAP_ADDR_WIDTH))) then
+                    memtest_out_addr <= (others => '0');
                     rd_data <= "0000000000000000" & output1;
                 elsif(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT2_ADDR,C_MMAP_ADDR_WIDTH))) then
+                    memtest_out_addr <= (others => '0');
                     rd_data <= "0000000000000000" & output2;
-                elsif(rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_END_ADDR, C_MMAP_ADDR_WIDTH)) and wr_addr >= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH))) then
+                elsif(rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_END_ADDR, C_MMAP_ADDR_WIDTH)) and rd_addr >= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH))) then
                     memtest_out_addr <= "00000000000000" & rd_addr;
                     rd_data <= memtest_out_data;
                 end if;

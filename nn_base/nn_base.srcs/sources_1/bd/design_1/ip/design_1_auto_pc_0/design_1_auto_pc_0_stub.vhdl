@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
--- Date        : Sat Apr 15 22:45:19 2017
+-- Date        : Sat Apr 15 22:45:18 2017
 -- Host        : matt-samsung running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_pc_0 -prefix
+--               design_1_auto_pc_0_ design_1_auto_pc_0_stub.vhdl
 -- Design      : design_1_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

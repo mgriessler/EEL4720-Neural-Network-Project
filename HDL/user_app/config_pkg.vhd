@@ -24,12 +24,15 @@ package config_pkg is
     constant C_OUTPUT0_ADDR : addr_type := 1;
     constant C_OUTPUT1_ADDR   : addr_type := 2;
     constant C_OUTPUT2_ADDR   : addr_type := 3;
-    constant C_MEMTEST_END_ADDR : addr_type := 500;
-    constant C_MEMTEST_START_ADDR : addr_type := 400;
+    constant C_MEMTEST_END_ADDR : addr_type := 200;
+    constant C_MEMTEST_START_ADDR : addr_type := 50;
     
     -- Double Buffered Memory
     subtype DBL_ADDR is std_logic_vector(31 downto 0);
     subtype DBL_DATA is std_logic_vector(31 downto 0);
+    
+    constant MEM_ADDR_WIDTH : positive := 15;
+    constant MEM_DATA_WIDTH : positive := 32;
     
 
     

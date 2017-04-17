@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Sat Apr 15 22:42:21 2017
+--Date        : Sun Apr 16 22:00:46 2017
 --Host        : matt-samsung running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -613,7 +613,7 @@ entity design_1 is
     FIXED_IO_ps_srstb : inout STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -691,7 +691,7 @@ architecture STRUCTURE of design_1 is
     PS_PORB : inout STD_LOGIC
   );
   end component design_1_processing_system7_0_0;
-  component design_1_nn_axi_0_0 is
+  component design_1_nn_axi_0_1 is
   port (
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 19 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -715,7 +715,7 @@ architecture STRUCTURE of design_1 is
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC
   );
-  end component design_1_nn_axi_0_0;
+  end component design_1_nn_axi_0_1;
   component design_1_rst_ps7_0_100M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -821,7 +821,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
-nn_axi_0: component design_1_nn_axi_0_0
+nn_axi_0: component design_1_nn_axi_0_1
      port map (
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(19 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(19 downto 0),
