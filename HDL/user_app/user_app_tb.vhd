@@ -51,7 +51,7 @@ begin
         wait until rising_edge(clk);
 
         wait for 200 ns;
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_OUTPUT0_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= C_OUTPUT0_ADDR;
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -59,7 +59,7 @@ begin
         report "Output 0 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0';        
         
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_OUTPUT1_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= C_OUTPUT1_ADDR;
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -67,7 +67,7 @@ begin
         report "Output 1 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0';        
         
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_OUTPUT2_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= C_OUTPUT2_ADDR;
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -75,7 +75,7 @@ begin
         report "Output 2 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0'; 
         
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_wr_addr <= C_MEMTEST_START_ADDR;
         mmap_wr_data <= "00000000000000000000000000001100";
         mmap_wr_en <= '1';
         wait until rising_edge(clk);
@@ -89,7 +89,7 @@ begin
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= C_MEMTEST_START_ADDR;
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -104,7 +104,7 @@ begin
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+1, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= std_logic_vector(unsigned(C_MEMTEST_START_ADDR) + 1);
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -119,7 +119,7 @@ begin
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+1, C_MMAP_ADDR_WIDTH));
+        mmap_wr_addr <= std_logic_vector(unsigned(C_MEMTEST_START_ADDR) + 1);
         mmap_wr_data <= "00000000000000000000000000001111";
         mmap_wr_en <= '1';
         wait until rising_edge(clk);
@@ -133,7 +133,7 @@ begin
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+1, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= std_logic_vector(unsigned(C_MEMTEST_START_ADDR) + 1);
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -148,7 +148,7 @@ begin
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH));
+        mmap_rd_addr <= C_MEMTEST_START_ADDR;
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);

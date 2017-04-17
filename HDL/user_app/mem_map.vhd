@@ -33,7 +33,17 @@ entity mem_map is
 end mem_map;
 
 architecture BHV of mem_map is
+    signal reg_rd_data : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
+    signal rd_data_sel : std_logic;
+
+    constant C_RD_DATA_SEL_REG     : std_logic := '0';
+    constant C_RD_DATA_SEL_MEMTEST_OUT : std_logic := '1';
 begin
+    memtest_in_data <= wr_data(memtest_in_data'range);
+    memtest_in_addr <= wr_addr(memtest_in_addr'range);
+    memtest_wr_en   <= '1' when wr_en = '1' and unsigned(wr_addr) >= unsigned(C_MEMTEST_START_ADDR) and unsigned(wr_addr) <= unsigned(C_MEMTEST_END_ADDR) else '0';
+    memtest_out_addr <= rd_addr(memtest_out_addr'range);
+
 	process(clk, rst)
 	begin
         input0 <= x"0080"; -- 0.5
@@ -43,38 +53,47 @@ begin
 		if(rst = '1') then
 			go_epoch <= '0';
 			epoch_size <= (others => '0');
-		elsif(clk'event and clk='1') then
+		elsif(rising_edge(clk)) then
 			if(wr_en='1') then
-                if(wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_END_ADDR, C_MMAP_ADDR_WIDTH)) and wr_addr >= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH))) then
-                    memtest_in_addr <= "00000000000000" & wr_addr;
-                    memtest_in_data <= wr_data;
-                    memtest_wr_en <= '1';
-                else
-                    memtest_in_addr <= (others => '0');
-                    memtest_in_data <= (others => '0');
-                    memtest_wr_en <= '0';
-                end if;
-            else
-                memtest_wr_en <= '0';
+                case wr_addr is
+                    when others => null;
+                end case;
 			end if;
 			
 			if(rd_en='1') then
-			    --map outputs
-				if(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT0_ADDR,C_MMAP_ADDR_WIDTH))) then
-                    memtest_out_addr <= (others => '0');
-                    rd_data <= "0000000000000000" & output0;
-                elsif(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT1_ADDR,C_MMAP_ADDR_WIDTH))) then
-                    memtest_out_addr <= (others => '0');
-                    rd_data <= "0000000000000000" & output1;
-                elsif(rd_addr = std_logic_vector(to_unsigned(C_OUTPUT2_ADDR,C_MMAP_ADDR_WIDTH))) then
-                    memtest_out_addr <= (others => '0');
-                    rd_data <= "0000000000000000" & output2;
-                elsif(rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_END_ADDR, C_MMAP_ADDR_WIDTH)) and rd_addr >= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR, C_MMAP_ADDR_WIDTH))) then
-                    memtest_out_addr <= "00000000000000" & rd_addr;
-                    rd_data <= memtest_out_data;
+                rd_data_sel <= C_RD_DATA_SEL_REG;
+                reg_rd_data <= (others => '0');
+                
+                if(unsigned(rd_addr) > unsigned(C_MEMTEST_END_ADDR)) then
+                    rd_data_sel <= C_RD_DATA_SEL_REG;
+                else
+                    rd_data_sel <= C_RD_DATA_SEL_MEMTEST_OUT;
                 end if;
+                
+                case rd_addr is
+                    when C_OUTPUT0_ADDR =>
+                        reg_rd_data <= std_logic_vector(to_unsigned(0,C_MMAP_DATA_WIDTH-16)) & output0;
+                    when C_OUTPUT1_ADDR =>
+                        reg_rd_data <= std_logic_vector(to_unsigned(0,C_MMAP_DATA_WIDTH-16)) & output1;
+                    when C_OUTPUT2_ADDR =>
+                        reg_rd_data <= std_logic_vector(to_unsigned(0,C_MMAP_DATA_WIDTH-16)) & output2;
+                    when others => null;
+                end case;
 			end if;
 		end if;
 	end process;
+	
+	process(rd_data_sel, reg_rd_data, memtest_out_data)
+	begin
+        rd_data <= (others => '0');
+	   
+        case rd_data_sel is
+            when C_RD_DATA_SEL_MEMTEST_OUT =>
+                rd_data(memtest_out_data'range) <= memtest_out_data;
+            when C_RD_DATA_SEL_REG =>
+                rd_data <= reg_rd_data;
+            when others => null;
+        end case;
+    end process;
 end BHV;
 

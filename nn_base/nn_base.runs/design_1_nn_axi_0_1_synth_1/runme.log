@@ -15,25 +15,25 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 75744 
+INFO: Helper process launched with PID 80756 
 The system cannot find the file specified.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 291.613 ; gain = 81.434
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 292.375 ; gain = 82.578
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_nn_axi_0_1' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/synth/design_1_nn_axi_0_1.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'nn_axi_v1_0' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0.vhd:5' bound to instance 'U0' of component 'nn_axi_v1_0' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/synth/design_1_nn_axi_0_1.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'nn_axi_v1_0' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd:5' bound to instance 'U0' of component 'nn_axi_v1_0' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/synth/design_1_nn_axi_0_1.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd:49]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'nn_axi_v1_0_S00_AXI' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0_S00_AXI.vhd:5' bound to instance 'nn_axi_v1_0_S00_AXI_inst' of component 'nn_axi_v1_0_S00_AXI' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0_S00_AXI' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-3491] module 'nn_axi_v1_0_S00_AXI' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd:5' bound to instance 'nn_axi_v1_0_S00_AXI_inst' of component 'nn_axi_v1_0_S00_AXI' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0_S00_AXI' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'user_app' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:6' bound to instance 'U_USER_APP' of component 'user_app' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0_S00_AXI.vhd:333]
+INFO: [Synth 8-3491] module 'user_app' declared at 'c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:6' bound to instance 'U_USER_APP' of component 'user_app' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd:333]
 INFO: [Synth 8-638] synthesizing module 'user_app' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:21]
 INFO: [Synth 8-638] synthesizing module 'mem_map' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/mem_map.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/mem_map.vhd:35]
@@ -98,8 +98,8 @@ WARNING: [Synth 8-3848] Net result in module/entity user_app does not have drive
 WARNING: [Synth 8-3848] Net done in module/entity user_app does not have driver. [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:30]
 WARNING: [Synth 8-3848] Net memtest_out_data in module/entity user_app does not have driver. [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'user_app' (11#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0_S00_AXI' (12#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0_S00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0' (13#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0_S00_AXI' (12#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0' (13#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'design_1_nn_axi_0_1' (14#1) [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/synth/design_1_nn_axi_0_1.vhd:85]
 WARNING: [Synth 8-3331] design mem_map has unconnected port result[2]
 WARNING: [Synth 8-3331] design mem_map has unconnected port result[1]
@@ -118,7 +118,7 @@ WARNING: [Synth 8-3331] design nn_axi_v1_0_S00_AXI has unconnected port S_AXI_AR
 WARNING: [Synth 8-3331] design nn_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design nn_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 332.012 ; gain = 121.832
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 332.824 ; gain = 123.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -160,7 +160,7 @@ WARNING: [Synth 8-3295] tying undriven pin U_MEM_MAP:memtest_out_data[2] to cons
 WARNING: [Synth 8-3295] tying undriven pin U_MEM_MAP:memtest_out_data[1] to constant 0 [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:67]
 WARNING: [Synth 8-3295] tying undriven pin U_MEM_MAP:memtest_out_data[0] to constant 0 [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/user_app.vhd:67]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 332.012 ; gain = 121.832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 332.824 ; gain = 123.027
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -172,27 +172,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 652.938 ; gain = 3.121
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 653.438 ; gain = 3.301
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 652.938 ; gain = 442.758
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 653.438 ; gain = 443.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 652.938 ; gain = 442.758
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 653.438 ; gain = 443.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 652.938 ; gain = 442.758
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 653.438 ; gain = 443.641
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'go_epoch_reg' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/mem_map.vhd:44]
 WARNING: [Synth 8-327] inferring latch for variable 'epoch_size_reg' [c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/HDL/user_app/mem_map.vhd:45]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 652.938 ; gain = 442.758
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 653.438 ; gain = 443.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -524,7 +524,7 @@ INFO: [Synth 8-3886] merging instance 'nn_axi_v1_0_S00_AXI_insti_1/axi_rdata_reg
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (nn_axi_v1_0_S00_AXI_insti_1/\axi_rdata_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 652.938 ; gain = 442.758
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 653.438 ; gain = 443.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -568,10 +568,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 683.598 ; gain = 473.418
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 684.098 ; gain = 474.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 683.598 ; gain = 473.418
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 684.098 ; gain = 474.301
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -593,7 +593,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -617,7 +617,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -630,7 +630,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -642,25 +642,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -725,11 +725,11 @@ Report Instance Areas:
 |31    |                  sig         |sigmablock          |  1192|
 +------+------------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 768.867 ; gain = 558.688
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 769.211 ; gain = 559.414
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 85 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 768.867 ; gain = 231.738
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 768.867 ; gain = 558.688
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 769.211 ; gain = 232.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 769.211 ; gain = 559.414
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2317 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -741,10 +741,10 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 166 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 768.867 ; gain = 552.664
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 769.211 ; gain = 553.375
 INFO: [Common 17-1381] The checkpoint 'C:/NN-Project/nn_base/nn_base.runs/design_1_nn_axi_0_1_synth_1/design_1_nn_axi_0_1.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.xci
 INFO: [Coretcl 2-1174] Renamed 30 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/NN-Project/nn_base/nn_base.runs/design_1_nn_axi_0_1_synth_1/design_1_nn_axi_0_1.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 768.867 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 16 22:02:21 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 769.211 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 00:06:01 2017...

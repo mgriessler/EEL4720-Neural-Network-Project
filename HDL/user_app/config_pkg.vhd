@@ -21,19 +21,15 @@ package config_pkg is
     
     -- Memory Map address definitions    
     subtype addr_type is integer range 0 to 2**C_MMAP_ADDR_WIDTH-1;
-    constant C_OUTPUT0_ADDR : addr_type := 1;
-    constant C_OUTPUT1_ADDR   : addr_type := 2;
-    constant C_OUTPUT2_ADDR   : addr_type := 3;
-    constant C_MEMTEST_END_ADDR : addr_type := 200;
-    constant C_MEMTEST_START_ADDR : addr_type := 50;
-    
-    -- Double Buffered Memory
-    subtype DBL_ADDR is std_logic_vector(31 downto 0);
-    subtype DBL_DATA is std_logic_vector(31 downto 0);
-    
     constant MEM_ADDR_WIDTH : positive := 15;
     constant MEM_DATA_WIDTH : positive := 32;
+    constant C_OUTPUT0_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-3, C_MMAP_ADDR_WIDTH));
+    constant C_OUTPUT1_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-2, C_MMAP_ADDR_WIDTH));
+    constant C_OUTPUT2_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-1, C_MMAP_ADDR_WIDTH));
+    constant C_MEMTEST_START_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := (others => '0');
+    constant C_MEMTEST_END_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(unsigned(C_MEMTEST_START_ADDR) + (2**MEM_ADDR_WIDTH-1));
     
-
+    subtype DBL_ADDR is std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
+    subtype DBL_DATA is std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
     
 end config_pkg;

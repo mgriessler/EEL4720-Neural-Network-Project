@@ -55,8 +55,8 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/hdl/user_app/mem_map.vhd" \
 "../../../bd/design_1/hdl/user_app/ram.vhd" \
 "../../../bd/design_1/hdl/user_app/user_app.vhd" \
-"../../../bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/d9ea/hdl/nn_axi_v1_0.vhd" \
+"../../../bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_nn_axi_0_1/sim/design_1_nn_axi_0_1.vhd" \
 
 vcom -work lib_cdc_v1_0_2 -64 -93 \
@@ -66,7 +66,7 @@ vcom -work proc_sys_reset_v5_0_10 -64 -93 \
 "../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_1/sim/design_1_rst_ps7_0_100M_1.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 -incr "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7dd0/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7dd0/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl" \
 "../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -93,7 +93,7 @@ vlog -work axi_protocol_converter_v2_1_11 -64 -incr "+incdir+../../../../nn_base
 "../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7dd0/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7dd0/hdl" "+incdir+../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl" \
-"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 
 vlog -work xil_defaultlib "glbl.v"
 

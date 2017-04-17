@@ -77,38 +77,4 @@ Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__32  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
 Warning: :fixed_pkg:">": metavalue detected, returning FALSE
-Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(1)\/neu/sig/abso/line__22  File: c:/nn-project/HDL/nn_dp/absfixed.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__32  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: :fixed_pkg:">": metavalue detected, returning FALSE
-Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(0)\/neu/sig/abso/line__22  File: c:/nn-project/HDL/nn_dp/absfixed.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(0)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(1)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(2)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 5 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(3)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/out_layer/\GEN2(0)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/out_layer/\GEN2(1)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 15 ns  Iteration: 5  Process: /user_app_tb/UUT/U_NN/nn/neu/out_layer/\GEN2(2)\/neu/sig/line__31  File: c:/nn-project/HDL/nn_dp/sigmablock.vhd
-Note: Output 0 is 233
-Time: 435 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Output 1 is 35
-Time: 455 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Output 2 is 60
-Time: 475 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Memory output is 12
-Time: 595 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Memory output is 0
-Time: 675 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Memory output is 15
-Time: 835 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
-Note: Memory output is 12
-Time: 915 ns  Iteration: 0  Process: /user_app_tb/line__35  File: c:/nn-project/HDL/user_app/user_app_tb.vhd
+Time: 0 ps  Iteration: 1  Process: /user_app_tb/UUT/U_NN/nn/neu/hid_layer/\GEN2(1)\/neu/sig/abso/line__22  File: c:/n
