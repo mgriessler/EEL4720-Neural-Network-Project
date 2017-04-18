@@ -1,0 +1,25 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -600 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -460 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y -720 -defaultsOSRD
+preplace inst nn_axi_v4_0 -pg 1 -lvl 2 -y -530 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y -330 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -410 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -600 NJ -600 NJ -600 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 1 3 450 -450 NJ -450 1130
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ -430 810
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 440
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 460 -440 800
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -460 NJ -460 NJ -460 NJ
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 820
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 -540 420 -370 830
+levelinfo -pg 1 0 220 630 980 1150 1190 -top -810 -bot 1200
+",
+}
+{
+   da_axi4_cnt: "12",
+   da_board_cnt: "1",
+   da_ps7_cnt: "2",
+}

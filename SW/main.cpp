@@ -17,11 +17,11 @@ using namespace std;
 // AXI addresses for the input and output
 #define ADDR_WIDTH 15
 #define MAX_SIZE (1<<ADDR_WIDTH)
-#define MEM_IN_ADDR 0
-#define MEM_OUT_ADDR_0
-#define C_OUTPUT_0_ADDR ((1<<MMAP_ADDR_WIDTH)-3)
-#define C_OUTPUT_1_ADDR ((1<<MMAP_ADDR_WIDTH)-2)
-#define C_OUTPUT_2_ADDR ((1<<MMAP_ADDR_WIDTH)-1)
+//#define MEM_IN_ADDR 442
+//#define MEM_OUT_ADDR_0
+#define C_OUTPUT_0_ADDR 1
+#define C_OUTPUT_1_ADDR 2
+#define C_OUTPUT_2_ADDR 3
 #define SHIFT_VAL 256.0
 
 //#define DEBUG
@@ -72,26 +72,72 @@ int main(int argc, char* argv[]) {
    std::cout<<"Output 3 is: ";
    std::cout<<output2/SHIFT_VAL<<std::endl;
   
+  unsigned long MEM_IN_ADDR = 400;
+  
+  unsigned int read_value[100];
 
-  unsigned int write_value = 42;
-  unsigned int read_value;
-  board->write(&write_value, MEM_IN_ADDR, 1);
-  board->read(&read_value, MEM_IN_ADDR, 1);
-  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value << std::endl;
-  
-  write_value = 43;
-  board->write(&write_value, MEM_IN_ADDR+1, 1);
-  board->read(&read_value, MEM_IN_ADDR+1, 1);
-  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value << std::endl;
-  
-  write_value = 12;
-  board->write(&write_value, MEM_IN_ADDR, 1);
-  board->read(&read_value, MEM_IN_ADDR, 1);
-  if(write_value == read_value) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value << std::endl;
-  
+  //unsigned int write_value[5] = {42, 43, 44, 45, 46};
+
+  for(unsigned int i = 0; i < 100; i++){
+  board->write(&i, MEM_IN_ADDR+i, 1);
+  }
+
+  cout<<"Wait"<<endl;
+
+
+  board->read(read_value, MEM_IN_ADDR, 100);
+  for(int i = 0; i < 100; i++){
+  cout<<"Item "<<i<<" is "<<read_value[i]<<endl;
+  }
+  for(int i = 2; i < 100; i++){
+  cout<<"Item "<<i<<" is "<<read_value[i]<<endl;
+  }
+  for(int i = 2; i < 100; i++){
+  cout<<"Item "<<2<<" is "<<read_value[2]<<endl;
+  }
+
+  /*if(read_value[0] == 42) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[0] << std::endl;
+
+  if(read_value[1] == 43) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[1] << std::endl;
+
+  if(read_value[2] == 44) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[2] << std::endl;
+
+  if(read_value[3] == 45) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[3] << std::endl;
+
+  if(read_value[4] == 46) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[4] << std::endl;
+
+if(read_value[0] == 42) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[0] << std::endl;
+
+  if(read_value[1] == 43) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[1] << std::endl;
+
+  if(read_value[2] == 44) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[2] << std::endl;
+
+  if(read_value[3] == 45) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[3] << std::endl;
+
+  if(read_value[4] == 46) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[4] << std::endl;
+
+  if(read_value[5] == 100) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[5] << std::endl;
+
+  if(read_value[6] == 100) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[6] << std::endl;
+
+  if(read_value[7] == 100) std::cout<<"Memory Map test success!"<<std::endl;
+  else std::cout << "Memory map failure, read: " << read_value[7] << std::endl;*/
+
+
+
+
 
   return 1;
 }

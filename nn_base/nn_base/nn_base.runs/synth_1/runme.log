@@ -1,0 +1,603 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v4_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/data_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/ddrx/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/interrupt_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/diff_clock/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/ddr4/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/reset_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/jtag/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/clock_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/bram/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/mbinterrupt/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/clock_enable_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/AXIS/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/AXIMM/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/acemm/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_status_out:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_status_out_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_control_in_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_control_in:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_status_out:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_status_out_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_control_in_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_control_in:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:pcie3_us_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_7x_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:pcie3_us_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:int_shared_logic_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_legacy:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_7x_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_legacy_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:int_shared_logic:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_phy_common_qpll_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_phy_common_qpll_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:gt8_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_rx_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_tx_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:gt8_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:interface:pcie_pipe_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:interface:pcie_pipe_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vivado/2015.4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/ip_repo/nn_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_ds_buf:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_ds_buf_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:jtag:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_jtag_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:aximm:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_aximm_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:ddrx:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_ddrx_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:acemm:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_acemm_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlconstant:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlconstant_1.1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:diff_clock:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_diff_clock_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_addone:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_addone_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:interrupt:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_interrupt_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_block:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_block_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axifull_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axifull_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_gen:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/clk_gen_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:mbinterrupt:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_mbinterrupt_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlconcat:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlconcat_2.1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_smithwaterman:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_smithwaterman_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:bram:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_bram_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:axis:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_axis_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axilite_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axilite_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlslice:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlslice_1.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_slave_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_slave_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:clockenable:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_clock_enable_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:ddr4:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_ddr4_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:clock:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_clock_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_terminator:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_terminator_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_vector_logic:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_vector_logic_2.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_fpmmult256x256:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_mmult256x256_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:rst_gen:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/rst_gen_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:reset:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_reset_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_idelay_ctrl:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_idelay_ctrl_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_reduced_logic:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_reduced_logic_2.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_master_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_master_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logibmp:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logibmp' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logi3d:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logi3d' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logisdhc:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logisdhc' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logicvc:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logicvc' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logibitblt:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logibitblt' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logiview:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logiview' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logii2s:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logii2s' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logii2c:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logii2c' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_deint:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_deint' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_common:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_common' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_axis_n_to_m:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_axis_n_to_m' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma_420_to_422:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma_420_to_422' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_cropper:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_cropper' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_version:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_version' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma_down:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma_down' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_crosspoint:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_crosspoint' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_mpvdma:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_mpvdma' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_resizer:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_resizer' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_offset_capability:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_offset_capability' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_colourspace:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_colourspace' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_gamma_lut:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_gamma_lut' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_vp:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_vp' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_interlacer:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_interlacer' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_axis_fifo_mon:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_axis_fifo_mon' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_combiner:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_combiner' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_noise_filter:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_noise_filter' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'topicembeddedproducts.com:dyplo:dyplo_axi_full:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Topic/dyplo_axi_full' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:iprop_adci:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/ADCI' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:iprop_ahci:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/AHCI' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:nvme_target:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/NVME' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:sata_host_application_interface:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/APP' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'nwlogic.com:ip:NWL_AXI_DMA:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/nwlogic/NWL_AXI_DMA' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:prc:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/prc_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:rld3:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/rld3_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xdma_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:aurora_8b10b:11.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/aurora_8b10b_v11_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dp_rx_subsystem:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/dp_rx_subsystem_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pl4:13.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pl4_v13_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ddr3:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ddr3_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie3_ultrascale:4.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pcie3_ultrascale_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:labtools_general_components_lib:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/labtools_general_components_lib_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_deinterlacer:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_deinterlacer_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:tcc_decoder_3gpplte:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/tcc_decoder_3gpplte_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_register_slice:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_register_slice_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:tcc_encoder_3gpplte:4.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/tcc_encoder_3gpplte_v4_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_uartlite:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_uartlite_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_usb2_device:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_usb2_device_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ibert_ultrascale_gth:1.3'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ibert_ultrascale_gth_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xbip_bram18k:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xbip_bram18k_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_epc:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_epc_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_gpio:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_gpio_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:jtag_axi:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/jtag_axi_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ibert_lib:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ibert_lib_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_protocol_checker:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axis_protocol_checker_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_smpte2022_56_rx:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_smpte2022_56_rx_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ddr4_phy:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ddr4_phy_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:fifo_generator:13.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/fifo_generator_v13_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:sid:8.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/sid_v8_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7_bfm:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/processing_system7_bfm_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ila:6.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ila_v6_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_hdmi_rx:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_hdmi_rx_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_traffic_gen:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_traffic_gen_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_cfa:7.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_cfa_v7_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_interconnect:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axis_interconnect_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xbip_dsp48_wrapper:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xbip_dsp48_wrapper_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_utils:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_utils_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie3_7x:4.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pcie3_7x_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:c_addsub:12.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/c_addsub_v12_0' will take precedence over the same IP in the Xilinx installed IP.
+INFO: [Common 17-14] Message 'IP_Flow 19-1663' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+add_files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1220.508 ; gain = 305.008 ; free physical = 687 ; free virtual = 9384
+Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.938 ; gain = 461.773 ; free physical = 643 ; free virtual = 9340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:591' bound to instance 'design_1_i' of component 'design_1' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:621]
+INFO: [Synth 8-3491] module 'design_1_nn_axi_v4_0_0' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_nn_axi_v4_0_0_stub.vhdl:5' bound to instance 'nn_axi_v4_0' of component 'design_1_nn_axi_v4_0_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:824]
+INFO: [Synth 8-638] synthesizing module 'design_1_nn_axi_v4_0_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_nn_axi_v4_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:848]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_axi_periph_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:398]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1CFO1MB' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:80]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1CFO1MB' (1#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_axi_periph_0' (2#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:398]
+INFO: [Synth 8-3491] module 'design_1_rst_processing_system7_0_100M_0' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_rst_processing_system7_0_100M_0_stub.vhdl:5' bound to instance 'rst_processing_system7_0_100M' of component 'design_1_rst_processing_system7_0_100M_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:985]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_processing_system7_0_100M_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/realtime/design_1_rst_processing_system7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (3#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1.vhd:621]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (4#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1345.320 ; gain = 501.156 ; free physical = 601 ; free virtual = 9298
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1345.320 ; gain = 501.156 ; free physical = 600 ; free virtual = 9297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp/design_1_nn_axi_v4_0_0_in_context.xdc] for cell 'design_1_i/nn_axi_v4_0'
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp/design_1_nn_axi_v4_0_0_in_context.xdc] for cell 'design_1_i/nn_axi_v4_0'
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_3/design_1_rst_processing_system7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_3/design_1_rst_processing_system7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_4/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_4/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1579.000 ; gain = 0.000 ; free physical = 424 ; free virtual = 9120
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context implementation of instance 'design_1_i/processing_system7_0_axi_periph/s00_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '10.000', this can result in different implementation results.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30766 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.004 ; gain = 735.840 ; free physical = 421 ; free virtual = 9117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.004 ; gain = 735.840 ; free physical = 421 ; free virtual = 9117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/synth_1/.Xil/Vivado-30753-nlandy-MacBookPro/dcp_2/design_1_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/nn_axi_v4_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.004 ; gain = 735.840 ; free physical = 421 ; free virtual = 9117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.004 ; gain = 735.840 ; free physical = 420 ; free virtual = 9117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.008 ; gain = 735.844 ; free physical = 420 ; free virtual = 9117
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.008 ; gain = 735.844 ; free physical = 422 ; free virtual = 9119
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.008 ; gain = 735.844 ; free physical = 422 ; free virtual = 9119
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.008 ; gain = 735.844 ; free physical = 422 ; free virtual = 9119
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1580.008 ; gain = 735.844 ; free physical = 422 ; free virtual = 9119
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1613.000 ; gain = 768.836 ; free physical = 365 ; free virtual = 9062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1613.000 ; gain = 768.836 ; free physical = 365 ; free virtual = 9062
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------------+----------+
+|      |BlackBox name                            |Instances |
++------+-----------------------------------------+----------+
+|1     |design_1_nn_axi_v4_0_0                   |         1|
+|2     |design_1_processing_system7_0_0          |         1|
+|3     |design_1_auto_pc_0                       |         1|
+|4     |design_1_rst_processing_system7_0_100M_0 |         1|
++------+-----------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------------+------+
+|      |Cell                                          |Count |
++------+----------------------------------------------+------+
+|1     |design_1_auto_pc_0_bbox                       |     1|
+|2     |design_1_nn_axi_v4_0_0_bbox                   |     1|
+|3     |design_1_processing_system7_0_0_bbox          |     1|
+|4     |design_1_rst_processing_system7_0_100M_0_bbox |     1|
++------+----------------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------------+-------------------------------------------+------+
+|      |Instance                            |Module                                     |Cells |
++------+------------------------------------+-------------------------------------------+------+
+|1     |top                                 |                                           |   417|
+|2     |  design_1_i                        |design_1                                   |   417|
+|3     |    processing_system7_0_axi_periph |design_1_processing_system7_0_axi_periph_0 |   177|
+|4     |      s00_couplers                  |s00_couplers_imp_1CFO1MB                   |   177|
++------+------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9053
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1622.016 ; gain = 120.391 ; free physical = 356 ; free virtual = 9053
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1622.016 ; gain = 777.852 ; free physical = 356 ; free virtual = 9052
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1622.020 ; gain = 401.512 ; free physical = 356 ; free virtual = 9052
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1630.023 ; gain = 0.000 ; free physical = 355 ; free virtual = 9052
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 04:09:10 2017...

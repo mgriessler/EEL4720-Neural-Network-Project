@@ -1,0 +1,566 @@
+
+*** Running vivado
+    with args -log design_1_rst_processing_system7_0_100M_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source design_1_rst_processing_system7_0_100M_0.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_rst_processing_system7_0_100M_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v4_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/data_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/ddrx/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/interrupt_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/diff_clock/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/ddr4/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/reset_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/jtag/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/clock_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/bram/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/mbinterrupt/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/clock_enable_signal/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/AXIS/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 2 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/AXIMM/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-395] Problem reading Parameter Definition: see 'spirit:vendor' near line 6 in /opt/Xilinx/Vivado/2015.4/data/rsb/busdef/acemm/paramAbsDef.xml: Mandatory element missing or unexpected element found
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_status_out:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_status_out_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_control_in_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_control_in:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_status_out:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_status_out_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:core_control_in_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_TX_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:QPLL_CONTROL_OUT:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:GT_Serial_Transceiver_Pins_RX:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_aurora:QPLL_CONTROL_IN_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_aurora:core_control_in:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:pcie3_us_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_7x_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:pcie3_us_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_ultrascale:int_shared_logic_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_legacy:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_7x_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_legacy_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie3_ultrascale:int_shared_logic:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie3_7x:pcie3_ext_pipe_ep_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_phy_common_qpll_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_rx_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_phy_common_qpll_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:gt8_transceiver_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_rx_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:jesd204_tx_bus:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_jesd204:gt8_transceiver_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_jesd204:jesd204_tx_bus_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:interface:pcie_pipe_debug:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:interface:pcie_pipe_debug_rtl:1.0' found within IP repository '/opt/Xilinx/Vivado/2015.4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vivado/2015.4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nlandy/EEL4720-Neural-Network-Project_copy/ip_repo/nn_axi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_ds_buf:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_ds_buf_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:jtag:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_jtag_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:aximm:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_aximm_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:ddrx:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_ddrx_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:acemm:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_acemm_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlconstant:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlconstant_1.1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:diff_clock:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_diff_clock_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_addone:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_addone_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:interrupt:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_interrupt_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_block:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_block_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axifull_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axifull_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_gen:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/clk_gen_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:mbinterrupt:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_mbinterrupt_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlconcat:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlconcat_2.1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_smithwaterman:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_smithwaterman_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:bram:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_bram_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:axis:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_axis_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axilite_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axilite_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xlslice:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/xilinx.com_ip_xlslice_1.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_slave_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_slave_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:clockenable:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_clock_enable_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:interface.param:ddr4:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_ddr4_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:clock:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_clock_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_terminator:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_terminator_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_vector_logic:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_vector_logic_2.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_fpmmult256x256:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_mmult256x256_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:rst_gen:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/rst_gen_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:signal.param:reset:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/intf_reset_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_idelay_ctrl:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_idelay_ctrl_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:util_reduced_logic:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/util_reduced_logic_2.0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ocl_axi_master_bridge:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/rsb/iprepos/ocl_axi_master_bridge_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logibmp:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logibmp' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logi3d:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logi3d' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logisdhc:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logisdhc' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logicvc:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logicvc' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logibitblt:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logibitblt' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logiview:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logiview' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logii2s:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logii2s' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'logicbricks.com:logicbricks:logii2c:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/xylon/logii2c' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_deint:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_deint' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_common:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_common' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_axis_n_to_m:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_axis_n_to_m' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma_420_to_422:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma_420_to_422' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_cropper:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_cropper' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_version:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_version' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma_down:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma_down' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_crosspoint:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_crosspoint' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_mpvdma:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_mpvdma' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_resizer:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_resizer' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_offset_capability:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_offset_capability' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_colourspace:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_colourspace' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_gamma_lut:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_gamma_lut' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_chroma:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_chroma' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_vp:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_vp' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_interlacer:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_interlacer' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_axis_fifo_mon:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_axis_fifo_mon' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_combiner:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_combiner' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'omnitek.tv:ip:omni_noise_filter:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Omnitek/omni_noise_filter' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'topicembeddedproducts.com:dyplo:dyplo_axi_full:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Topic/dyplo_axi_full' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:iprop_adci:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/ADCI' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:iprop_ahci:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/AHCI' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:nvme_target:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/NVME' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'intelliprop.com:ip:sata_host_application_interface:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/Intelliprop/APP' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'nwlogic.com:ip:NWL_AXI_DMA:0.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/partners/nwlogic/NWL_AXI_DMA' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:prc:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/prc_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:rld3:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/rld3_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xdma_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:aurora_8b10b:11.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/aurora_8b10b_v11_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dp_rx_subsystem:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/dp_rx_subsystem_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pl4:13.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pl4_v13_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ddr3:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ddr3_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie3_ultrascale:4.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pcie3_ultrascale_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:labtools_general_components_lib:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/labtools_general_components_lib_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_deinterlacer:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_deinterlacer_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:tcc_decoder_3gpplte:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/tcc_decoder_3gpplte_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_register_slice:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_register_slice_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:tcc_encoder_3gpplte:4.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/tcc_encoder_3gpplte_v4_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_uartlite:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_uartlite_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_usb2_device:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_usb2_device_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ibert_ultrascale_gth:1.3'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ibert_ultrascale_gth_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xbip_bram18k:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xbip_bram18k_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_epc:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_epc_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_gpio:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_gpio_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:jtag_axi:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/jtag_axi_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ibert_lib:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ibert_lib_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_protocol_checker:1.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axis_protocol_checker_v1_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_smpte2022_56_rx:5.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_smpte2022_56_rx_v5_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ddr4_phy:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ddr4_phy_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:fifo_generator:13.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/fifo_generator_v13_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:sid:8.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/sid_v8_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7_bfm:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/processing_system7_bfm_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:ila:6.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/ila_v6_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_hdmi_rx:1.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_hdmi_rx_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_traffic_gen:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_traffic_gen_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:v_cfa:7.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/v_cfa_v7_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_interconnect:2.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axis_interconnect_v2_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xbip_dsp48_wrapper:3.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/xbip_dsp48_wrapper_v3_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_utils:2.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/axi_utils_v2_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie3_7x:4.1'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/pcie3_7x_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:c_addsub:12.0'. The one found in IP location '/opt/Xilinx/Vivado/2015.4/data/ip/xilinx/c_addsub_v12_0' will take precedence over the same IP in the Xilinx installed IP.
+INFO: [Common 17-14] Message 'IP_Flow 19-1663' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_processing_system7_0_100M_0' generated file not found '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_processing_system7_0_100M_0' generated file not found '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_processing_system7_0_100M_0' generated file not found '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_processing_system7_0_100M_0' generated file not found '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_rst_processing_system7_0_100M_0' generated file not found '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_sim_netlist.vhdl'. Please regenerate to continue.
+read_ip: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1181.242 ; gain = 265.742 ; free physical = 635 ; free virtual = 9408
+Command: synth_design -top design_1_rst_processing_system7_0_100M_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1296.672 ; gain = 452.508 ; free physical = 557 ; free virtual = 9330
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_processing_system7_0_100M_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/synth/design_1_rst_processing_system7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/synth/design_1_rst_processing_system7_0_100M_0.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:199]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:138]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43266' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43266]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:43266]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_processing_system7_0_100M_0' (7#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/synth/design_1_rst_processing_system7_0_100M_0.vhd:74]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1337.055 ; gain = 492.891 ; free physical = 516 ; free virtual = 9290
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1337.055 ; gain = 492.891 ; free physical = 516 ; free virtual = 9289
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_ooc.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_ooc.xdc]
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1646.734 ; gain = 0.000 ; free physical = 327 ; free virtual = 9083
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30364 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1646.738 ; gain = 802.574 ; free physical = 349 ; free virtual = 9100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1646.738 ; gain = 802.574 ; free physical = 349 ; free virtual = 9100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1646.738 ; gain = 802.574 ; free physical = 349 ; free virtual = 9100
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:222]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.738 ; gain = 802.574 ; free physical = 369 ; free virtual = 9120
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+Module proc_sys_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 369 ; free virtual = 9120
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 364 ; free virtual = 9115
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 364 ; free virtual = 9115
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\U0/SEQ/pr_dec_reg[1] ' (FD) to '\U0/SEQ/bsr_dec_reg[1] '
+INFO: [Synth 8-3886] merging instance '\U0/SEQ/bsr_dec_reg[1] ' (FD) to '\U0/SEQ/core_dec_reg[1] '
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/SEQ/bsr_dec_reg[1] ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+INFO: [Synth 8-3332] Sequential element (\U0/SEQ/pr_dec_reg[1] ) is unused and will be removed from module design_1_rst_processing_system7_0_100M_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 356 ; free virtual = 9107
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 356 ; free virtual = 9107
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 302 ; free virtual = 9053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 302 ; free virtual = 9053
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 285 ; free virtual = 9036
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 285 ; free virtual = 9036
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 285 ; free virtual = 9036
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 285 ; free virtual = 9035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 285 ; free virtual = 9035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------+------+
+|      |Instance                          |Module         |Cells |
++------+----------------------------------+---------------+------+
+|1     |top                               |               |    66|
+|2     |  U0                              |proc_sys_reset |    66|
+|3     |    EXT_LPF                       |lpf            |    23|
+|4     |      \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync       |     6|
+|5     |      \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_0     |     6|
+|6     |    SEQ                           |sequence_psr   |    38|
+|7     |      SEQ_COUNTER                 |upcnt_n        |    14|
++------+----------------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1646.742 ; gain = 109.387 ; free physical = 284 ; free virtual = 9035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1646.742 ; gain = 802.578 ; free physical = 284 ; free virtual = 9035
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_ooc.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_ooc.xdc]
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
+Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+Finished Parsing XDC File [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1646.742 ; gain = 465.500 ; free physical = 283 ; free virtual = 9034
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1678.754 ; gain = 0.000 ; free physical = 282 ; free virtual = 9033
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 04:04:27 2017...

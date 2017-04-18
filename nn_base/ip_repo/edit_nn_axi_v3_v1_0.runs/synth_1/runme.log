@@ -1,0 +1,679 @@
+
+*** Running vivado
+    with args -log nn_axi_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source nn_axi_v1_0.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source nn_axi_v1_0.tcl -notrace
+Command: synth_design -top nn_axi_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22125 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.926 ; gain = 161.766 ; free physical = 2243 ; free virtual = 12388
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'nn_axi_v1_0_S00_AXI' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0_S00_AXI.vhd:5' bound to instance 'nn_axi_v1_0_S00_AXI_inst' of component 'nn_axi_v1_0_S00_AXI' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'nn_axi_v1_0_S00_AXI' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'user_app' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:6' bound to instance 'U_USER_APP' of component 'user_app' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0_S00_AXI.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'user_app' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'mem_map' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/mem_map.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/mem_map.vhd:35]
+INFO: [Synth 8-3491] module 'nn_wrapper' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_wrapper.vhd:10' bound to instance 'U_NN' of component 'nn_wrapper' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'nn_wrapper' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_wrapper.vhd:26]
+INFO: [Synth 8-3491] module 'neural_network_top' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network_top.vhd:10' bound to instance 'nn' of component 'neural_network_top' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_wrapper.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'neural_network_top' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network_top.vhd:76]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_network' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network_top.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network.vhd:30]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'hidden_layer' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MAC' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/MAC.vhd:19]
+	Parameter input_size bound to: 4 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+INFO: [Synth 8-256] done synthesizing module 'MAC' (2#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/MAC.vhd:19]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+INFO: [Synth 8-3491] module 'sigmablock' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sigmablock' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/sigmablock.vhd:19]
+INFO: [Synth 8-3491] module 'absfixed' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/sigmablock.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'absfixed' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/absfixed.vhd:18]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+INFO: [Synth 8-256] done synthesizing module 'absfixed' (3#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/absfixed.vhd:18]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+INFO: [Synth 8-256] done synthesizing module 'sigmablock' (4#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/sigmablock.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (5#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (6#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_layer' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'neural_layer' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'neural_layer' (7#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_layer.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (8#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (9#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/neural_network_top.vhd:76]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2056]
+INFO: [Synth 8-256] done synthesizing module 'nn_wrapper' (10#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_wrapper.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'ram_sync_read' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/ram.vhd:117]
+	Parameter num_words bound to: 65536 - type: integer 
+	Parameter word_width bound to: 16 - type: integer 
+	Parameter addr_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram_sync_read' (11#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/ram.vhd:117]
+WARNING: [Synth 8-3848] Net result in module/entity user_app does not have driver. [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:29]
+WARNING: [Synth 8-3848] Net done in module/entity user_app does not have driver. [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'user_app' (12#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/user_app.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0_S00_AXI' (13#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'nn_axi_v1_0' (14#1) [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/nn_axi_v1_0.vhd:49]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1078.309 ; gain = 234.148 ; free physical = 2195 ; free virtual = 12340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1078.309 ; gain = 234.148 ; free physical = 2195 ; free virtual = 12340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1086.309 ; gain = 242.148 ; free physical = 2195 ; free virtual = 12340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [Synth 8-327] inferring latch for variable 'go_epoch_reg' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/mem_map.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'epoch_size_reg' [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/mem_map.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1118.309 ; gain = 274.148 ; free physical = 2182 ; free virtual = 12327
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |neuron                   |           7|     16659|
+|2     |neural_network__GC0      |           1|       176|
+|3     |user_app__GC0            |           1|      1334|
+|4     |nn_axi_v1_0_S00_AXI__GC0 |           1|        86|
++------+-------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 7     
+	   2 Input     52 Bit       Adders := 14    
+	   2 Input     50 Bit       Adders := 14    
+	   2 Input     49 Bit       Adders := 7     
+	   2 Input     34 Bit       Adders := 7     
+	   2 Input     17 Bit       Adders := 42    
+	   4 Input     16 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 12    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	            1024K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 7     
+	   2 Input     52 Bit        Muxes := 14    
+	   2 Input     50 Bit        Muxes := 14    
+	   2 Input     49 Bit        Muxes := 7     
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 196   
+	   3 Input     16 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 31    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+Module absfixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sigmablock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     52 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 2     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 2     
+	   2 Input     50 Bit        Muxes := 2     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module neuron 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module neural_network 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 11    
+Module mem_map 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module ram_sync_read 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	            1024K Bit         RAMs := 1     
+Module nn_axi_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1174.312 ; gain = 330.152 ; free physical = 2112 ; free virtual = 12257
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v3_1.0/src/fixed_pkg_c.vhd:2418]
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_araddr[1]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_araddr[0]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design nn_axi_v1_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1182.312 ; gain = 338.152 ; free physical = 2123 ; free virtual = 12268
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1182.312 ; gain = 338.152 ; free physical = 2123 ; free virtual = 12268
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |neuron                   |           7|     17607|
+|2     |neural_network__GC0      |           1|       176|
+|3     |user_app__GC0            |           1|       713|
+|4     |nn_axi_v1_0_S00_AXI__GC0 |           1|        86|
++------+-------------------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 16 RAM instances of RAM U_MEMTEST/memory_reg to conserve power
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++--------------+----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------+
+|Module Name   | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name | 
++--------------+----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------+
+|user_app__GC0 | U_MEMTEST/memory_reg | 64 K x 16(READ_FIRST)  | W |   | 64 K x 16(WRITE_FIRST) |   | R | Port A and B | 0      | 32     | extram__2         | 
++--------------+----------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sigmablock  | A*B         | No           | 17     | 17     | 48     | 25     | 34     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC         | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC         | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC         | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC         | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\axi_rresp_reg[0] ' (FDRE) to '\axi_rresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance '\axi_bresp_reg[0] ' (FDRE) to '\axi_bresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][0] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][1] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][2] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][3] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][4] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][5] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][6] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][7] ' (FD) to '\in_vector_reg[1][6] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][8] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][9] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][10] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][11] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][12] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][13] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][14] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[0][15] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][0] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][1] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][2] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][3] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][4] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][5] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][6] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][7] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][8] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][9] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][10] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][11] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][12] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][13] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][14] ' (FD) to '\in_vector_reg[1][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[1][15] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][0] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][1] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][2] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][3] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][4] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][5] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][6] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][7] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][8] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][9] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][10] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][11] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][12] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][13] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][14] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[2][15] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][0] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][1] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][2] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][3] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][4] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][5] ' (FD) to '\in_vector_reg[3][7] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][6] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_vector_reg[3][7] )
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][8] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][9] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][10] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][11] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][12] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][13] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3886] merging instance '\in_vector_reg[3][14] ' (FD) to '\in_vector_reg[3][15] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\in_vector_reg[3][15] )
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[9] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[10] '
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[10] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[11] '
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[11] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[12] '
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[12] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[13] '
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[13] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[14] '
+INFO: [Synth 8-3886] merging instance '\U_MEM_MAP/memtest_in_addr_reg[14] ' (FDE) to '\U_MEM_MAP/memtest_in_addr_reg[15] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_MEM_MAP/memtest_in_addr_reg[15] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1286.992 ; gain = 442.832 ; free physical = 2080 ; free virtual = 12223
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1286.992 ; gain = 442.832 ; free physical = 2080 ; free virtual = 12223
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |neuron                   |           1|      3205|
+|2     |neural_network__GC0      |           1|       112|
+|3     |user_app__GC0            |           1|       241|
+|4     |nn_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|5     |neuron__1                |           1|      3205|
+|6     |neuron__2                |           1|      3205|
+|7     |neuron__3                |           1|      3205|
+|8     |neuron__4                |           1|      3233|
+|9     |neuron__5                |           1|      3233|
+|10    |neuron__6                |           1|      3205|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1286.992 ; gain = 442.832 ; free physical = 2080 ; free virtual = 12223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |neuron                   |           1|      3205|
+|2     |neural_network__GC0      |           1|       112|
+|3     |user_app__GC0            |           1|       241|
+|4     |nn_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|5     |neuron__1                |           1|      3205|
+|6     |neuron__2                |           1|      3205|
+|7     |neuron__3                |           1|      3205|
+|8     |neuron__4                |           1|      3233|
+|9     |neuron__5                |           1|      3233|
+|10    |neuron__6                |           1|      3205|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[31] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[30] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[29] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[28] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[27] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[26] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[25] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[24] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[23] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[22] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[21] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[20] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[19] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[18] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[17] ) is unused and will be removed from module nn_axi_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/axi_rdata_reg[16] ) is unused and will be removed from module nn_axi_v1_0.
+INFO: [Synth 8-3886] merging instance '\nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/memtest_in_addr_reg[7] ' (FDE) to '\nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/memtest_in_addr_reg[8] '
+WARNING: [Synth 8-3332] Sequential element (\nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/memtest_in_addr_reg[7] ) is unused and will be removed from module nn_axi_v1_0.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_12  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_13  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_14  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \nn_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg_1_15  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2071 ; free virtual = 12213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2070 ; free virtual = 12213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2070 ; free virtual = 12213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2070 ; free virtual = 12213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |  2387|
+|3     |DSP48E1  |    28|
+|4     |LUT1     |   883|
+|5     |LUT2     |   921|
+|6     |LUT3     |  1119|
+|7     |LUT4     |   654|
+|8     |LUT5     |  6249|
+|9     |LUT6     |   709|
+|10    |RAMB36E1 |    32|
+|11    |FDRE     |   137|
+|12    |IBUF     |    59|
+|13    |OBUF     |    41|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------+--------------------+------+
+|      |Instance                    |Module              |Cells |
++------+----------------------------+--------------------+------+
+|1     |top                         |                    | 13220|
+|2     |  nn_axi_v1_0_S00_AXI_inst  |nn_axi_v1_0_S00_AXI |  8604|
+|3     |    U_USER_APP              |user_app            |  8558|
+|4     |      U_MEMTEST             |ram_sync_read       |    32|
+|5     |      U_MEM_MAP             |mem_map             |    74|
+|6     |      U_NN                  |nn_wrapper          |  8452|
+|7     |        nn                  |neural_network_top  |  8452|
+|8     |          neu               |neural_network      |  8452|
+|9     |            hid_layer       |hidden_layer        |   212|
+|10    |              \GEN2[0].neu  |neuron_4            |    53|
+|11    |                MC          |MAC_11              |    53|
+|12    |              \GEN2[1].neu  |neuron_5            |    53|
+|13    |                MC          |MAC_10              |    53|
+|14    |              \GEN2[2].neu  |neuron_6            |    53|
+|15    |                MC          |MAC_9               |    53|
+|16    |              \GEN2[3].neu  |neuron_7            |    53|
+|17    |                MC          |MAC_8               |    53|
+|18    |            out_layer       |neural_layer        |  4747|
+|19    |              \GEN2[0].neu  |neuron              |    53|
+|20    |                MC          |MAC_3               |    53|
+|21    |              \GEN2[1].neu  |neuron_0            |    53|
+|22    |                MC          |MAC_2               |    53|
+|23    |              \GEN2[2].neu  |neuron_1            |  4641|
+|24    |                MC          |MAC                 |  4641|
++------+----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2070 ; free virtual = 12213
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1298.422 ; gain = 336.496 ; free physical = 2070 ; free virtual = 12213
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1298.422 ; gain = 454.262 ; free physical = 2070 ; free virtual = 12213
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2506 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 1331.434 ; gain = 415.938 ; free physical = 2061 ; free virtual = 12203
+report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1363.453 ; gain = 0.000 ; free physical = 2057 ; free virtual = 12202
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 21:16:24 2017...
