@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER nn_axi_v5
+	OPTION supported_peripherals = (nn_axi_v5);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = nn_axi_v5;
+END DRIVER

@@ -3,6 +3,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
 use work.config_pkg.all;
+ 
+library work;
+use work.fixed_pkg.all;
+
+USE work.heap_arr_pkg.all;
 
 entity user_app_tb is
 end user_app_tb;
@@ -49,9 +54,75 @@ begin
         rst <= '0';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST0_START_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= x"00000080";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';        
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST1_START_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= x"00000040";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';   
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST2_START_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= x"0000FF9A";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST3_START_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= x"0000FF40";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST0_START_ADDR+1, mmap_wr_addr'length));
+        mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(0.3, 7, -8));
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';        
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST1_START_ADDR+1, mmap_wr_addr'length));
+        mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(-0.8, 7, -8));
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';   
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST2_START_ADDR+1, mmap_wr_addr'length));
+        mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(1, 7, -8));
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST3_START_ADDR+1, mmap_wr_addr'length));
+        mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(-1, 7, -8));
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_SIZE_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= "00000000000000000000000000000010";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_GO_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= "00000000000000000000000000000001";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
+        
+        mmap_wr_addr <= std_logic_vector(to_unsigned(C_GO_ADDR, mmap_wr_addr'length));
+        mmap_wr_data <= "00000000000000000000000000000000";
+        mmap_wr_en <= '1';
+        wait until rising_edge(clk);
+        mmap_wr_en <= '0';  
 
         wait for 200 ns;
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_OUTPUT0_ADDR, mmap_rd_addr'length));
+        mmap_rd_addr <= std_logic_vector(to_unsigned(C_DONE_ADDR, mmap_rd_addr'length));
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -59,7 +130,7 @@ begin
         report "Output 0 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0';        
         
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_OUTPUT1_ADDR, mmap_rd_addr'length));
+        mmap_rd_addr <= std_logic_vector(to_unsigned(C_DONE_ADDR, mmap_rd_addr'length));
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -67,7 +138,7 @@ begin
         report "Output 1 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0';        
         
-        mmap_rd_addr <= std_logic_Vector(to_unsigned(C_OUTPUT2_ADDR, mmap_rd_addr'length));
+        mmap_rd_addr <= std_logic_Vector(to_unsigned(C_DONE_ADDR, mmap_rd_addr'length));
         mmap_rd_en <= '1';
         wait until rising_edge(clk);
         wait until rising_edge(clk);
@@ -75,75 +146,41 @@ begin
         report "Output 2 is " & integer'image(to_integer(unsigned(result)));
         mmap_rd_en <= '0'; 
         
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR + 43, mmap_wr_addr'length));
-        mmap_wr_data <= "00000000000000000000000000101010";
-        mmap_wr_en <= '1';
+        mmap_rd_addr <= std_logic_Vector(to_unsigned(C_MEMTEST4_START_ADDR, mmap_rd_addr'length));
+        mmap_rd_en <= '1';
         wait until rising_edge(clk);
-        mmap_wr_en <= '0';        
+        wait until rising_edge(clk);
+        result := mmap_rd_data;
+        report "Output 2 is " & integer'image(to_integer(unsigned(result)));
+        mmap_rd_en <= '0'; 
         
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR + 44, mmap_wr_addr'length));
-        mmap_wr_data <= "00000000000000000000000000101011";
-        mmap_wr_en <= '1';
+        mmap_rd_addr <= std_logic_Vector(to_unsigned(C_MEMTEST5_START_ADDR, mmap_rd_addr'length));
+        mmap_rd_en <= '1';
         wait until rising_edge(clk);
-        mmap_wr_en <= '0';   
+        wait until rising_edge(clk);
+        result := mmap_rd_data;
+        report "Output 2 is " & integer'image(to_integer(unsigned(result)));
+        mmap_rd_en <= '0'; 
         
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR + 45, mmap_wr_addr'length));
-        mmap_wr_data <= "00000000000000000000000000101100";
-        mmap_wr_en <= '1';
+        mmap_rd_addr <= std_logic_Vector(to_unsigned(C_MEMTEST6_START_ADDR, mmap_rd_addr'length));
+        mmap_rd_en <= '1';
         wait until rising_edge(clk);
-        mmap_wr_en <= '0';  
+        wait until rising_edge(clk);
+        result := mmap_rd_data;
+        report "Output 2 is " & integer'image(to_integer(unsigned(result)));
+        mmap_rd_en <= '0'; 
+                
         
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR + 46, mmap_wr_addr'length));
-        mmap_wr_data <= "00000000000000000000000000101101";
-        mmap_wr_en <= '1';
-        wait until rising_edge(clk);
-        mmap_wr_en <= '0';  
-        
-        mmap_wr_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR + 47, mmap_wr_addr'length));
-        mmap_wr_data <= "00000000000000000000000000101110";
-        mmap_wr_en <= '1';
-        wait until rising_edge(clk);
-        mmap_wr_en <= '0';  
 
+
+        
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);
         wait until rising_edge(clk);
         wait until rising_edge(clk);
 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+43, mmap_rd_addr'length));
-        mmap_rd_en <= '1';
-        wait until rising_edge(clk);
-        result := mmap_rd_data;
-        report "Memory output is " & integer'image(to_integer(unsigned(result)));
-        mmap_rd_en <= '0'; 
-        
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+44, mmap_rd_addr'length));
-        mmap_rd_en <= '1';
-        wait until rising_edge(clk);
-        result := mmap_rd_data;
-        report "Memory output is " & integer'image(to_integer(unsigned(result)));
-        mmap_rd_en <= '0'; 
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+45, mmap_rd_addr'length));
-        mmap_rd_en <= '1';
-        wait until rising_edge(clk);
-        result := mmap_rd_data;
-        report "Memory output is " & integer'image(to_integer(unsigned(result)));
-        mmap_rd_en <= '0'; 
-        
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+46, mmap_rd_addr'length));
-        mmap_rd_en <= '1';
-        wait until rising_edge(clk);
-        result := mmap_rd_data;
-        report "Memory output is " & integer'image(to_integer(unsigned(result)));
-        mmap_rd_en <= '0'; 
-        
-        mmap_rd_addr <= std_logic_vector(to_unsigned(C_MEMTEST_START_ADDR+47, mmap_rd_addr'length));
-        mmap_rd_en <= '1';
-        wait until rising_edge(clk);
-        result := mmap_rd_data;
-        report "Memory output is " & integer'image(to_integer(unsigned(result)));
-        --mmap_rd_en <= '0'; 
+
         
         
         wait until rising_edge(clk);

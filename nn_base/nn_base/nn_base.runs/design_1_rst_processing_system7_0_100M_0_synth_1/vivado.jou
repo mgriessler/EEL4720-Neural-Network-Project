@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Tue Apr 18 04:03:34 2017
-# Process ID: 30343
+# Start of session at: Tue Apr 18 09:15:35 2017
+# Process ID: 22679
 # Current directory: /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/design_1_rst_processing_system7_0_100M_0_synth_1
 # Command line: vivado -log design_1_rst_processing_system7_0_100M_0.vds -mode batch -messageDb vivado.pb -notrace -source design_1_rst_processing_system7_0_100M_0.tcl
 # Log file: /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.runs/design_1_rst_processing_system7_0_100M_0_synth_1/design_1_rst_processing_system7_0_100M_0.vds

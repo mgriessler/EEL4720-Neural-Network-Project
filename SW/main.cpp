@@ -75,13 +75,14 @@ int main(int argc, char* argv[]) {
   unsigned long MEM_IN_ADDR = 400;
   
   unsigned int read_value[100];
+  unsigned int write_value[100];
 
   //unsigned int write_value[5] = {42, 43, 44, 45, 46};
 
   for(unsigned int i = 0; i < 100; i++){
-  board->write(&i, MEM_IN_ADDR+i, 1);
+  write_value[i] = i+2;
   }
-
+  board->write(write_value, MEM_IN_ADDR, 100);
   cout<<"Wait"<<endl;
 
 

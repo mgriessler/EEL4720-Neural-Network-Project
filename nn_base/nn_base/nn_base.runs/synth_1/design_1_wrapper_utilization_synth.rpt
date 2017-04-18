@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Tue Apr 18 04:09:10 2017
+| Date         : Tue Apr 18 09:20:32 2017
 | Host         : nlandy-MacBookPro running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -175,7 +175,7 @@ Table of Contents
 +------------------------------------------+------+
 | design_1_rst_processing_system7_0_100M_0 |    1 |
 | design_1_processing_system7_0_0          |    1 |
-| design_1_nn_axi_v4_0_0                   |    1 |
+| design_1_nn_axi_v5_0_0                   |    1 |
 | design_1_auto_pc_0                       |    1 |
 +------------------------------------------+------+
 

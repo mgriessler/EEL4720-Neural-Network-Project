@@ -15,6 +15,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_repo_paths {
+  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v5_1.0
   /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v4_1.0
   /opt/Xilinx/Vivado/2015.4
   /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo

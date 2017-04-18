@@ -75,13 +75,14 @@ int main(int argc, char* argv[]) {
   unsigned long MEM_IN_ADDR = 400;
   
   unsigned int read_value[100];
+  unsigned int write_value[100];
 
   //unsigned int write_value[5] = {42, 43, 44, 45, 46};
 
   for(unsigned int i = 0; i < 100; i++){
-  board->write(&i, MEM_IN_ADDR+i, 1);
+  write_value[i] = i;
   }
-
+  board->write(write_value, MEM_IN_ADDR, 100);
   cout<<"Wait"<<endl;
 
 
@@ -91,6 +92,9 @@ int main(int argc, char* argv[]) {
   }
   for(int i = 2; i < 100; i++){
   cout<<"Item "<<i<<" is "<<read_value[i]<<endl;
+  }
+  for(int i = 2; i < 100; i++){
+  cout<<"Item "<<2<<" is "<<read_value[2]<<endl;
   }
 
   /*if(read_value[0] == 42) std::cout<<"Memory Map test success!"<<std::endl;

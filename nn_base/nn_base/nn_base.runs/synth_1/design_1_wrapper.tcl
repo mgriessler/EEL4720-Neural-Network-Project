@@ -15,6 +15,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_repo_paths {
+  /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v5_1.0
   /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo/nn_axi_v4_1.0
   /opt/Xilinx/Vivado/2015.4
   /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/ip_repo
@@ -22,13 +23,13 @@ set_property ip_repo_paths {
 } [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 add_files /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_v4_0_0/design_1_nn_axi_v4_0_0.dcp]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.dcp]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_v5_0_0/design_1_nn_axi_v5_0_0.dcp]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nlandy/EEL4720-Neural-Network-Project_copy/nn_base/nn_base/nn_base.srcs/sources_1/bd/design_1/design_1_ooc.xdc]

@@ -1,16 +1,16 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Tue Apr 18 04:13:19 2017
+| Date             : Tue Apr 18 09:21:35 2017
 | Host             : nlandy-MacBookPro running 64-bit Ubuntu 14.04.5 LTS
-| Command          : 
+| Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb
 | Design           : design_1_wrapper
 | Device           : xc7z020clg484-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
 | Characterization : Production
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 Power Report
 
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.746  |
-| Dynamic (W)              | 1.584  |
-| Device Static (W)        | 0.162  |
+| Total On-Chip Power (W)  | 1.693  |
+| Dynamic (W)              | 1.535  |
+| Device Static (W)        | 0.157  |
 | Effective TJA (C/W)      | 11.5   |
-| Max Ambient (C)          | 64.9   |
-| Junction Temperature (C) | 45.1   |
+| Max Ambient (C)          | 65.5   |
+| Junction Temperature (C) | 44.5   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,19 +49,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.007 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |    14094 |       --- |             --- |
-|   LUT as Logic          |     0.001 |     9743 |     53200 |           18.31 |
-|   Register              |    <0.001 |      691 |    106400 |            0.65 |
-|   CARRY4                |    <0.001 |     2405 |     13300 |           18.08 |
+| Clocks                  |     0.003 |        3 |       --- |             --- |
+| Slice Logic             |     0.001 |     1344 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      336 |     53200 |            0.63 |
+|   Register              |    <0.001 |      641 |    106400 |            0.60 |
+|   CARRY4                |    <0.001 |        6 |     13300 |            0.05 |
 |   LUT as Shift Register |    <0.001 |       68 |     17400 |            0.39 |
-|   Others                |     0.000 |      220 |       --- |             --- |
-| Signals                 |     0.003 |    12921 |       --- |             --- |
-| Block RAM               |     0.043 |       32 |       140 |           22.86 |
-| DSPs                    |     0.000 |       28 |       220 |           12.73 |
+|   Others                |     0.000 |      185 |       --- |             --- |
+| Signals                 |     0.002 |      979 |       --- |             --- |
 | PS7                     |     1.529 |        1 |       --- |             --- |
-| Static Power            |     0.162 |          |           |                 |
-| Total                   |     1.746 |          |           |                 |
+| Static Power            |     0.157 |          |           |                 |
+| Total                   |     1.693 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +69,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.067 |       0.051 |      0.016 |
+| Vccint    |       1.000 |     0.021 |       0.006 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -80,11 +78,11 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.007 |       0.004 |      0.003 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.749 |       0.718 |      0.031 |
+| Vccpint   |       1.000 |     0.748 |       0.718 |      0.030 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
@@ -147,56 +145,34 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| design_1_wrapper                                 |     1.584 |
-|   design_1_i                                     |     1.584 |
-|     nn_axi_v4_0                                  |     0.045 |
-|       U0                                         |     0.045 |
-|         nn_axi_v1_0_S00_AXI_inst                 |     0.045 |
-|           U_USER_APP                             |     0.045 |
-|             U_MEMTEST                            |     0.044 |
-|             U_MEM_MAP                            |    <0.001 |
-|             U_NN                                 |    <0.001 |
-|               nn                                 |    <0.001 |
-|                 neu                              |    <0.001 |
-|                   hid_layer                      |     0.000 |
-|                     GEN2[0].neu                  |     0.000 |
-|                       MC                         |     0.000 |
-|                     GEN2[1].neu                  |     0.000 |
-|                       MC                         |     0.000 |
-|                     GEN2[2].neu                  |     0.000 |
-|                       MC                         |     0.000 |
-|                     GEN2[3].neu                  |     0.000 |
-|                       MC                         |     0.000 |
-|                   out_layer                      |    <0.001 |
-|                     GEN2[0].neu                  |    <0.001 |
-|                       MC                         |    <0.001 |
-|                     GEN2[1].neu                  |    <0.001 |
-|                       MC                         |    <0.001 |
-|                     GEN2[2].neu                  |    <0.001 |
-|                       MC                         |    <0.001 |
+| design_1_wrapper                                 |     1.535 |
+|   design_1_i                                     |     1.535 |
+|     nn_axi_v5_0                                  |     0.001 |
+|       U0                                         |     0.001 |
+|         nn_axi_v5_v1_0_S00_AXI_inst              |     0.001 |
 |     processing_system7_0                         |     1.530 |
 |       inst                                       |     1.530 |
 |         xlnx_axi_wrshim_unwrap_inst_gp0          |     0.000 |
 |         xlnx_axi_wrshim_unwrap_inst_gp1          |     0.000 |
-|     processing_system7_0_axi_periph              |     0.009 |
-|       s00_couplers                               |     0.009 |
-|         auto_pc                                  |     0.009 |
-|           inst                                   |     0.009 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s |     0.009 |
-|               RD.ar_channel_0                    |     0.002 |
+|     processing_system7_0_axi_periph              |     0.004 |
+|       s00_couplers                               |     0.004 |
+|         auto_pc                                  |     0.004 |
+|           inst                                   |     0.004 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s |     0.004 |
+|               RD.ar_channel_0                    |    <0.001 |
 |                 ar_cmd_fsm_0                     |    <0.001 |
-|                 cmd_translator_0                 |     0.001 |
+|                 cmd_translator_0                 |    <0.001 |
 |                   incr_cmd_0                     |    <0.001 |
 |                   wrap_cmd_0                     |    <0.001 |
-|               RD.r_channel_0                     |     0.002 |
+|               RD.r_channel_0                     |     0.001 |
 |                 rd_data_fifo_0                   |    <0.001 |
 |                 transaction_fifo_0               |    <0.001 |
-|               SI_REG                             |     0.003 |
+|               SI_REG                             |     0.001 |
 |                 ar_pipe                          |    <0.001 |
 |                 aw_pipe                          |    <0.001 |
 |                 b_pipe                           |    <0.001 |
 |                 r_pipe                           |    <0.001 |
-|               WR.aw_channel_0                    |     0.002 |
+|               WR.aw_channel_0                    |    <0.001 |
 |                 aw_cmd_fsm_0                     |    <0.001 |
 |                 cmd_translator_0                 |    <0.001 |
 |                   incr_cmd_0                     |    <0.001 |
