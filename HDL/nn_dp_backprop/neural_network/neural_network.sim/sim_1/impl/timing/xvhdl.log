@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_float_types_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/new/heap_arr_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/new/MAC_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_tb

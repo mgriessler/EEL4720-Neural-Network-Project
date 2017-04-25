@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.sim/sim_1/synth/timing/MAC_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,39 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/accelerator_1.0/src/config_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/accelerator_1.0/src/user_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_float_types_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/new/heap_arr_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/absfixed.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity absfixed
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity MAC
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity sigmablock
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neuron
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_layer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity hidden_layer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_network
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_network_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/nn_wrapper.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity nn_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity parameters
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/imports/new/MAC_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAC_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/absfixed_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity absfixed_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/sigmablock_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sigmablock_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neuron_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuron_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_layer_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neural_layer_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neural_network_top_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neural_network_tb

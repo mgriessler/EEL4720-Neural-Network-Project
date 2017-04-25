@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 10 19:38:00 2017
+# Process ID: 10473
+# Current directory: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/impl_1
+# Command line: vivado -log neuron.vdi -applog -messageDb vivado.pb -mode batch -source neuron.tcl -notrace
+# Log file: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/impl_1/neuron.vdi
+# Journal file: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source neuron.tcl -notrace

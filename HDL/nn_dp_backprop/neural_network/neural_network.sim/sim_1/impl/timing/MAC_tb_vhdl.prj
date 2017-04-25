@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl work  "../../../../neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd"
+vhdl work  "../../../../neural_network.srcs/sources_1/imports/distributable/fixed_float_types_c.vhd"
+vhdl work  "../../../../neural_network.srcs/sources_1/imports/new/heap_arr_pkg.vhd"
+vhdl xil_defaultlib  "../../../../neural_network.srcs/sources_1/imports/new/MAC_tb.vhd"
+
+# Do not sort compile order
+nosort

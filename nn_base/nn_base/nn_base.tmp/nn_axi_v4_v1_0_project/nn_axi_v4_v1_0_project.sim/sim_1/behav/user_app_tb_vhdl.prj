@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl work  "../../../../../../ip_repo/nn_axi_v4_1.0/src/config_pkg.vhd"
-vhdl work  "../../../../../../ip_repo/nn_axi_v4_1.0/src/ram.vhd"
-vhdl work  "../../../../../../ip_repo/nn_axi_v4_1.0/src/mem_map.vhd"
-vhdl work  "../../../../../../ip_repo/nn_axi_v4_1.0/src/user_app.vhd"
-vhdl work  "../../../../../../ip_repo/nn_axi_v4_1.0/src/user_app_tb.vhd"
-
-# Do not sort compile order
-nosort

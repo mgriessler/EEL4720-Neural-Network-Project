@@ -1,0 +1,1 @@
+-wto "ebae1fb47d514e0882e68ef289259d16" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "work" -L "secureip" --snapshot "neuron_tb_func_impl" "xil_defaultlib.neuron_tb" -log "elaborate.log" 

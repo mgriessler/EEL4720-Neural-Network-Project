@@ -1,0 +1,34 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto ebae1fb47d514e0882e68ef289259d16 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L work -L simprims_ver -L secureip --snapshot MAC_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.MAC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "MAC_tb_time_synth.sdf", for root module "MAC_tb/uut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "MAC_tb_time_synth.sdf", for root module "MAC_tb/uut".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee_proposed.fixed_float_types
+Compiling package work.fixed_pkg
+Compiling package ieee.math_real
+Compiling package work.heap_arr_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.MAC
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module xil_defaultlib.neuron
+Compiling architecture tb of entity xil_defaultlib.mac_tb
+Built simulation snapshot MAC_tb_time_synth

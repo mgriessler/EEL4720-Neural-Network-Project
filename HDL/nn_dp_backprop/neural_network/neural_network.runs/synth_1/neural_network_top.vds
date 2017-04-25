@@ -1,0 +1,963 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Apr 22 00:57:15 2017
+# Process ID: 3717
+# Current directory: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/synth_1
+# Command line: vivado -log neural_network_top.vds -mode batch -messageDb vivado.pb -notrace -source neural_network_top.tcl
+# Log file: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/synth_1/neural_network_top.vds
+# Journal file: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source neural_network_top.tcl -notrace
+Command: synth_design -top neural_network_top -part xc7z020clg484-1 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3723 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.926 ; gain = 161.766 ; free physical = 4551 ; free virtual = 13470
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'neural_network_top' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd:89]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'parameters' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:10' bound to instance 'par' of component 'parameters' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'parameters' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:42]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2056]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter input_size bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:19]
+	Parameter input_size bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MAC' (1#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:19]
+	Parameter input_size bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:72]
+	Parameter input_size bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:72]
+	Parameter input_size bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:72]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'parameters' (2#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd:42]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_network' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd:35]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'hidden_layer' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized4' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:19]
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MAC__parameterized4' (2#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/MAC.vhd:19]
+INFO: [Synth 8-3491] module 'sigmablock' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sigmablock' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd:19]
+INFO: [Synth 8-3491] module 'absfixed' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'absfixed' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'absfixed' (3#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sigmablock' (4#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (5#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (6#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_layer' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'neural_layer' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at '/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'neural_layer' (7#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_layer.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (8#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (9#1) [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd:89]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1095.309 ; gain = 251.148 ; free physical = 4417 ; free virtual = 13343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1095.309 ; gain = 251.148 ; free physical = 4411 ; free virtual = 13341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1103.309 ; gain = 259.148 ; free physical = 4411 ; free virtual = 13341
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5545] ROM "weights_out[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "in_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out_vector[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1155.379 ; gain = 311.219 ; free physical = 4338 ; free virtual = 13303
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |parameters__GB0     |           1|     26631|
+|2     |parameters__GB1     |           1|      4905|
+|3     |neuron              |           7|     16659|
+|4     |neural_network__GC0 |           1|      1858|
++------+--------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 7     
+	   2 Input     52 Bit       Adders := 14    
+	   2 Input     50 Bit       Adders := 14    
+	   2 Input     49 Bit       Adders := 7     
+	   2 Input     34 Bit       Adders := 7     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 77    
+	   3 Input     17 Bit       Adders := 35    
+	   3 Input     16 Bit       Adders := 4     
+	   4 Input     16 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 46    
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 9x48  Multipliers := 28    
+	                16x32  Multipliers := 28    
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 7     
+	   2 Input     52 Bit        Muxes := 14    
+	   2 Input     50 Bit        Muxes := 14    
+	   2 Input     49 Bit        Muxes := 7     
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 616   
+	   3 Input     16 Bit        Muxes := 56    
+	   2 Input      1 Bit        Muxes := 63    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAC__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module MAC__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module MAC__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module parameters 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 35    
+	   3 Input     17 Bit       Adders := 35    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 35    
++---Multipliers : 
+	                 9x48  Multipliers := 28    
+	                16x32  Multipliers := 28    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 420   
+	   3 Input     16 Bit        Muxes := 35    
+	   2 Input      1 Bit        Muxes := 37    
+Module MAC__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+Module absfixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sigmablock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     52 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 2     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 2     
+	   2 Input     50 Bit        Muxes := 2     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module neuron 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module neural_network 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1194.383 ; gain = 350.223 ; free physical = 4301 ; free virtual = 13268
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-5545] ROM "O180" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "weights_out[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd:2418]
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out_vector[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.383 ; gain = 358.223 ; free physical = 4276 ; free virtual = 13256
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.383 ; gain = 358.223 ; free physical = 4276 ; free virtual = 13256
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |parameters__GB0     |           1|     28210|
+|2     |parameters__GB1     |           1|      4927|
+|3     |neuron              |           7|     17607|
+|4     |neural_network__GC0 |           1|      1778|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++----------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | (D-A)*B        | No           | 16     | 16     | 48     | 16     | 33     | 0    | 0    | 1    | 0    | 0     | 0    | 0    | 
+|parameters      | (D-A)*B        | No           | 16     | 16     | 48     | 16     | 33     | 0    | 0    | 1    | 0    | 0     | 0    | 0    | 
+|parameters      | (D-A)*B        | No           | 16     | 16     | 48     | 16     | 33     | 0    | 0    | 1    | 0    | 0     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB0 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters      | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|parameters__GB1 | (PCIN>>17)+A*B | No           | 16     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|sigmablock      | A*B            | No           | 17     | 17     | 48     | 25     | 34     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|MAC             | A*B            | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++----------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\state_reg[1] ' (FD) to '\state_reg[0] '
+INFO: [Synth 8-3886] merging instance '\state_reg[0] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[30] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[28] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[27] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[26] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[25] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[24] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[23] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[22] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[21] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[20] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[19] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[18] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[17] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[16] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[15] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[14] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[13] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[12] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[11] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[10] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[9] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[8] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[7] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[6] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[5] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[4] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[3] ' (FD) to '\state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\state_reg[2] ' (FD) to '\state_reg[29] '
+INFO: [Synth 8-3886] merging instance '\state_reg[29] ' (FD) to '\state_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[31] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1354.773 ; gain = 510.613 ; free physical = 4139 ; free virtual = 13114
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1354.773 ; gain = 510.613 ; free physical = 4139 ; free virtual = 13114
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |parameters__GB0     |           1|     11471|
+|2     |parameters__GB1     |           1|      1264|
+|3     |neuron              |           7|      7290|
+|4     |neural_network__GC0 |           1|       408|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1354.773 ; gain = 510.613 ; free physical = 4139 ; free virtual = 13114
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |parameters__GB0     |           1|     11471|
+|2     |parameters__GB1     |           1|      1264|
+|3     |neuron              |           7|      7290|
+|4     |neural_network__GC0 |           1|       408|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4129 ; free virtual = 13104
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4129 ; free virtual = 13104
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4129 ; free virtual = 13104
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4128 ; free virtual = 13103
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4123 ; free virtual = 13097
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4123 ; free virtual = 13097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |  6196|
+|3     |DSP48E1 |   138|
+|4     |LUT1    |  2904|
+|5     |LUT2    |  2660|
+|6     |LUT3    |  2812|
+|7     |LUT4    |  1234|
+|8     |LUT5    | 17105|
+|9     |LUT6    |  2403|
+|10    |FDCE    |   560|
+|11    |FDRE    |    81|
+|12    |IBUF    |   693|
+|13    |OBUF    |   161|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 36948|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4123 ; free virtual = 13097
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 361 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1364.406 ; gain = 402.480 ; free physical = 4123 ; free virtual = 13097
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 1364.406 ; gain = 520.246 ; free physical = 4123 ; free virtual = 13097
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7027 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'neural_network_top' is not ideal for floorplanning, since the cellview 'neural_network_top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 1416.418 ; gain = 500.922 ; free physical = 4025 ; free virtual = 13028
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1448.438 ; gain = 32.020 ; free physical = 4055 ; free virtual = 13064
+report_utilization: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1448.438 ; gain = 0.000 ; free physical = 4052 ; free virtual = 13061
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 22 00:58:40 2017...
