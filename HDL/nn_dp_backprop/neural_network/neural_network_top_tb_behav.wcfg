@@ -12,11 +12,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="126600001fs"></ZoomEndTime>
-      <Cursor1Time time="20600000fs"></Cursor1Time>
+      <ZoomStartTime time="100706333334fs"></ZoomStartTime>
+      <ZoomEndTime time="101628333335fs"></ZoomEndTime>
+      <Cursor1Time time="101096333000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="63" />
+   <WVObjectSize size="9" />
    <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input0">
       <obj_property name="ElementShortName">input0[15:0]</obj_property>
       <obj_property name="ObjectShortName">input0[15:0]</obj_property>
@@ -49,146 +49,6 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_0">
-      <obj_property name="ElementShortName">weight_hid_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_1">
-      <obj_property name="ElementShortName">weight_hid_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_2">
-      <obj_property name="ElementShortName">weight_hid_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_2[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_3">
-      <obj_property name="ElementShortName">weight_hid_3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_3[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_4">
-      <obj_property name="ElementShortName">weight_hid_4[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_4[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_5">
-      <obj_property name="ElementShortName">weight_hid_5[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_5[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_6">
-      <obj_property name="ElementShortName">weight_hid_6[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_6[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_7">
-      <obj_property name="ElementShortName">weight_hid_7[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_7[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_8">
-      <obj_property name="ElementShortName">weight_hid_8[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_8[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_9">
-      <obj_property name="ElementShortName">weight_hid_9[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_9[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_10">
-      <obj_property name="ElementShortName">weight_hid_10[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_10[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_11">
-      <obj_property name="ElementShortName">weight_hid_11[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_11[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_12">
-      <obj_property name="ElementShortName">weight_hid_12[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_12[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_13">
-      <obj_property name="ElementShortName">weight_hid_13[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_13[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_14">
-      <obj_property name="ElementShortName">weight_hid_14[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_14[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_hid_15">
-      <obj_property name="ElementShortName">weight_hid_15[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_hid_15[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_0">
-      <obj_property name="ElementShortName">weight_out_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_1">
-      <obj_property name="ElementShortName">weight_out_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_2">
-      <obj_property name="ElementShortName">weight_out_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_2[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_3">
-      <obj_property name="ElementShortName">weight_out_3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_3[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_4">
-      <obj_property name="ElementShortName">weight_out_4[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_4[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_5">
-      <obj_property name="ElementShortName">weight_out_5[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_5[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_6">
-      <obj_property name="ElementShortName">weight_out_6[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_6[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_7">
-      <obj_property name="ElementShortName">weight_out_7[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_7[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_8">
-      <obj_property name="ElementShortName">weight_out_8[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_8[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_9">
-      <obj_property name="ElementShortName">weight_out_9[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_9[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_10">
-      <obj_property name="ElementShortName">weight_out_10[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_10[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/weight_out_11">
-      <obj_property name="ElementShortName">weight_out_11[15:0]</obj_property>
-      <obj_property name="ObjectShortName">weight_out_11[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_hid_0">
-      <obj_property name="ElementShortName">b_hid_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_hid_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_hid_1">
-      <obj_property name="ElementShortName">b_hid_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_hid_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_hid_2">
-      <obj_property name="ElementShortName">b_hid_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_hid_2[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_hid_3">
-      <obj_property name="ElementShortName">b_hid_3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_hid_3[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_out_0">
-      <obj_property name="ElementShortName">b_out_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_out_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_out_1">
-      <obj_property name="ElementShortName">b_out_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_out_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/b_out_2">
-      <obj_property name="ElementShortName">b_out_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b_out_2[15:0]</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_0">
       <obj_property name="ElementShortName">final_0[15:0]</obj_property>
       <obj_property name="ObjectShortName">final_0[15:0]</obj_property>
@@ -213,100 +73,13 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/y_0">
-      <obj_property name="ElementShortName">y_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">y_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/y_1">
-      <obj_property name="ElementShortName">y_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">y_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/y_2">
-      <obj_property name="ElementShortName">y_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">y_2[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_hid_0">
-      <obj_property name="ElementShortName">final_prime_hid_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_hid_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_hid_1">
-      <obj_property name="ElementShortName">final_prime_hid_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_hid_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_hid_2">
-      <obj_property name="ElementShortName">final_prime_hid_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_hid_2[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_hid_3">
-      <obj_property name="ElementShortName">final_prime_hid_3[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_hid_3[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_out_0">
-      <obj_property name="ElementShortName">final_prime_out_0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_out_0[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_out_1">
-      <obj_property name="ElementShortName">final_prime_out_1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_out_1[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_prime_out_2">
-      <obj_property name="ElementShortName">final_prime_out_2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">final_prime_out_2[15:0]</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/en">
-      <obj_property name="ElementShortName">en</obj_property>
-      <obj_property name="ObjectShortName">en</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/pipeline">
-      <obj_property name="ElementShortName">pipeline</obj_property>
-      <obj_property name="ObjectShortName">pipeline</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/new_output">
-      <obj_property name="ElementShortName">new_output</obj_property>
-      <obj_property name="ObjectShortName">new_output</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/n">
-      <obj_property name="ElementShortName">n[15:0]</obj_property>
-      <obj_property name="ObjectShortName">n[15:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/initialize">
-      <obj_property name="ElementShortName">initialize</obj_property>
-      <obj_property name="ObjectShortName">initialize</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/backpropagation">
-      <obj_property name="ElementShortName">backpropagation</obj_property>
-      <obj_property name="ObjectShortName">backpropagation</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/clr">
-      <obj_property name="ElementShortName">clr</obj_property>
-      <obj_property name="ObjectShortName">clr</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/top/neu/in_vector">
-      <obj_property name="ElementShortName">in_vector[3:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">in_vector[3:0][15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">8</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/top/neu/hid_vector">
-      <obj_property name="ElementShortName">hid_vector[3:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">hid_vector[3:0][15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">8</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/top/neu/out_vector">
-      <obj_property name="ElementShortName">out_vector[2:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">out_vector[2:0][15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">8</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/flower">
+      <obj_property name="ElementShortName">flower[1:0]</obj_property>
+      <obj_property name="ObjectShortName">flower[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

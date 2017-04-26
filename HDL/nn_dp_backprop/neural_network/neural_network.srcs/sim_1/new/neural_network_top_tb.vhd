@@ -162,6 +162,11 @@ signal input0 : std_logic_vector(15 downto 0);
         signal backpropagation : std_logic;
         signal clr : std_logic;
         
+        signal flower : std_logic_vector(1 downto 0);
+        signal stop : std_logic := '1';
+        
+        
+        
         
         
 begin
@@ -240,16 +245,16 @@ top: neural_network_top port map(
         clr => clr);
 
 
-        clk <= not clk after 10 ns;
+        clk <= not clk and stop after 10 ns;
 
 
         process
+        variable num_correct : integer := 0;
+        constant num_total_test : integer := 90;
+        constant num_total_train : integer := 60;
+        constant num_epochs : integer := 100;
        
         begin
-        input0 <= std_logic_vector(to_sfixed(0.5, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(0.25, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(-0.4, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(-0.75, char_size-1, -mantissa_size));
         
         weight_hid_0  <= std_logic_vector(to_sfixed(0.364536, char_size-1, -mantissa_size));
         weight_hid_1 <= std_logic_vector(to_sfixed(0.517334, char_size-1, -mantissa_size));
@@ -296,7 +301,7 @@ top: neural_network_top port map(
         y_2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
         
         
-        en <= '1';
+        en <= '0';
         pipeline <= '1';
         clr <= '0';
         initialize <= '1';
@@ -308,44 +313,69 @@ top: neural_network_top port map(
         
         wait for 50 ns;
         
+        en <= '1';
+        
+                backpropagation <='0';
+        pipeline <= '1';
+        
+        for i in 0 to 89 loop
+        
+        input0 <= std_logic_vector(to_sfixed(sepal_length_test(i), char_size-1, -mantissa_size));
+        input1 <= std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
+        input2  <= std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
+        input3 <= std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
+        wait for 100 ns;
+        
+        if(flower = expected_output_test(i)) then
+        num_correct := num_correct + 1;
+        end if;
+        
+        end loop;
+        
+        report "Start Accuracy is " & integer'image(num_correct) & "/" & integer'image(num_total_test) & " = " & integer'image(num_correct*100/num_total_test) & "%" severity note;
+        num_correct := 0;
         
         
+        pipeline <= '0';
         backpropagation <= '1';
-        
+        en <= '1';
         initialize <= '0';
         
         wait for 10 ns;
       
-        for i in 0 to 1000 loop
-        input0 <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
+        for j in 0 to num_epochs - 1 loop
+        for i in 0 to 59 loop
+                
+        input0 <= std_logic_vector(to_sfixed(sepal_length_train(i), char_size-1, -mantissa_size));
+        input1 <= std_logic_vector(to_sfixed(sepal_width_train(i), char_size-1, -mantissa_size));
+        input2  <= std_logic_vector(to_sfixed(petal_length_train(i), char_size-1, -mantissa_size));
+        input3 <= std_logic_vector(to_sfixed(petal_width_train(i), char_size-1, -mantissa_size));
+        if(expected_output_train(i) = "00") then
         y_0  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
         y_1  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
         y_2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        pipeline <= '0';
-        wait for 100 ns;
         
-        
-        
-        input0 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
+        elsif (expected_output_train(i) = "01") then
         y_0  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
         y_1  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
         y_2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        wait for 100 ns;
         
-        input0 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
+        elsif (expected_output_train(i) = "10") then
         y_0  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
         y_1  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
         y_2  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
+        
+        end if;
+                
         wait for 100 ns;
+        if(flower = expected_output_train(i)) then
+        num_correct := num_correct + 1;
+        end if;
+        
+        end loop;
+        report "Current training Accuracy is " & integer'image(num_correct) & "/" & integer'image(num_total_train) & " = " & integer'image(num_correct*100/num_total_train) & "% (Epoch #" & integer'image(j) & ")" severity note;
+        num_correct := 0;
+        
         end loop;
         
       
@@ -353,34 +383,31 @@ top: neural_network_top port map(
         backpropagation <='0';
         pipeline <= '1';
         
-        input0 <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_0  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        y_1  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
+        for i in 0 to 89 loop
+                
+        input0 <= std_logic_vector(to_sfixed(sepal_length_test(i), char_size-1, -mantissa_size));
+        input1 <= std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
+        input2  <= std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
+        input3 <= std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
         wait for 100 ns;
         
-        input0 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_0  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_1  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        y_2  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        wait for 100 ns;
+        if(flower = expected_output_test(i)) then
+        num_correct := num_correct + 1;
+        end if;
         
-        input0 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input1 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        input2  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        input3 <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_0  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_1  <= std_logic_vector(to_sfixed(0, char_size-1, -mantissa_size));
-        y_2  <= std_logic_vector(to_sfixed(1, char_size-1, -mantissa_size));
-        wait for 100 ns;
+        end loop;
+        
+        
+        
+        stop <= '0';
+        
+        report "Final Accuracy is " & integer'image(num_correct) & "/" & integer'image(num_total_test) & " = " & integer'image(num_correct*100/num_total_test) & "%" severity note;
         
         wait;
         end process;
+        
+        flower <= "00" when (final_0 > final_1 and final_0 > final_2) else
+                  "01" when (final_1 > final_0 and final_1 > final_2) else
+                  "10" when (final_2 > final_1 and final_2 > final_0);
 
 end tb;
