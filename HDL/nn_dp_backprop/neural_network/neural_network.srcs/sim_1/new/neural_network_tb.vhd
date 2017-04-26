@@ -23,10 +23,15 @@ port(
         weights_out : in array_stdvec15 (num_outputs-1 downto 0);
         b_hid : in array_stdvec(num_hid-1 downto 0);
         b_out : in array_stdvec(num_outputs-1 downto 0);
+        
+        hid : out array_stdvec(num_hid-1 downto 0);
         final : out array_stdvec(num_outputs-1 downto 0);
         final_prime_hid : out array_stdvec(num_hid-1 downto 0);
         final_prime_out: out array_stdvec(num_outputs-1 downto 0);
-        clk : in std_logic
+        clk : in std_logic;
+        en : in std_logic;
+        pipeline : in std_logic;
+        new_output : out std_logic := '0'
         
     );
 end component;
@@ -39,9 +44,13 @@ end component;
         signal b_hid : array_stdvec(num_hid-1 downto 0);
         signal b_out : array_stdvec(num_outputs-1 downto 0);
         signal final : array_stdvec(num_outputs-1 downto 0);
+        signal hid : array_stdvec(num_hid-1 downto 0);
         signal final_prime_hid :array_stdvec(num_hid-1 downto 0);
         signal final_prime_out: array_stdvec(num_outputs-1 downto 0);
         signal clk : std_logic;
+        signal pipeline : std_logic;
+        signal en : std_logic;
+        signal new_output : std_logic;
 
 begin
 
@@ -53,14 +62,20 @@ neu: neural_network
      weights_out => weights_out,
      b_hid => b_hid,
      b_out => b_out,
+     hid => hid,
      final => final,
      final_prime_hid => final_prime_hid,
      final_prime_out => final_prime_out,
-     clk => clk
+     clk => clk,
+     pipeline => pipeline,
+     en => en,
+     new_output => new_output
      );
 
 process
 begin
+       pipeline <= '1';
+       en <= '1';
        input(0) <= std_logic_vector(to_sfixed(0.5, char_size-1, -mantissa_size));
        input(1) <= std_logic_vector(to_sfixed(0.25, char_size-1, -mantissa_size));
        input(2)  <= std_logic_vector(to_sfixed(-0.4, char_size-1, -mantissa_size));

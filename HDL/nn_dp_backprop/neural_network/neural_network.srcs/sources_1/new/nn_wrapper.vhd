@@ -76,6 +76,12 @@ port(
         final_1 : out std_logic_vector(15 downto 0);
         final_2 : out std_logic_vector(15 downto 0);
         
+        output : out std_logic_vector(1 downto 0);
+        
+        y_0 : in std_logic_vector(15 downto 0);
+        y_1 : in std_logic_vector(15 downto 0);
+        y_2 : in std_logic_vector(15 downto 0);
+        
         
         final_prime_hid_0 : out std_logic_vector(15 downto 0);
         final_prime_hid_1 : out std_logic_vector(15 downto 0);
@@ -85,8 +91,18 @@ port(
         final_prime_out_0 : out std_logic_vector(15 downto 0);
         final_prime_out_1 : out std_logic_vector(15 downto 0);
         final_prime_out_2 : out std_logic_vector(15 downto 0);
-
-        clk : in std_logic
+        
+        clk : in std_logic;
+        --datapath control signals
+        en : in std_logic; --enables nn to start processing data
+        pipeline : in std_logic; --if enabled, data is pipelined, otherwise it takes 5 cycles per input (3 to get output, 2 to finish backprop)
+        new_output : out std_logic; --high when nn generates a new output, valid for both pipelined and non pipelined
+        --parameter control signals
+        n : in std_logic_vector(15 downto 0); --learning rate for backprop
+        initialize : in std_logic;--if high, will update internal weights and biases to input weights and biases
+        backpropagation : in std_logic;--if enabled, will perform backprop, NOTE: always make sure backpropagation = !pipeline. Will combine to one signal later.
+        clr : in std_logic --asynchronous clear to internal weights and biases
+        
         
     );
 end component;
@@ -136,7 +152,16 @@ b_out_2 => (others => '0'),
 final_0 => final_0,
 final_1 => final_1,
 final_2 => final_2,
-clk => clk
+clk => clk,
+en => '1',
+pipeline => '1',
+n => (others => '0'),
+initialize => '1',
+backpropagation => '0',
+clr => '0',
+y_0 => (others => '0'),
+y_1 => (others => '0'),
+y_2 => (others => '0')
 );
 
 

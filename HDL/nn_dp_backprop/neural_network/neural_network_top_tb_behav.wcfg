@@ -12,11 +12,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="100706333334fs"></ZoomStartTime>
-      <ZoomEndTime time="101628333335fs"></ZoomEndTime>
-      <Cursor1Time time="101096333000fs"></Cursor1Time>
+      <ZoomStartTime time="617986666666fs"></ZoomStartTime>
+      <ZoomEndTime time="618086666667fs"></ZoomEndTime>
+      <Cursor1Time time="618070000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="10" />
    <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input0">
       <obj_property name="ElementShortName">input0[15:0]</obj_property>
       <obj_property name="ObjectShortName">input0[15:0]</obj_property>
@@ -81,5 +81,9 @@
       <obj_property name="ElementShortName">flower[1:0]</obj_property>
       <obj_property name="ObjectShortName">flower[1:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/output">
+      <obj_property name="ElementShortName">output[1:0]</obj_property>
+      <obj_property name="ObjectShortName">output[1:0]</obj_property>
    </wvobject>
 </wave_config>

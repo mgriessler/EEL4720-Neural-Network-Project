@@ -1,2 +1,18 @@
 Vivado Simulator 2015.4
 Time resolution is 1 ps
+Note: Start Accuracy is 31/90 = 34%
+Time: 90500 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #0)
+Time: 150600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #1)
+Time: 210600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #2)
+Time: 270600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #3)
+Time: 330600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #4)
+Time: 390600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #5)
+Time: 450600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 19/60 = 31% (Epoch #6)
+Time: 510600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd

@@ -58,6 +58,8 @@ port(
         final_1 : out std_logic_vector(15 downto 0);
         final_2 : out std_logic_vector(15 downto 0);
         
+        output : out std_logic_vector(1 downto 0);
+        
         y_0 : in std_logic_vector(15 downto 0);
         y_1 : in std_logic_vector(15 downto 0);
         y_2 : in std_logic_vector(15 downto 0);
@@ -264,7 +266,9 @@ neu: neural_network generic map(num_inputs => input_layer_size, num_hid => hidde
                     pipeline => pipeline,
                     new_output => new_output
                     );
-
+output <= "00" when (final(0) > final(1) and final(0) > final(2)) else
+          "01" when (final(1) > final(0) and final(1) > final(2)) else
+          "10";
 
 
 end top;

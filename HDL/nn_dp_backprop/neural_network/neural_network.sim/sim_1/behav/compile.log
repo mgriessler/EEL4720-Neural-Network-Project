@@ -37,3 +37,5 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project
 INFO: [VRFC 10-307] analyzing entity neural_network_top_tb
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity neural_network_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/nn_wrapper_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity nn_wrapper_tb

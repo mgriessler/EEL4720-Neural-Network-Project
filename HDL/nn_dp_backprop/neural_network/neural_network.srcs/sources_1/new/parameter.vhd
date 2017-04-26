@@ -114,10 +114,10 @@ elsif (clk'event and clk = '1') then
         
         elsif(state = 3) then
         weights_out <= weights_out_upd;
---        b_out <= b_out_upd;
+        b_out <= b_out_upd;
         elsif(state = 4) then
         weights_hid <= weights_hid_upd;
---        b_hid <= b_hid_upd;
+        b_hid <= b_hid_upd;
         end if;
     end if;
     

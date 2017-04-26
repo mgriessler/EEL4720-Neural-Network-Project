@@ -21,6 +21,7 @@ vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neuron_tb.vhd"
 vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_layer_tb.vhd"
 vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_network_top_tb.vhd"
 vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_network_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/nn_wrapper_tb.vhd"
 
 # Do not sort compile order
 nosort

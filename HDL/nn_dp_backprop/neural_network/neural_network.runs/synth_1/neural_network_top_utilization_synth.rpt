@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Tue Apr 25 22:27:02 2017
+| Date         : Wed Apr 26 15:25:19 2017
 | Host         : nlandy-MacBookPro running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_utilization -file neural_network_top_utilization_synth.rpt -pb neural_network_top_utilization_synth.pb
 | Design       : neural_network_top
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+-------+-------+-----------+-------+
 |        Site Type        |  Used | Fixed | Available | Util% |
 +-------------------------+-------+-------+-----------+-------+
-| Slice LUTs*             | 26881 |     0 |     53200 | 50.53 |
-|   LUT as Logic          | 26881 |     0 |     53200 | 50.53 |
+| Slice LUTs*             | 27337 |     0 |     53200 | 51.39 |
+|   LUT as Logic          | 27337 |     0 |     53200 | 51.39 |
 |   LUT as Memory         |     0 |     0 |     17400 |  0.00 |
 | Slice Registers         |   737 |     0 |    106400 |  0.69 |
 |   Register as Flip Flop |   705 |     0 |    106400 |  0.66 |
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |  855 |     0 |       200 | 427.50 |
+| Bonded IOB                  |  857 |     0 |       200 | 428.50 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |   0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -147,16 +147,16 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| LUT5     | 16830 |                 LUT |
-| CARRY4   |  6178 |          CarryLogic |
-| LUT1     |  2902 |                 LUT |
-| LUT2     |  2793 |                 LUT |
-| LUT3     |  2770 |                 LUT |
-| LUT6     |  2436 |                 LUT |
-| LUT4     |  1243 |                 LUT |
+| LUT5     | 16956 |                 LUT |
+| CARRY4   |  6221 |          CarryLogic |
+| LUT1     |  2911 |                 LUT |
+| LUT3     |  2892 |                 LUT |
+| LUT2     |  2838 |                 LUT |
+| LUT6     |  2634 |                 LUT |
+| LUT4     |  1302 |                 LUT |
 | IBUF     |   694 |                  IO |
 | FDCE     |   560 |        Flop & Latch |
-| OBUF     |   161 |                  IO |
+| OBUF     |   163 |                  IO |
 | DSP48E1  |   138 |    Block Arithmetic |
 | FDRE     |   113 |        Flop & Latch |
 | LDCE     |    32 |        Flop & Latch |

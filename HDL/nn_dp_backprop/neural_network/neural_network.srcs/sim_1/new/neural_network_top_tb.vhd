@@ -62,6 +62,8 @@ port(
         final_1 : out std_logic_vector(15 downto 0);
         final_2 : out std_logic_vector(15 downto 0);
         
+        output : out std_logic_vector(1 downto 0);
+        
         y_0 : in std_logic_vector(15 downto 0);
         y_1 : in std_logic_vector(15 downto 0);
         y_2 : in std_logic_vector(15 downto 0);
@@ -137,6 +139,7 @@ signal input0 : std_logic_vector(15 downto 0);
         signal final_0 : std_logic_vector(15 downto 0);
         signal final_1 : std_logic_vector(15 downto 0);
         signal final_2 : std_logic_vector(15 downto 0);
+        signal output : std_logic_vector(1 downto 0);
         
         signal y_0 : std_logic_vector(15 downto 0);
         signal y_1 : std_logic_vector(15 downto 0);
@@ -219,6 +222,7 @@ top: neural_network_top port map(
         final_0 => final_0, 
         final_1 => final_1,
         final_2 => final_2,
+        output => output,
         
         y_0 => y_0,
         y_1 => y_1,
@@ -245,7 +249,7 @@ top: neural_network_top port map(
         clr => clr);
 
 
-        clk <= not clk and stop after 10 ns;
+        clk <= not clk and stop after 100 ns;
 
 
         process
@@ -311,7 +315,7 @@ top: neural_network_top port map(
         
         
         
-        wait for 50 ns;
+        wait for 500 ns;
         
         en <= '1';
         
@@ -324,9 +328,9 @@ top: neural_network_top port map(
         input1 <= std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
         input2  <= std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
         input3 <= std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
-        wait for 100 ns;
+        wait for 1000 ns;
         
-        if(flower = expected_output_test(i)) then
+        if(output = expected_output_test(i)) then
         num_correct := num_correct + 1;
         end if;
         
@@ -341,7 +345,7 @@ top: neural_network_top port map(
         en <= '1';
         initialize <= '0';
         
-        wait for 10 ns;
+        wait for 100 ns;
       
         for j in 0 to num_epochs - 1 loop
         for i in 0 to 59 loop
@@ -367,8 +371,8 @@ top: neural_network_top port map(
         
         end if;
                 
-        wait for 100 ns;
-        if(flower = expected_output_train(i)) then
+        wait for 1000 ns;
+        if(output = expected_output_train(i)) then
         num_correct := num_correct + 1;
         end if;
         
@@ -389,9 +393,9 @@ top: neural_network_top port map(
         input1 <= std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
         input2  <= std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
         input3 <= std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
-        wait for 100 ns;
+        wait for 1000 ns;
         
-        if(flower = expected_output_test(i)) then
+        if(output = expected_output_test(i)) then
         num_correct := num_correct + 1;
         end if;
         

@@ -1,0 +1,7 @@
+Running: xsim.dir/neural_network_top_tb_func_synth/xsimk -simmode gui -wdb neural_network_top_tb_func_synth.wdb -simrunnum 0 -socket 56596
+Design successfully loaded
+Design Loading Memory Usage: 240516 KB (Peak: 270212 KB)
+Design Loading CPU Usage: 410 ms
+Simulation completed
+Simulation Memory Usage: 411620 KB (Peak: 477156 KB)
+Simulation CPU Usage: 5480 ms

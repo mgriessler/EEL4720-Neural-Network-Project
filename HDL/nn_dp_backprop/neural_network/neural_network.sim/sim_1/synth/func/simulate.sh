@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim neuron_tb_func_synth -key {Post-Synthesis:sim_1:Functional:neuron_tb} -tclbatch neuron_tb.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim neural_network_top_tb_func_synth -key {Post-Synthesis:sim_1:Functional:neural_network_top_tb} -tclbatch neural_network_top_tb.tcl -view /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network_top_tb_behav.wcfg -log simulate.log
