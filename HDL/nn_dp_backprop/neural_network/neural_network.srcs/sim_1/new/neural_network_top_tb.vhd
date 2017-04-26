@@ -81,7 +81,7 @@ port(
         clk : in std_logic;
         --datapath control signals
         en : in std_logic; --enables nn to start processing data
-        pipeline : in std_logic; --if enabled, data is pipelined, otherwise it takes 5 cycles per input (3 to get output, 2 to finish backprop)
+        --pipeline : in std_logic; --if enabled, data is pipelined, otherwise it takes 5 cycles per input (3 to get output, 2 to finish backprop)
         new_output : out std_logic; --high when nn generates a new output, valid for both pipelined and non pipelined
         --parameter control signals
         n : in std_logic_vector(15 downto 0); --learning rate for backprop
@@ -157,7 +157,7 @@ signal input0 : std_logic_vector(15 downto 0);
 
         signal clk : std_logic := '0';
         signal en : std_logic;
-        signal pipeline : std_logic;
+        --signal pipeline : std_logic;
         signal new_output : std_logic;
         
         signal n : std_logic_vector(15 downto 0);
@@ -240,7 +240,6 @@ top: neural_network_top port map(
 
         clk =>  clk,
         en => en,
-        pipeline => pipeline,
         new_output => new_output,
         
         n => n,
@@ -306,7 +305,7 @@ top: neural_network_top port map(
         
         
         en <= '0';
-        pipeline <= '1';
+        --pipeline <= '1';
         clr <= '0';
         initialize <= '1';
         
@@ -320,7 +319,7 @@ top: neural_network_top port map(
         en <= '1';
         
                 backpropagation <='0';
-        pipeline <= '1';
+        --pipeline <= '1';
         
         for i in 0 to 89 loop
         
@@ -340,7 +339,7 @@ top: neural_network_top port map(
         num_correct := 0;
         
         
-        pipeline <= '0';
+        --pipeline <= '0';
         backpropagation <= '1';
         en <= '1';
         initialize <= '0';
@@ -385,7 +384,7 @@ top: neural_network_top port map(
       
         
         backpropagation <='0';
-        pipeline <= '1';
+        --pipeline <= '1';
         
         for i in 0 to 89 loop
                 

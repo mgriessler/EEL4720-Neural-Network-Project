@@ -19,6 +19,7 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project
 INFO: [VRFC 10-307] analyzing entity neural_network
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd" into library work
 INFO: [VRFC 10-307] analyzing entity neural_network_top
+WARNING: [VRFC 10-280] actual for formal port pipeline is neither a static name nor a globally static expression [/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/neural_network_top.vhd:266]
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/nn_wrapper.vhd" into library work
 INFO: [VRFC 10-307] analyzing entity nn_wrapper
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/parameter.vhd" into library work

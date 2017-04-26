@@ -99,158 +99,158 @@ Time: 900 ns  Iteration: 5  Process: /neural_network_top_tb/top/neu/out_layer/\G
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 900 ns  Iteration: 5  Process: /neural_network_top_tb/top/neu/out_layer/\GEN2(2)\/neu/sig/line__31  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sources_1/new/sigmablock.vhd
 Note: Start Accuracy is 31/90 = 34%
-Time: 90500 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 90500 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 23/60 = 38% (Epoch #0)
-Time: 150600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 150600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 42/60 = 70% (Epoch #1)
-Time: 210600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 210600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 44/60 = 73% (Epoch #2)
-Time: 270600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 270600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 44/60 = 73% (Epoch #3)
-Time: 330600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 330600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #4)
-Time: 390600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 390600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #5)
-Time: 450600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 450600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #6)
-Time: 510600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 510600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #7)
-Time: 570600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 570600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #8)
-Time: 630600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 630600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 45/60 = 75% (Epoch #9)
-Time: 690600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 690600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 46/60 = 76% (Epoch #10)
-Time: 750600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 750600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 46/60 = 76% (Epoch #11)
-Time: 810600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 810600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 47/60 = 78% (Epoch #12)
-Time: 870600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 870600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 47/60 = 78% (Epoch #13)
-Time: 930600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 930600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 47/60 = 78% (Epoch #14)
-Time: 990600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 990600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 49/60 = 81% (Epoch #15)
-Time: 1050600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1050600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 50/60 = 83% (Epoch #16)
-Time: 1110600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1110600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 50/60 = 83% (Epoch #17)
-Time: 1170600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1170600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 51/60 = 85% (Epoch #18)
-Time: 1230600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1230600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 51/60 = 85% (Epoch #19)
-Time: 1290600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1290600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 52/60 = 86% (Epoch #20)
-Time: 1350600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1350600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 52/60 = 86% (Epoch #21)
-Time: 1410600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1410600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 54/60 = 90% (Epoch #22)
-Time: 1470600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1470600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #23)
-Time: 1530600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1530600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #24)
-Time: 1590600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1590600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #25)
-Time: 1650600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1650600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #26)
-Time: 1710600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1710600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #27)
-Time: 1770600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1770600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #28)
-Time: 1830600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1830600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #29)
-Time: 1890600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1890600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #30)
-Time: 1950600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 1950600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #31)
-Time: 2010600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2010600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #32)
-Time: 2070600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2070600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #33)
-Time: 2130600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2130600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #34)
-Time: 2190600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2190600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #35)
-Time: 2250600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2250600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #36)
-Time: 2310600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2310600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #37)
-Time: 2370600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2370600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #38)
-Time: 2430600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2430600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #39)
-Time: 2490600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2490600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #40)
-Time: 2550600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2550600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #41)
-Time: 2610600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2610600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 54/60 = 90% (Epoch #42)
-Time: 2670600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2670600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #43)
-Time: 2730600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2730600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 54/60 = 90% (Epoch #44)
-Time: 2790600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2790600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 54/60 = 90% (Epoch #45)
-Time: 2850600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2850600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 54/60 = 90% (Epoch #46)
-Time: 2910600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2910600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #47)
-Time: 2970600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 2970600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #48)
-Time: 3030600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3030600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #49)
-Time: 3090600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3090600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #50)
-Time: 3150600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3150600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #51)
-Time: 3210600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3210600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #52)
-Time: 3270600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3270600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #53)
-Time: 3330600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3330600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #54)
-Time: 3390600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3390600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #55)
-Time: 3450600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3450600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #56)
-Time: 3510600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3510600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #57)
-Time: 3570600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3570600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #58)
-Time: 3630600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3630600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #59)
-Time: 3690600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3690600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #60)
-Time: 3750600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3750600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #61)
-Time: 3810600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3810600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #62)
-Time: 3870600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3870600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 58/60 = 96% (Epoch #63)
-Time: 3930600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3930600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #64)
-Time: 3990600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 3990600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #65)
-Time: 4050600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4050600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #66)
-Time: 4110600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4110600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #67)
-Time: 4170600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4170600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #68)
-Time: 4230600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4230600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #69)
-Time: 4290600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4290600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #70)
-Time: 4350600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4350600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #71)
-Time: 4410600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4410600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #72)
-Time: 4470600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4470600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 56/60 = 93% (Epoch #73)
-Time: 4530600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4530600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #74)
-Time: 4590600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4590600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 55/60 = 91% (Epoch #75)
-Time: 4650600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4650600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #76)
-Time: 4710600 ns  Iteration: 0  Process: /neural_network_top_tb/line__255  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Time: 4710600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd

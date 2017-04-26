@@ -77,7 +77,7 @@ port(
         clk : in std_logic;
         --datapath control signals
         en : in std_logic; --enables nn to start processing data
-        pipeline : in std_logic; --if enabled, data is pipelined, otherwise it takes 5 cycles per input (3 to get output, 2 to finish backprop)
+        --pipeline : in std_logic; --if enabled, data is pipelined, otherwise it takes 5 cycles per input (3 to get output, 2 to finish backprop)
         new_output : out std_logic; --high when nn generates a new output, valid for both pipelined and non pipelined
         --parameter control signals
         n : in std_logic_vector(15 downto 0); --learning rate for backprop
@@ -263,7 +263,7 @@ neu: neural_network generic map(num_inputs => input_layer_size, num_hid => hidde
                     final_prime_out => final_prime_out,
                     clk => clk,
                     en => en,
-                    pipeline => pipeline,
+                    pipeline => not backpropagation,
                     new_output => new_output
                     );
 output <= "00" when (final(0) > final(1) and final(0) > final(2)) else
