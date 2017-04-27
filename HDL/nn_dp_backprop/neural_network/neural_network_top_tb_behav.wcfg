@@ -3,21 +3,21 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="neural_network_top_tb_behav.wdb" id="1">
+      <db_ref path="nn_wrapper_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="fixed_pkg" />
             <top_module name="heap_arr_pkg" />
-            <top_module name="neural_network_top_tb" />
+            <top_module name="nn_wrapper_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="617986666666fs"></ZoomStartTime>
-      <ZoomEndTime time="618086666667fs"></ZoomEndTime>
-      <Cursor1Time time="618070000000fs"></Cursor1Time>
+      <ZoomStartTime time="3651216641fs"></ZoomStartTime>
+      <ZoomEndTime time="6481756672fs"></ZoomEndTime>
+      <Cursor1Time time="5061877000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="10" />
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input0">
+   <WVObjectSize size="17" />
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/input0">
       <obj_property name="ElementShortName">input0[15:0]</obj_property>
       <obj_property name="ObjectShortName">input0[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -25,7 +25,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input1">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/input1">
       <obj_property name="ElementShortName">input1[15:0]</obj_property>
       <obj_property name="ObjectShortName">input1[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -33,7 +33,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input2">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/input2">
       <obj_property name="ElementShortName">input2[15:0]</obj_property>
       <obj_property name="ObjectShortName">input2[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -41,7 +41,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/input3">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/input3">
       <obj_property name="ElementShortName">input3[15:0]</obj_property>
       <obj_property name="ObjectShortName">input3[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -49,7 +49,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_0">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/final_0">
       <obj_property name="ElementShortName">final_0[15:0]</obj_property>
       <obj_property name="ObjectShortName">final_0[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -57,7 +57,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_1">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/final_1">
       <obj_property name="ElementShortName">final_1[15:0]</obj_property>
       <obj_property name="ObjectShortName">final_1[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -65,7 +65,7 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/final_2">
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/final_2">
       <obj_property name="ElementShortName">final_2[15:0]</obj_property>
       <obj_property name="ObjectShortName">final_2[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -73,17 +73,52 @@
       <obj_property name="radix_fractionWidth">8</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="logic" fp_name="/neural_network_top_tb/clk">
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/flower">
-      <obj_property name="ElementShortName">flower[1:0]</obj_property>
-      <obj_property name="ObjectShortName">flower[1:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/en">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neural_network_top_tb/output">
-      <obj_property name="ElementShortName">output[1:0]</obj_property>
-      <obj_property name="ObjectShortName">output[1:0]</obj_property>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/new_output">
+      <obj_property name="ElementShortName">new_output</obj_property>
+      <obj_property name="ObjectShortName">new_output</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/n">
+      <obj_property name="ElementShortName">n[15:0]</obj_property>
+      <obj_property name="ObjectShortName">n[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/initialize">
+      <obj_property name="ElementShortName">initialize</obj_property>
+      <obj_property name="ObjectShortName">initialize</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/backpropagation">
+      <obj_property name="ElementShortName">backpropagation</obj_property>
+      <obj_property name="ObjectShortName">backpropagation</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/clr">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/nn_wrapper_tb/finished">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/nn/nn/neu/hid_layer/\GEN2(0)\/neu/weights">
+      <obj_property name="ElementShortName">weights[3:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">weights[3:0][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/nn/nn/neu/out_layer/\GEN2(0)\/neu/weights">
+      <obj_property name="ElementShortName">weights[3:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">weights[3:0][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
 </wave_config>

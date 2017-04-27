@@ -50,7 +50,7 @@ end component;
         signal final_1 : std_logic_vector(15 downto 0);
         signal final_2 : std_logic_vector(15 downto 0);
 
-        signal clk : std_logic;
+        signal clk : std_logic := '0';
         signal en : std_logic;
         signal new_output : std_logic;
         signal n : std_logic_vector(15 downto 0);
@@ -58,10 +58,12 @@ end component;
         signal backpropagation : std_logic;
         signal clr : std_logic;
         
+        signal finished : std_logic := '0';
+        
 
 
 begin
-
+clk <= not clk and not finished after 10 ns;
 nn: nn_wrapper
      port map
      (
@@ -88,50 +90,26 @@ begin
        input1 <= std_logic_vector(to_sfixed(0.25, char_size-1, -mantissa_size));
        input2  <= std_logic_vector(to_sfixed(-0.4, char_size-1, -mantissa_size));
        input3 <= std_logic_vector(to_sfixed(-0.75, char_size-1, -mantissa_size));
-       en <= '1';
+       wait for 1000 ns;
        backpropagation <= '0';
+       wait for 1000 ns;
        clr <= '0';
+       wait for 1000 ns;
        n <= (others => '0');
+       wait for 1000 ns;
        initialize <= '1';
+        en <= '1';
+       wait for 1000 ns;
+      
        
-       clk <= '1';
-       wait for 10 ns;
-       clk <= '0';
-       wait for 10 ns;
-       clk <= '1';
-       wait for 10 ns;
-       clk <= '0';
-       wait for 10 ns;
-       clk <= '1';
-       wait for 10 ns;
-       clk <= '0';
-       wait for 10 ns;
-       clk <= '1';
-          wait for 10 ns;
-          clk <= '0';
-          wait for 10 ns;
-          clk <= '1';
-          wait for 10 ns;
-          clk <= '0';
-          wait for 10 ns;
-          clk <= '1';
-          wait for 10 ns;
-          clk <= '0';
-          wait for 10 ns;
-       clk <= '1';
-     wait for 10 ns;
-     clk <= '0';
-     wait for 10 ns;
-     clk <= '1';
-     wait for 10 ns;
-     clk <= '0';
-     wait for 10 ns;
-     clk <= '1';
-     wait for 10 ns;
-     clk <= '0';
-     wait for 10 ns;
+       
+       
+       
+       
+       
               
-wait for 10 ns;
+wait for 1000 ns;
+finished <= '1';
 wait;
 end process;
 
