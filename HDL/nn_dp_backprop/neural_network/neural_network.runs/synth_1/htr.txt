@@ -6,4 +6,4 @@
 # Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log neural_network_top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source neural_network_top.tcl
+vivado -log nn_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source nn_wrapper.tcl

@@ -254,3 +254,51 @@ Note: Current training Accuracy is 55/60 = 91% (Epoch #75)
 Time: 4650600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
 Note: Current training Accuracy is 57/60 = 95% (Epoch #76)
 Time: 4710600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 57/60 = 95% (Epoch #77)
+Time: 4770600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 55/60 = 91% (Epoch #78)
+Time: 4830600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 56/60 = 93% (Epoch #79)
+Time: 4890600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 55/60 = 91% (Epoch #80)
+Time: 4950600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #81)
+Time: 5010600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 59/60 = 98% (Epoch #82)
+Time: 5070600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 59/60 = 98% (Epoch #83)
+Time: 5130600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 59/60 = 98% (Epoch #84)
+Time: 5190600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 59/60 = 98% (Epoch #85)
+Time: 5250600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #86)
+Time: 5310600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #87)
+Time: 5370600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #88)
+Time: 5430600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #89)
+Time: 5490600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 59/60 = 98% (Epoch #90)
+Time: 5550600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #91)
+Time: 5610600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #92)
+Time: 5670600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #93)
+Time: 5730600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 57/60 = 95% (Epoch #94)
+Time: 5790600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 57/60 = 95% (Epoch #95)
+Time: 5850600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #96)
+Time: 5910600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #97)
+Time: 5970600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #98)
+Time: 6030600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Current training Accuracy is 58/60 = 96% (Epoch #99)
+Time: 6090600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd
+Note: Final Accuracy is 88/90 = 97%
+Time: 6180600 ns  Iteration: 0  Process: /neural_network_top_tb/line__254  File: /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network.srcs/sim_1/new/neural_network_top_tb.vhd

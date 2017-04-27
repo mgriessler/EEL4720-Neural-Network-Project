@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log neural_network_top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source neural_network_top.tcl
+EAStep vivado -log nn_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source nn_wrapper.tcl
