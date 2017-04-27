@@ -23,7 +23,17 @@ port(
     final_1 : out std_logic_vector(15 downto 0);
     final_2 : out std_logic_vector(15 downto 0);
     
-    clk : in std_logic
+    output : out std_logic_vector(1 downto 0);
+    
+    clk : in std_logic;
+    en : in std_logic := '0'; --enables nn to start processing data
+    new_output : out std_logic; --high when nn generates a new output, valid for both pipelined and non pipelined
+    --parameter control signals
+    n : in std_logic_vector(15 downto 0) := (others => '0'); --learning rate for backprop
+    initialize : in std_logic := '1';--if high, will update internal weights and biases to input weights and biases
+    backpropagation : in std_logic := '0';--if enabled, will perform backprop, NOTE: always make sure backpropagation = !pipeline. Will combine to one signal later.
+    clr : in std_logic := '0' --asynchronous clear to internal weights and biases
+    
     
     );
 end component;
@@ -41,6 +51,13 @@ end component;
         signal final_2 : std_logic_vector(15 downto 0);
 
         signal clk : std_logic;
+        signal en : std_logic;
+        signal new_output : std_logic;
+        signal n : std_logic_vector(15 downto 0);
+        signal initialize : std_logic;
+        signal backpropagation : std_logic;
+        signal clr : std_logic;
+        
 
 
 begin
@@ -55,7 +72,13 @@ nn: nn_wrapper
         final_0 => final_0,
         final_1 => final_1,
         final_2 => final_2,
-        clk => clk
+        clk => clk,
+        en => en,
+        new_output => new_output,
+        n => n,
+        initialize => initialize,
+        backpropagation => backpropagation,
+        clr => clr
      );
 
 process
@@ -65,7 +88,11 @@ begin
        input1 <= std_logic_vector(to_sfixed(0.25, char_size-1, -mantissa_size));
        input2  <= std_logic_vector(to_sfixed(-0.4, char_size-1, -mantissa_size));
        input3 <= std_logic_vector(to_sfixed(-0.75, char_size-1, -mantissa_size));
-       
+       en <= '1';
+       backpropagation <= '0';
+       clr <= '0';
+       n <= (others => '0');
+       initialize <= '1';
        
        clk <= '1';
        wait for 10 ns;

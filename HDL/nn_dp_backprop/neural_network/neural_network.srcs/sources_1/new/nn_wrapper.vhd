@@ -24,7 +24,7 @@ entity nn_wrapper is
     en : in std_logic := '0'; --enables nn to start processing data
     new_output : out std_logic; --high when nn generates a new output, valid for both pipelined and non pipelined
     --parameter control signals
-    n : in std_logic_vector(15 downto 0); --learning rate for backprop
+    n : in std_logic_vector(15 downto 0) := (others => '0'); --learning rate for backprop
     initialize : in std_logic := '1';--if high, will update internal weights and biases to input weights and biases
     backpropagation : in std_logic := '0';--if enabled, will perform backprop, NOTE: always make sure backpropagation = !pipeline. Will combine to one signal later.
     clr : in std_logic := '0' --asynchronous clear to internal weights and biases
@@ -162,10 +162,11 @@ final_1 => final_1,
 final_2 => final_2,
 clk => clk,
 en => en,
-n => (others => '0'),
+n => n,
 initialize => initialize,
 backpropagation => backpropagation,
 clr => clr,
+new_output => new_output,
 y_0 => (others => '0'),
 y_1 => (others => '0'),
 y_2 => (others => '0')

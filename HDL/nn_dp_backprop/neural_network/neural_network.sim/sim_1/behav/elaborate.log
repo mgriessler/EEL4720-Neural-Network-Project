@@ -1,6 +1,6 @@
 Vivado Simulator 2015.4
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto ebae1fb47d514e0882e68ef289259d16 --debug typical --relax --mt 8 -L work -L xil_defaultlib -L secureip --snapshot neural_network_top_tb_behav xil_defaultlib.neural_network_top_tb -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto ebae1fb47d514e0882e68ef289259d16 --debug typical --relax --mt 8 -L work -L xil_defaultlib -L secureip --snapshot nn_wrapper_tb_behav xil_defaultlib.nn_wrapper_tb -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -25,5 +25,6 @@ Compiling architecture hid of entity work.hidden_layer [\hidden_layer(4,4)\]
 Compiling architecture lay of entity work.neural_layer [\neural_layer(4,3)\]
 Compiling architecture net of entity work.neural_network [\neural_network(4,4,3)\]
 Compiling architecture top of entity work.neural_network_top [neural_network_top_default]
-Compiling architecture tb of entity xil_defaultlib.neural_network_top_tb
-Built simulation snapshot neural_network_top_tb_behav
+Compiling architecture wrap of entity work.nn_wrapper [nn_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.nn_wrapper_tb
+Built simulation snapshot nn_wrapper_tb_behav

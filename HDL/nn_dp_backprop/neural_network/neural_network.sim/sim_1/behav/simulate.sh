@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim neural_network_top_tb_behav -key {Behavioral:sim_1:Functional:neural_network_top_tb} -tclbatch neural_network_top_tb.tcl -view /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network_top_tb_behav.wcfg -log simulate.log
+ExecStep $xv_path/bin/xsim nn_wrapper_tb_behav -key {Behavioral:sim_1:Functional:nn_wrapper_tb} -tclbatch nn_wrapper_tb.tcl -view /home/nlandy/Documents/Reconfig/Project/neural_network/neural_network_top_tb_behav.wcfg -log simulate.log

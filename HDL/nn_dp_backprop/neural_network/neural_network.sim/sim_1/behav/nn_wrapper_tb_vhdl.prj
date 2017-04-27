@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl work  "../../../neural_network.srcs/sources_1/imports/accelerator_1.0/src/config_pkg.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/imports/accelerator_1.0/src/user_pkg.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/imports/distributable/fixed_float_types_c.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/imports/distributable/fixed_pkg_c.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/imports/new/heap_arr_pkg.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/absfixed.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/MAC.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/sigmablock.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/neuron.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/neural_layer.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/hidden_layer.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/neural_network.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/neural_network_top.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/nn_wrapper.vhd"
+vhdl work  "../../../neural_network.srcs/sources_1/new/parameter.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/imports/new/MAC_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/absfixed_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/sigmablock_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neuron_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_layer_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_network_top_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/neural_network_tb.vhd"
+vhdl xil_defaultlib  "../../../neural_network.srcs/sim_1/new/nn_wrapper_tb.vhd"
+
+# Do not sort compile order
+nosort
