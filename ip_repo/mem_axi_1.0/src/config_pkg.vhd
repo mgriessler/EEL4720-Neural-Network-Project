@@ -19,6 +19,9 @@ package config_pkg is
     subtype NN_INPUT is std_logic_vector(INPUT_WIDTH-1 downto 0);
     subtype NN_OUTPUT is std_logic_vector(OUTPUT_WIDTH-1 downto 0);
     
+    constant C_MEMS_SRC_MAP : std_logic := '0';
+    constant C_MEMS_SRC_CTRL : std_logic := '1';
+    
     -- Memory Map address definitions    
     subtype addr_type is integer range 0 to 2**C_MMAP_ADDR_WIDTH-1;
     constant MEM_ADDR_WIDTH : positive := 10;
