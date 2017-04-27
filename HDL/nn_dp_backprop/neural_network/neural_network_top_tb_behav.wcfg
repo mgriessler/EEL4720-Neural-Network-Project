@@ -12,11 +12,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3651216641fs"></ZoomStartTime>
-      <ZoomEndTime time="6481756672fs"></ZoomEndTime>
-      <Cursor1Time time="5061877000fs"></Cursor1Time>
+      <ZoomStartTime time="3683300000fs"></ZoomStartTime>
+      <ZoomEndTime time="5988300001fs"></ZoomEndTime>
+      <Cursor1Time time="4593300000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="18" />
    <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/input0">
       <obj_property name="ElementShortName">input0[15:0]</obj_property>
       <obj_property name="ObjectShortName">input0[15:0]</obj_property>
@@ -105,20 +105,16 @@
       <obj_property name="ElementShortName">finished</obj_property>
       <obj_property name="ObjectShortName">finished</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/nn/nn/neu/hid_layer/\GEN2(0)\/neu/weights">
-      <obj_property name="ElementShortName">weights[3:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">weights[3:0][15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">8</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/y_0">
+      <obj_property name="ElementShortName">y_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_0[15:0]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/nn/nn/neu/out_layer/\GEN2(0)\/neu/weights">
-      <obj_property name="ElementShortName">weights[3:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">weights[3:0][15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">8</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/y_1">
+      <obj_property name="ElementShortName">y_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/nn_wrapper_tb/y_2">
+      <obj_property name="ElementShortName">y_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_2[15:0]</obj_property>
    </wvobject>
 </wave_config>

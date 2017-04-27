@@ -23,6 +23,10 @@ port(
     final_1 : out std_logic_vector(15 downto 0);
     final_2 : out std_logic_vector(15 downto 0);
     
+    y_0 : in std_logic_vector(15 downto 0);
+    y_1 : in std_logic_vector(15 downto 0);
+    y_2 : in std_logic_vector(15 downto 0);
+    
     output : out std_logic_vector(1 downto 0);
     
     clk : in std_logic;
@@ -49,6 +53,11 @@ end component;
         signal final_0 : std_logic_vector(15 downto 0);
         signal final_1 : std_logic_vector(15 downto 0);
         signal final_2 : std_logic_vector(15 downto 0);
+        
+        signal y_0 : std_logic_vector(15 downto 0);
+        signal y_1 : std_logic_vector(15 downto 0);
+        signal y_2 : std_logic_vector(15 downto 0);
+
 
         signal clk : std_logic := '0';
         signal en : std_logic;
@@ -74,6 +83,9 @@ nn: nn_wrapper
         final_0 => final_0,
         final_1 => final_1,
         final_2 => final_2,
+        y_0 => y_0,
+        y_1 => y_1,
+        y_2 => y_2,
         clk => clk,
         en => en,
         new_output => new_output,
@@ -99,6 +111,22 @@ begin
        wait for 1000 ns;
        initialize <= '1';
         en <= '1';
+       for i in 0 to 89 loop
+                
+        input0 <= std_logic_vector(to_sfixed(sepal_length_test(i), char_size-1, -mantissa_size));
+        input1 <= std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
+        input2  <= std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
+        input3 <= std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
+        wait for 1000 ns;
+        
+--        if(output = expected_output_test(i)) then
+--        num_correct := num_correct + 1;
+--        end if;
+        
+        end loop;
+        
+--        report "Start Accuracy is " & integer'image(num_correct) & "/" & integer'image(num_total_test) & " = " & integer'image(num_correct*100/num_total_test) & "%" severity note;
+--        num_correct := 0;
        wait for 1000 ns;
       
        

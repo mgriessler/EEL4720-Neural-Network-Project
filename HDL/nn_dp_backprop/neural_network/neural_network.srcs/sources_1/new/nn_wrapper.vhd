@@ -18,6 +18,10 @@ entity nn_wrapper is
     final_1 : out std_logic_vector(15 downto 0);
     final_2 : out std_logic_vector(15 downto 0);
     
+    y_0 : in std_logic_vector(15 downto 0);
+    y_1 : in std_logic_vector(15 downto 0);
+    y_2 : in std_logic_vector(15 downto 0);
+    
     output : out std_logic_vector(1 downto 0);
     
     clk : in std_logic;
@@ -168,9 +172,9 @@ initialize => initialize,
 backpropagation => backpropagation,
 clr => clr,
 new_output => new_output,
-y_0 => (others => '0'),
-y_1 => (others => '0'),
-y_2 => (others => '0')
+y_0 => y_0,
+y_1 => y_1,
+y_2 => y_2
 );
 
 
