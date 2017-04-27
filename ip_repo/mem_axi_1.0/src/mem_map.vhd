@@ -29,19 +29,14 @@ entity mem_map is
         memtest_out_data : in DBL_DATA;
         memtest_wr_en : out std_logic;
 
-        input_0_out_data : in DBL_DATA;
         input_0_wr_en : out std_logic;
 
-        input_1_out_data : in DBL_DATA;
         input_1_wr_en : out std_logic;
 
-        input_2_out_data : in DBL_DATA;
         input_2_wr_en : out std_logic;
 
-        input_3_out_data : in DBL_DATA;
         input_3_wr_en : out std_logic;
 
-        expected_output_out_data : in DBL_DATA;
         expected_output_wr_en : out std_logic;
 
         output_out_data : in DBL_DATA;
@@ -58,11 +53,6 @@ architecture BHV of mem_map is
 
     constant C_RD_DATA_SEL_REG     : std_logic_vector := "000";
     constant C_RD_DATA_SEL_MEMTEST_OUT : std_logic_vector := "001";
-    constant C_RD_DATA_SEL_INPUT_0_OUT : std_logic_vector := "010";
-    constant C_RD_DATA_SEL_INPUT_1_OUT : std_logic_vector := "011";
-    constant C_RD_DATA_SEL_INPUT_2_OUT : std_logic_vector := "100";
-    constant C_RD_DATA_SEL_INPUT_3_OUT : std_logic_vector := "101";
-    constant C_RD_DATA_SEL_EXPECTED_OUTPUT_OUT : std_logic_vector := "110";
     constant C_RD_DATA_SEL_OUTPUT_OUT : std_logic_vector := "111";
 begin
     mem_in_data <= wr_data(mem_in_data'range);
@@ -102,16 +92,6 @@ begin
                 
                 if((unsigned(rd_addr) >= unsigned(C_MEMTEST_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_MEMTEST_END_ADDR))) then
                     rd_data_sel <= C_RD_DATA_SEL_MEMTEST_OUT;
-                elsif((unsigned(rd_addr) >= unsigned(C_INPUT_0_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_INPUT_0_END_ADDR))) then
-                    rd_data_sel <= C_RD_DATA_SEL_INPUT_0_OUT;
-                elsif((unsigned(rd_addr) >= unsigned(C_INPUT_1_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_INPUT_1_END_ADDR))) then
-                    rd_data_sel <= C_RD_DATA_SEL_INPUT_1_OUT;
-                elsif((unsigned(rd_addr) >= unsigned(C_INPUT_2_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_INPUT_2_END_ADDR))) then
-                    rd_data_sel <= C_RD_DATA_SEL_INPUT_2_OUT;
-                elsif((unsigned(rd_addr) >= unsigned(C_INPUT_3_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_INPUT_3_END_ADDR))) then
-                    rd_data_sel <= C_RD_DATA_SEL_INPUT_3_OUT;
-                elsif((unsigned(rd_addr) >= unsigned(C_EXPECTED_OUTPUT_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_EXPECTED_OUTPUT_END_ADDR))) then
-                    rd_data_sel <= C_RD_DATA_SEL_EXPECTED_OUTPUT_OUT;
                 elsif((unsigned(rd_addr) >= unsigned(C_OUTPUT_START_ADDR)) and (unsigned(rd_addr) <= unsigned(C_OUTPUT_END_ADDR))) then
                     rd_data_sel <= C_RD_DATA_SEL_OUTPUT_OUT;
                 else
@@ -135,23 +115,13 @@ begin
 	go <= reg_go;
 	epoch_size <= reg_epoch_size;
     
-	process(rd_data_sel, reg_rd_data, memtest_out_data, input_0_out_data, input_1_out_data, input_2_out_data, input_3_out_data, expected_output_out_data, output_out_data)
+	process(rd_data_sel, reg_rd_data, memtest_out_data, output_out_data)
 	begin
         rd_data <= (others => '0');
 	   
         case rd_data_sel is
             when C_RD_DATA_SEL_MEMTEST_OUT =>
                 rd_data(memtest_out_data'range) <= memtest_out_data;
-            when C_RD_DATA_SEL_INPUT_0_OUT =>
-                rd_data(input_0_out_data'range) <= input_0_out_data;
-            when C_RD_DATA_SEL_INPUT_1_OUT =>
-                rd_data(input_1_out_data'range) <= input_1_out_data;
-            when C_RD_DATA_SEL_INPUT_2_OUT =>
-                rd_data(input_2_out_data'range) <= input_2_out_data;
-            when C_RD_DATA_SEL_INPUT_3_OUT =>
-                rd_data(input_3_out_data'range) <= input_3_out_data;
-            when C_RD_DATA_SEL_EXPECTED_OUTPUT_OUT =>
-                rd_data(expected_output_out_data'range) <= expected_output_out_data;
             when C_RD_DATA_SEL_OUTPUT_OUT =>
                 rd_data(output_out_data'range) <= output_out_data;
             when C_RD_DATA_SEL_REG =>
