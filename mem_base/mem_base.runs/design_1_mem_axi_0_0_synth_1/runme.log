@@ -1,0 +1,421 @@
+
+*** Running vivado
+    with args -log design_1_mem_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mem_axi_0_0.tcl
+
+The system cannot find the file specified.
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_mem_axi_0_0.tcl -notrace
+Command: synth_design -top design_1_mem_axi_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1852 
+The system cannot find the file specified.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 291.297 ; gain = 81.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_mem_axi_0_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mem_axi_v1_0' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0.vhd:5' bound to instance 'U0' of component 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mem_axi_v1_0_S00_AXI' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0_S00_AXI.vhd:5' bound to instance 'mem_axi_v1_0_S00_AXI_inst' of component 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'user_app' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/user_app.vhd:6' bound to instance 'U_USER_APP' of component 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0_S00_AXI.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/user_app.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'mem_map' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/mem_map.vhd:46]
+INFO: [Synth 8-226] default block is never used [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/mem_map.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/mem_map.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'ram_sync_read' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/ram.vhd:117]
+	Parameter num_words bound to: 1024 - type: integer 
+	Parameter word_width bound to: 32 - type: integer 
+	Parameter addr_width bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram_sync_read' (2#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/ram.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'user_app' (3#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/src/user_app.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0_S00_AXI' (4#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0' (5#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/f741/hdl/mem_axi_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mem_axi_0_0' (6#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 328.777 ; gain = 118.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 328.777 ; gain = 118.809
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 640.785 ; gain = 0.164
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	               20 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              32K Bit         RAMs := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mem_map 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+Module ram_sync_read 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module mem_axi_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_araddr[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_araddr[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_1/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_2/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_3/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_OUTPUT/memory_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[0]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[1]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[2]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[3]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[4]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[5]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[6]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[7]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[8]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[9]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[10]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[11]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[12]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[13]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[14]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[15]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[16]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[17]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[18]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[19]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[20]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[21]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[22]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[23]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[24]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[25]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[26]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[27]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[28]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[29]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[30]' (FDCE) to 'U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/mem_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/mem_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/mem_axi_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/mem_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/mem_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/mem_axi_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_mem_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEM_MAP/reg_rd_data_reg[31]) is unused and will be removed from module design_1_mem_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/mem_axi_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_mem_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/mem_axi_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_mem_axi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/mem_axi_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_mem_axi_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ram_sync_read | memory_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_1/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_2/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_3/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_OUTPUT/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |     1|
+|3     |LUT3     |     4|
+|4     |LUT4     |     4|
+|5     |LUT5     |    34|
+|6     |LUT6     |    41|
+|7     |MUXF7    |    32|
+|8     |RAMB36E1 |     7|
+|9     |FDCE     |     3|
+|10    |FDRE     |    55|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |   182|
+|2     |  U0                          |mem_axi_v1_0         |   182|
+|3     |    mem_axi_v1_0_S00_AXI_inst |mem_axi_v1_0_S00_AXI |   182|
+|4     |      U_USER_APP              |user_app             |   121|
+|5     |        U_EXPECTED_OUTPUT     |ram_sync_read        |     2|
+|6     |        U_INPUT_0             |ram_sync_read_0      |     2|
+|7     |        U_INPUT_1             |ram_sync_read_1      |     2|
+|8     |        U_INPUT_2             |ram_sync_read_2      |     2|
+|9     |        U_INPUT_3             |ram_sync_read_3      |     2|
+|10    |        U_MEMTEST             |ram_sync_read_4      |     4|
+|11    |        U_MEM_MAP             |mem_map              |   105|
+|12    |        U_OUTPUT              |ram_sync_read_5      |     2|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 640.785 ; gain = 430.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 640.785 ; gain = 112.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 640.785 ; gain = 430.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 640.785 ; gain = 424.758
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/design_1_mem_axi_0_0_synth_1/design_1_mem_axi_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/design_1_mem_axi_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/design_1_mem_axi_0_0_synth_1/design_1_mem_axi_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 640.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 01:44:49 2017...

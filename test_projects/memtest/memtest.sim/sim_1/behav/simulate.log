@@ -1,0 +1,4 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Note: SIMULATION FINISHED!!!
+Time: 190 ns  Iteration: 0  Process: /memtest_tb/line__56  File: C:/NN-Project/test_projects/memtest/memtest.srcs/sim_1/new/memest_tb.vhd

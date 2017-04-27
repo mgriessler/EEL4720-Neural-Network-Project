@@ -53,27 +53,27 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/NN-Project/nn_base/nn_base.cache/wt [current_project]
-  set_property parent.project_path C:/NN-Project/nn_base/nn_base.xpr [current_project]
-  set_property ip_repo_paths c:/NN-Project/ip_repo/nn_axi_1.0 [current_project]
-  set_property ip_output_repo C:/NN-Project/nn_base/nn_base.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.xpr [current_project]
+  set_property ip_repo_paths C:/Users/Matthew/Documents/git/NN-Project/ip_repo/nn_axi_1.0 [current_project]
+  set_property ip_output_repo C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/NN-Project/nn_base/nn_base.runs/synth_1/design_1_wrapper.dcp
-  add_files -quiet C:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp
-  set_property netlist_only true [get_files C:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
-  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp
-  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp]
-  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp
-  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp]
-  add_files -quiet c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp
-  set_property netlist_only true [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp]
-  read_xdc -ref design_1_processing_system7_0_0 -cells inst c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_rst_ps7_0_100M_0 -cells U0 c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc
-  set_property processing_order EARLY [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
-  read_xdc -ref design_1_rst_ps7_0_100M_0 -cells U0 c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc
-  set_property processing_order EARLY [get_files c:/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
+  add_files -quiet C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
+  add_files -quiet C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp
+  set_property netlist_only true [get_files C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_nn_axi_0_1/design_1_nn_axi_0_1.dcp]
+  add_files -quiet c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp
+  set_property netlist_only true [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp]
+  add_files -quiet c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp
+  set_property netlist_only true [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp]
+  read_xdc -ref design_1_processing_system7_0_0 -cells inst c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_rst_ps7_0_100M_0 -cells U0 c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
+  read_xdc -ref design_1_rst_ps7_0_100M_0 -cells U0 c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
   link_design -top design_1_wrapper -part xc7z020clg484-1
   write_hwdef -file design_1_wrapper.hwdef
   close_msg_db -file init_design.pb

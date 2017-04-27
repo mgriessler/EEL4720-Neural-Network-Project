@@ -43,20 +43,20 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/hdl/nn_dp/lib/fixed_pkg_c.vhd" \
 "../../../bd/design_1/hdl/nn_dp/lib/heap_arr_pkg.vhd" \
 "../../../bd/design_1/hdl/nn_dp/absfixed.vhd" \
-"../../../bd/design_1/hdl/nn_dp/sigmablock.vhd" \
 "../../../bd/design_1/hdl/nn_dp/MAC.vhd" \
+"../../../bd/design_1/hdl/nn_dp/sigmablock.vhd" \
 "../../../bd/design_1/hdl/nn_dp/neuron.vhd" \
-"../../../bd/design_1/hdl/nn_dp/neural_layer.vhd" \
 "../../../bd/design_1/hdl/nn_dp/hidden_layer.vhd" \
+"../../../bd/design_1/hdl/nn_dp/neural_layer.vhd" \
 "../../../bd/design_1/hdl/nn_dp/neural_network.vhd" \
 "../../../bd/design_1/hdl/nn_dp/neural_network_top.vhd" \
 "../../../bd/design_1/hdl/user_app/config_pkg.vhd" \
-"../../../bd/design_1/hdl/nn_dp/nn_wrapper.vhd" \
 "../../../bd/design_1/hdl/user_app/mem_map.vhd" \
 "../../../bd/design_1/hdl/user_app/ram.vhd" \
+"../../../bd/design_1/hdl/nn_dp/nn_wrapper.vhd" \
 "../../../bd/design_1/hdl/user_app/user_app.vhd" \
-"../../../bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/30e3/hdl/nn_axi_v1_0.vhd" \
+"../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/e5e3/hdl/nn_axi_v1_0_S00_AXI.vhd" \
+"../../../../nn_base.srcs/sources_1/bd/design_1/ipshared/e5e3/hdl/nn_axi_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_nn_axi_0_1/sim/design_1_nn_axi_0_1.vhd" \
 
 vcom -work lib_cdc_v1_0_2 -93 \

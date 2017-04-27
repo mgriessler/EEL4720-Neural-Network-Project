@@ -25,16 +25,36 @@ architecture default of user_app is
     signal go_fp        : std_logic;
     signal go_bp        : std_logic;
 
-    signal epoch_size   : std_logic_vector(MAX_EPOCH_SIZE-1 downto 0);    
+    signal epoch_size   : std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);    
     signal result : std_logic_vector(RESULT_SIZE-1 downto 0);
     signal done   : std_logic;
     
     signal input0, input1, input2, input3 : NN_INPUT;
     signal output0, output1, output2 : NN_OUTPUT;
     
-    signal memtest_in_addr, memtest_out_addr : DBL_ADDR;
-    signal memtest_in_data, memtest_out_data : DBL_DATA;
+    signal mem_in_addr, mem_out_addr : DBL_ADDR;
+    signal mem_in_data : DBL_DATA;
+    
+    signal memtest_out_data : DBL_DATA;
     signal memtest_wr_en : std_logic := '0';
+    
+    signal input_0_out_data : DBL_DATA;
+    signal input_0_wr_en : std_logic := '0';
+    
+    signal input_1_out_data : DBL_DATA;
+    signal input_1_wr_en : std_logic := '0';
+    
+    signal input_2_out_data : DBL_DATA;
+    signal input_2_wr_en : std_logic := '0';
+    
+    signal input_3_out_data : DBL_DATA;
+    signal input_3_wr_en : std_logic := '0';
+    
+    signal expected_output_out_data : DBL_DATA;
+    signal expected_output_wr_en : std_logic := '0';
+    
+    signal output_out_data : DBL_DATA;
+    signal output_wr_en : std_logic := '0';
     
     component nn_wrapper is
     port (
@@ -72,11 +92,23 @@ begin
         output0 => output0,
         output1 => output1,
         output2 => output2,
-        memtest_in_addr => memtest_in_addr,
-        memtest_out_addr => memtest_out_addr,
-        memtest_in_data => memtest_in_data,
+        mem_in_addr => mem_in_addr,
+        mem_out_addr => mem_out_addr,
+        mem_in_data => mem_in_data,
         memtest_out_data => memtest_out_data,
-        memtest_wr_en => memtest_wr_en
+        memtest_wr_en => memtest_wr_en,
+        input_0_out_data => input_0_out_data,
+        input_0_wr_en => input_0_wr_en,
+        input_1_out_data => input_1_out_data,
+        input_1_wr_en => input_1_wr_en,
+        input_2_out_data => input_2_out_data,
+        input_2_wr_en => input_2_wr_en,
+        input_3_out_data => input_3_out_data,
+        input_3_wr_en => input_3_wr_en,
+        expected_output_out_data => expected_output_out_data,
+        expected_output_wr_en => expected_output_wr_en,
+        output_out_data => output_out_data,
+        output_wr_en => output_wr_en
     );
     
     U_NN : nn_wrapper
@@ -100,10 +132,100 @@ begin
     port map (
         clk => clk,
         wen => memtest_wr_en,
-        waddr => memtest_in_addr(MEM_ADDR_WIDTH-1 downto 0),
-        wdata => memtest_in_data,
-        raddr => memtest_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
         rdata => memtest_out_data
+    );
+
+    U_INPUT_0 : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => input_0_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => input_0_out_data
+    );
+
+    U_INPUT_1 : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => input_1_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => input_1_out_data
+    );
+
+    U_INPUT_2 : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => input_2_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => input_2_out_data
+    );
+
+    U_INPUT_3 : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => input_3_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => input_3_out_data
+    );
+
+    U_EXPECTED_OUTPUT : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => expected_output_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => expected_output_out_data
+    );
+
+    U_OUTPUT : entity work.ram(SYNC_READ)
+    generic map (
+        num_words => 2**MEM_ADDR_WIDTH,
+        word_width => MEM_DATA_WIDTH,
+        addr_width => MEM_ADDR_WIDTH
+    )
+    port map (
+        clk => clk,
+        wen => output_wr_en,
+        waddr => mem_in_addr(MEM_ADDR_WIDTH-1 downto 0),
+        wdata => mem_in_data,
+        raddr => mem_out_addr(MEM_ADDR_WIDTH-1 downto 0),
+        rdata => output_out_data
     );
 
 end default;

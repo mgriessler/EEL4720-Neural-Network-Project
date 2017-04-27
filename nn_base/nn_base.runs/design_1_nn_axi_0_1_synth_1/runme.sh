@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/NN-Project/nn_base/nn_base.runs/design_1_nn_axi_0_1_synth_1'
+HD_PWD='C:/Users/Matthew/Documents/git/NN-Project/nn_base/nn_base.runs/design_1_nn_axi_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

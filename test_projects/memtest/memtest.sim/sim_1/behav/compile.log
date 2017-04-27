@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/NN-Project/HDL/user_app/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/NN-Project/test_projects/memtest/memtest.srcs/sim_1/new/memest_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memtest_tb
