@@ -12,7 +12,11 @@ entity user_app_tb is
 end user_app_tb;
 
 architecture TB of user_app_tb is
+<<<<<<< HEAD
     constant TEST_SIZE : integer := 1;
+=======
+    constant TEST_SIZE : integer := 90;
+>>>>>>> 04fea99224e67656c0278a6aebb5bc6e915ba53e
     signal clk : std_logic := '0';
     signal rst : std_logic := '1';
     
@@ -54,6 +58,7 @@ begin
         rst <= '0';
         wait for 50 ns;
         
+<<<<<<< HEAD
         mmap_wr_addr <= std_logic_vector(unsigned(C_INPUT_0_ADDR));
         mmap_wr_en   <= '1';
         mmap_wr_data <= (others => '0');
@@ -211,6 +216,97 @@ begin
         mmap_rd_en <= '0';
         
 
+=======
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_wr_addr <= std_logic_vector(unsigned(C_INPUT_0_START_ADDR)+i);
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= (others => '0');
+            mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(sepal_length_test(i), char_size-1, -mantissa_size));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        end loop;  -- i
+        
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_wr_addr <= std_logic_vector(unsigned(C_INPUT_1_START_ADDR)+i);
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= (others => '0');
+            mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(sepal_width_test(i), char_size-1, -mantissa_size));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        end loop;  -- i
+        
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_wr_addr <= std_logic_vector(unsigned(C_INPUT_2_START_ADDR)+i);
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= (others => '0');
+            mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(petal_length_test(i), char_size-1, -mantissa_size));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        end loop;  -- i
+        
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_wr_addr <= std_logic_vector(unsigned(C_INPUT_3_START_ADDR)+i);
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= (others => '0');
+            mmap_wr_data <= "0000000000000000" & std_logic_vector(to_sfixed(petal_width_test(i), char_size-1, -mantissa_size));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        end loop;  -- i
+        
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_wr_addr <= std_logic_vector(unsigned(C_EXPECTED_OUTPUT_START_ADDR)+i);
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= (others => '0');
+            mmap_wr_data <= std_logic_vector(resize(unsigned(expected_output_test(i)), C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        end loop;  -- i
+
+	    mmap_wr_addr <= std_logic_vector(unsigned(C_EPOCH_SIZE_ADDR));
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= std_logic_vector(to_unsigned(TEST_SIZE, C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+            
+        mmap_wr_addr <= std_logic_vector(unsigned(C_INIT_ADDR));
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= std_logic_vector(to_unsigned(1, C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        mmap_wr_addr <= std_logic_vector(unsigned(C_INIT_ADDR));
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+        mmap_wr_addr <= std_logic_vector(unsigned(C_BP_ADDR));
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+	    mmap_wr_addr <= std_logic_vector(unsigned(C_GO_EPOCH_ADDR));
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= std_logic_vector(to_unsigned(1, C_MMAP_DATA_WIDTH));
+            wait until rising_edge(clk);
+            mmap_wr_en <= '0';
+
+	    wait for 2000 ns;
+
+	    mmap_rd_addr <= std_logic_vector(unsigned(C_DONE_ADDR));
+            mmap_rd_en   <= '1';
+            result := mmap_rd_data;
+            wait until rising_edge(clk);
+            mmap_rd_en <= '0';
+
+
+        for i in 0 to TEST_SIZE-1 loop
+            mmap_rd_addr <= std_logic_vector(unsigned(C_OUTPUT_START_ADDR)+i);
+            mmap_rd_en   <= '1';
+            result := mmap_rd_data;
+            wait until rising_edge(clk);
+            mmap_rd_en <= '0';
+        end loop;  -- i
+        
+>>>>>>> 04fea99224e67656c0278a6aebb5bc6e915ba53e
         sim_done <= '1';
         wait;
     end process;

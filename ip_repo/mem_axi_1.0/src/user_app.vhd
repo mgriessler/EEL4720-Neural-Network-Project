@@ -26,7 +26,8 @@ architecture default of user_app is
     signal ctrl_go : std_logic;
     signal ctrl_epoch_size : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
     signal ctrl_done : std_logic;
-    
+    signal ctrl_num_epochs : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
+
     signal output_mem_wr_addr_inc : std_logic;
     signal input_mems_rd_addr_inc : std_logic;
     signal output_mem_wr_addr_rst : std_logic;
@@ -64,6 +65,7 @@ begin
         rd_data => mmap_rd_data,
         go => ctrl_go,
         epoch_size => ctrl_epoch_size,
+        num_epochs => ctrl_num_epochs,
         backprop => bp,
         init => nn_init,
         done => ctrl_done,
@@ -83,6 +85,7 @@ begin
         rst => rst,
         go => ctrl_go,
         epoch_size => ctrl_epoch_size,
+        num_epochs => ctrl_num_epochs,
         done => ctrl_done,
         nn_bp => nn_bp,
         bp => bp,

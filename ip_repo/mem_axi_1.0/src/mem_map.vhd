@@ -22,15 +22,26 @@ entity mem_map is
         done : in std_logic;
         backprop : out std_logic;
         init : out std_logic;
-        
-        input_0 : out std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        input_1 : out std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        input_2 : out std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        input_3 : out std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        final_0 : in std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        final_1 : in std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        final_2 : in std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-        output : in std_logic_vector(MEM_DATA_WIDTH-1 downto 0)
+        num_epochs : out std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
+        --memory
+        mem_in_addr : out DBL_ADDR;
+        mem_out_addr : out DBL_ADDR;
+        mem_in_data : out DBL_DATA;
+
+        memtest_out_data : in DBL_DATA;
+        memtest_wr_en : out std_logic;
+
+        input_0_wr_en : out std_logic;
+
+        input_1_wr_en : out std_logic;
+
+        input_2_wr_en : out std_logic;
+
+        input_3_wr_en : out std_logic;
+
+        expected_output_wr_en : out std_logic;
+
+        output_out_data : in DBL_DATA
     );
 end mem_map;
 
@@ -41,10 +52,7 @@ architecture BHV of mem_map is
     signal reg_epoch_size : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
     signal reg_bp : std_logic;
     signal reg_init : std_logic;
-    signal reg_input_0 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-    signal reg_input_1 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-    signal reg_input_2 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
-    signal reg_input_3 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
+    signal reg_num_epochs : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
 
     constant C_RD_DATA_SEL_REG     : std_logic_vector := "000";
     constant C_RD_DATA_SEL_MEMTEST_OUT : std_logic_vector := "001";
@@ -59,10 +67,7 @@ begin
             reg_init <= '0';
             rd_data_sel <= (others => '0');
             reg_rd_data <= (others => '0');
-            reg_input_0 <= (others => '0');
-            reg_input_1 <= (others => '0');
-            reg_input_2 <= (others => '0');
-            reg_input_3 <= (others => '0');
+            reg_num_epochs <= (others => '0');
 		elsif(rising_edge(clk)) then
             --reg_go <= '0';
             
@@ -75,16 +80,10 @@ begin
                     when C_BP_ADDR =>
                         reg_bp <= wr_data(0);
                     when C_INIT_ADDR =>
-                        reg_init <= wr_data(0);
-                    when C_INPUT_0_ADDR =>
-                        reg_input_0 <= wr_data(input_0'range);
-                    when C_INPUT_1_ADDR =>
-                        reg_input_1 <= wr_data(input_1'range);
-                    when C_INPUT_2_ADDR =>
-                        reg_input_2 <= wr_data(input_2'range);
-                    when C_INPUT_3_ADDR =>
-                        reg_input_3 <= wr_data(input_3'range);
-                    when others => null;                    
+                            reg_init <= wr_data(0);
+                    when C_NUM_EPOCHS_ADDR =>
+                            reg_num_epochs <= wr_data(num_epochs'range);
+                    when others => null;
                 end case;
             end if;
 
@@ -104,22 +103,9 @@ begin
                         reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_bp;
                     when C_INIT_ADDR =>
                         reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_init;
-                    when C_INPUT_0_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & reg_input_0;
-                    when C_INPUT_1_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & reg_input_1;
-                    when C_INPUT_2_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & reg_input_2;
-                    when C_INPUT_3_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & reg_input_3;
-                    when C_FINAL_0_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & final_0;
-                    when C_FINAL_1_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & final_1;
-                    when C_FINAL_2_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & final_2;
-                    when C_OUTPUT_ADDR =>
-                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-16)) & output;
+                    when C_NUM_EPOCHS_ADDR =>
+                        reg_rd_data <= (others => '0');
+                        reg_rd_data(num_epochs'range) <= reg_num_epochs;    
                     when others => null;
                 end case;
 			end if;
@@ -130,11 +116,7 @@ begin
 	epoch_size <= reg_epoch_size;
 	backprop <= reg_bp;
 	init <= reg_init;
-	input_0 <= reg_input_0;
-	input_1 <= reg_input_1;
-	input_2 <= reg_input_2;
-	input_3 <= reg_input_3;
-	
+	num_epochs <= reg_num_epochs;
     
 	process(rd_data_sel, reg_rd_data)
 	begin

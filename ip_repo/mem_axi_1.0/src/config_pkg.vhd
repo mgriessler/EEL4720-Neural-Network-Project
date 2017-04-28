@@ -40,6 +40,7 @@ package config_pkg is
     constant C_GO_EPOCH_ADDR   : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-6, C_MMAP_ADDR_WIDTH));
     constant C_EPOCH_SIZE_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-5, C_MMAP_ADDR_WIDTH));
     constant C_DONE_ADDR       : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-4, C_MMAP_ADDR_WIDTH));
+    constant C_NUM_EPOCHS_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-3, C_MMAP_ADDR_WIDTH));
     constant C_MEMTEST_START_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := (others => '0');
     constant C_MEMTEST_END_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(unsigned(C_MEMTEST_START_ADDR) + (2**MEM_ADDR_WIDTH-1));
     constant C_INPUT_0_START_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(unsigned(C_MEMTEST_END_ADDR) + 1);
