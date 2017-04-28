@@ -12,6 +12,7 @@ port(
     --cpp control signals    
     go : in std_logic;
     epoch_size : in std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
+    num_epochs : in std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
     done : out std_logic;
     bp : in std_logic;
     
@@ -31,6 +32,8 @@ architecture cont of controller is
     type STATE_TYPE is (S_START, S_START_2, S_LOAD, S_FP, S_BP, S_FP_END_1, S_FP_END_2, S_DONE, S_BP_DELAY_1, S_BP_DELAY_2, S_BP_DELAY_3, S_BP_DELAY_4, S_BP_INITIAL_DELAY_1, S_BP_INITIAL_DELAY_2, S_BP_INITIAL_DELAY_3);
     signal state, next_state : STATE_TYPE;
     signal iterations, next_iterations : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0) := (others => '0');
+    signal epochs_comp : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0) := (others => '0');
+
 begin
     process(clk, rst)
     begin
@@ -97,7 +100,12 @@ begin
                 nn_bp <= '1';
                 nn_en <= '1';
                 if(iterations >= epoch_size) then
+                    if(epochs_comp < num_epochs) then
+                    next_state <= S_START_2;
+                    epochs_comp <= std_logic_vector(unsigned(epochs_comp)+1);
+                    else
                     next_state <= S_FP_END_1;
+                    end if;
                 else
                     next_state <= S_BP_DELAY_1;
                 end if;

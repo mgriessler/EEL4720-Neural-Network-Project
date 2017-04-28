@@ -84,19 +84,17 @@ if(pipeline'event and pipeline = '0') then
 state <= 0;
 end if;
 
-if(clk'event and clk = '1' and en = '1') then
-    if(pipeline = '1') then
+if(clk'event and clk = '1') then
+    if(pipeline = '1' and en = '1') then
     in_vector <= input;
     hid_vector <= hid_out;
     out_vector <= out_out;
     state <= state +1;
-    if(state > 2) then 
-    new_output <= '1';
-    else new_output <= '0';
-    end if;
     
     
-    else
+    
+    
+    elsif (pipeline = '0' and en = '1') then
     
     if(state = 0) then
     in_vector <= input;
@@ -119,6 +117,11 @@ if(clk'event and clk = '1' and en = '1') then
     end if;
     
     
+    end if;
+    
+    if((state > 2 and en = '1' and pipeline = '1') or (state = 2 and en = '1' and pipeline = '0')) then 
+    new_output <= '1';
+    else new_output <= '0';
     end if;
 end if;
 

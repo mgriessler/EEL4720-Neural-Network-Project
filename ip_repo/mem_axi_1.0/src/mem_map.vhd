@@ -22,6 +22,7 @@ entity mem_map is
         done : in std_logic;
         backprop : out std_logic;
         init : out std_logic;
+        num_epochs : out std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
         --memory
         mem_in_addr : out DBL_ADDR;
         mem_out_addr : out DBL_ADDR;
@@ -51,6 +52,7 @@ architecture BHV of mem_map is
     signal reg_epoch_size : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
     signal reg_bp : std_logic;
     signal reg_init : std_logic;
+    signal reg_num_epochs : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
 
     constant C_RD_DATA_SEL_REG     : std_logic_vector := "000";
     constant C_RD_DATA_SEL_MEMTEST_OUT : std_logic_vector := "001";
@@ -76,6 +78,7 @@ begin
             reg_init <= '0';
             rd_data_sel <= (others => '0');
             reg_rd_data <= (others => '0');
+            reg_num_epochs <= (others => '0');
 		elsif(rising_edge(clk)) then
             --reg_go <= '0';
             
@@ -89,6 +92,8 @@ begin
                             reg_bp <= wr_data(0);
                     when C_INIT_ADDR =>
                             reg_init <= wr_data(0);
+                    when C_NUM_EPOCHS_ADDR =>
+                            reg_num_epochs <= wr_data(num_epochs'range);
                     when others => null;
                     
                 end case;
@@ -118,6 +123,9 @@ begin
                         reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_bp;
                     when C_INIT_ADDR =>
                         reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_init;
+                    when C_NUM_EPOCHS_ADDR =>
+                        reg_rd_data <= (others => '0');
+                        reg_rd_data(num_epochs'range) <= reg_num_epochs;    
                     when others => null;
                 end case;
 			end if;
@@ -128,6 +136,7 @@ begin
 	epoch_size <= reg_epoch_size;
 	backprop <= reg_bp;
 	init <= reg_init;
+	num_epochs <= reg_num_epochs;
     
 	process(rd_data_sel, reg_rd_data, memtest_out_data, output_out_data)
 	begin
