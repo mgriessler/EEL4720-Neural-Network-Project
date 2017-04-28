@@ -9,20 +9,26 @@
 #include <cstdlib>
 #include <cassert>
 #include <cstring>
+#include <algorithm>
 
 #include "Board.h"
 
 using namespace std;
 
 // AXI addresses for the input and output
-#define ADDR_WIDTH 15
-#define MAX_SIZE (1<<ADDR_WIDTH)
-//#define MEM_IN_ADDR 442
-//#define MEM_OUT_ADDR_0
-#define C_OUTPUT_0_ADDR 1
-#define C_OUTPUT_1_ADDR 2
-#define C_OUTPUT_2_ADDR 3
-#define SHIFT_VAL 256.0
+#define TEST_SIZE 90
+#define TRAIN SIZE 60
+#define C_INPUT_0_START_ADDR 1024
+#define C_INPUT_1_START_ADDR 2048
+#define C_INPUT_2_START_ADDR 3072
+#define C_INPUT_3_START_ADDR 4096
+#define C_EXPECTED_OUTPUT_START_ADDR 5120
+#define C_OUTPUT_START_ADDR 6144
+#define C_INIT_ADDR ((1<<18)-8)
+#define C_BP_ADDR ((1<<18)-7)
+#define C_GO_EPOCH_ADDR ((1<<18)-6)
+#define C_EPOCH_SIZE_ADDR ((1<<18)-5)
+#define C_DONE_ADDR ((1<<18)-4)
 
 //#define DEBUG
 
@@ -50,95 +56,67 @@ int main(int argc, char* argv[]) {
   catch(...) {
     exit(-1);
   }
-  unsigned output0;
-  unsigned output1;
-  unsigned output2;
-  board->read(&output0, C_OUTPUT_0_ADDR, 1);
-  board->read(&output2, C_OUTPUT_2_ADDR, 1);
-  board->read(&output1, C_OUTPUT_1_ADDR, 1);
 
+  float sepal_length_test[TEST_SIZE] = {4.8, 6.1, 6.5, 5.5, 5.7, 5.8, 6.9, 6.4, 6.4, 6.7, 6.3, 5.8, 6.7, 5.7, 4.5, 6.5, 6.7, 6.7, 6.0, 7.3, 6.4, 6.7, 5.0, 5.2, 4.9, 5.9, 6.1, 4.9, 5.7, 6.8, 5.7, 7.7, 5.8, 6.3, 5.4, 7.2, 5.2, 5.2, 4.7, 7.2, 4.8, 5.9, 5.0, 5.1, 6.3, 4.7, 6.1, 6.7, 6.9, 6.2, 5.1, 6.6, 7.0, 5.0, 5.0, 5.6, 4.6, 5.5, 6.7, 5.4, 6.3, 5.6, 7.9, 5.9, 6.7, 5.5, 4.9, 5.4, 5.1, 6.2, 7.2, 6.3, 5.2, 5.5, 6.3, 6.4, 5.0, 6.0, 5.1, 5.8, 5.1, 6.2, 5.1, 7.7, 6.9, 5.6, 4.9, 5.5, 5.3, 6.4};
+  float sepal_width_test[TEST_SIZE] = {3.4, 2.8, 3.0, 3.5, 3.8, 2.7, 3.2, 3.2, 3.2, 3.3, 2.7, 2.7, 3.1, 2.9, 2.3, 3.0, 3.3, 3.1, 2.9, 2.9, 2.8, 2.5, 3.4, 3.5, 3.1, 3.0, 3.0, 3.1, 4.4, 2.8, 2.5, 2.6, 2.7, 2.9, 3.4, 3.2, 3.4, 2.7, 3.2, 3.6, 3.0, 3.2, 2.0, 3.5, 2.8, 3.2, 2.6, 3.0, 3.1, 3.4, 3.7, 2.9, 3.2, 3.3, 2.3, 3.0, 3.4, 2.4, 3.1, 3.4, 3.3, 3.0, 3.8, 3.0, 3.0, 2.3, 3.0, 3.0, 3.8, 2.9, 3.0, 3.3, 4.1, 4.2, 3.4, 2.8, 3.2, 2.7, 3.8, 2.8, 3.8, 2.2, 3.4, 3.0, 3.1, 2.9, 2.4, 2.4, 3.7, 2.9};
+  float petal_length_test[TEST_SIZE] = {1.9, 4.7, 5.8, 1.3, 1.7, 4.1, 5.7, 4.5, 5.3, 5.7, 4.9, 5.1, 4.7, 4.2, 1.3, 5.5, 5.7, 5.6, 4.5, 6.3, 5.6, 5.8, 1.6, 1.5, 1.5, 4.2, 4.6, 1.5, 1.5, 4.8, 5.0, 6.9, 5.1, 5.6, 1.7, 6.0, 1.4, 3.9, 1.6, 6.1, 1.4, 4.8, 3.5, 1.4, 5.1, 1.3, 5.6, 5.2, 5.1, 5.4, 1.5, 4.6, 4.7, 1.4, 3.3, 4.1, 1.4, 3.7, 4.4, 1.5, 6.0, 4.5, 6.4, 5.1, 5.0, 4.0, 1.4, 4.5, 1.9, 4.3, 5.8, 4.7, 1.5, 1.4, 5.6, 5.6, 1.2, 5.1, 1.5, 5.1, 1.6, 4.5, 1.5, 6.1, 4.9, 3.6, 3.3, 3.8, 1.5, 4.3};
+  float petal_width_test[TEST_SIZE] = {0.2, 1.2, 2.2, 0.2, 0.3, 1.0, 2.3, 1.5, 2.3, 2.1, 1.8, 1.9, 1.5, 1.3, 0.3, 1.8, 2.5, 2.4, 1.5, 1.8, 2.1, 1.8, 0.4, 0.2, 0.1, 1.5, 1.4, 0.1, 0.4, 1.4, 2.0, 2.3, 1.9, 1.8, 0.2, 1.8, 0.2, 1.4, 0.2, 2.5, 0.1, 1.8, 1.0, 0.2, 1.5, 0.2, 1.4, 2.3, 2.3, 2.3, 0.4, 1.3, 1.4, 0.2, 1.0, 1.3, 0.3, 1.0, 1.4, 0.4, 2.5, 1.5, 2.0, 1.8, 1.7, 1.3, 0.2, 1.5, 0.4, 1.3, 1.6, 1.6, 0.1, 0.2, 2.4, 2.2, 0.2, 1.6, 0.3, 2.4, 0.2, 1.5, 0.2, 2.3, 1.5, 1.3, 1.0, 1.1, 0.2, 1.3};
+  float expected_output_test[TEST_SIZE] = {0, 1, 2, 0, 0, 1, 2, 1, 2, 2, 2, 2, 1, 1, 0, 2, 2, 2, 1, 2, 2, 2, 0, 0, 0, 1, 1, 0, 0, 1, 2, 2, 2, 2, 0, 2, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 2, 2, 2, 2, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 2, 1, 2, 2, 1, 1, 0, 1, 0, 1, 2, 1, 0, 0, 2, 2, 0, 1, 0, 2, 0, 1, 0, 2, 1, 1, 1, 1, 0, 1};
 
-   std::cout<<"Output 1 is: ";
-   std::cout<<std::hex<<output0<<std::endl;
-   std::cout<<"Output 2 is: ";
-   std::cout<<std::hex<<output1<<std::endl;
-   std::cout<<"Output 3 is: ";
-   std::cout<<std::hex<<output2<<std::endl;
+  for(int i = 0; i < TEST_SIZE; i++){
+  sepal_length_test[i] *= 256;
+  sepal_width_test[i] *= 256;
+  petal_length_test[i] *= 256;
+  petal_width_test[i] *= 256;
+  expected_output_test[i] *= 256;
+  }
   
-   std::cout<<"Output 1 is: ";
-   std::cout<<output0/SHIFT_VAL<<std::endl;
-   std::cout<<"Output 2 is: ";
-   std::cout<<output1/SHIFT_VAL<<std::endl;
-   std::cout<<"Output 3 is: ";
-   std::cout<<output2/SHIFT_VAL<<std::endl;
+  int sepal_length_test_sf[TEST_SIZE];
+  int sepal_width_test_sf[TEST_SIZE];
+  int petal_length_test_sf[TEST_SIZE];
+  int petal_width_test_sf[TEST_SIZE];
+  int expected_output_test_sf[TEST_SIZE];
   
-  unsigned long MEM_IN_ADDR = 400;
+  std::copy(sepal_length_test, sepal_length_test + TEST_SIZE, sepal_length_test_sf);
+  std::copy(sepal_width_test, sepal_width_test + TEST_SIZE, sepal_width_test_sf);
+  std::copy(petal_length_test, petal_length_test + TEST_SIZE, petal_length_test_sf);
+  std::copy(petal_width_test, petal_width_test + TEST_SIZE, petal_width_test_sf);
+  std::copy(expected_output_test, expected_output_test + TEST_SIZE, expected_output_test_sf);
   
-  unsigned int read_value[100];
-  unsigned int write_value[100];
+  std::cout<<"Loading Memories"<<std::endl;
 
-  //unsigned int write_value[5] = {42, 43, 44, 45, 46};
+  board->write(sepal_length_test, C_INPUT_0_START_ADDR, TEST_SIZE);
+  board->write(sepal_width_test, C_INPUT_1_START_ADDR, TEST_SIZE);
+  board->write(petal_length_test, C_INPUT_2_START_ADDR, TEST_SIZE);
+  board->write(petal_width_test, C_INPUT_3_START_ADDR, TEST_SIZE);
+  board->write(expected_output_test, C_EXPECTED_OUTPUT_START_ADDR, TEST_SIZE);
 
-  for(unsigned int i = 0; i < 100; i++){
-  write_value[i] = i+2;
+  int init, bp, go_epoch, epoch_size, done;
+  init = 1;
+  bp = 0;
+  go_epoch = 1;
+  
+  std::cout<<"Initializing Net"<<std::endl;
+
+  board->write(&init, C_INIT_ADDR, 1);
+  board->write(&bp, C_BP_ADDR, 1);
+  board->write(&go_epoch, C_GO_EPOCH_ADDR, 1);
+
+  std::cout<<"Running Net"<<std::endl;
+  
+  done = 0;
+  while(!done){
+  board->read(&done, C_DONE_ADDR, 1);
   }
-  board->write(write_value, MEM_IN_ADDR, 100);
-  cout<<"Wait"<<endl;
 
+  std::cout<<"Finished."<<std::endl<<"Net Output:"<<std::endl;
 
-  board->read(read_value, MEM_IN_ADDR, 100);
-  for(int i = 0; i < 100; i++){
-  cout<<"Item "<<i<<" is "<<read_value[i]<<endl;
+  int output[TEST_SIZE];
+  board->read(output, C_OUTPUT_START_ADDR, 1);
+  
+  for(int i = 0; i < TEST_SIZE; i++){
+  std::cout<<output[i]<<std::endl;
   }
-  for(int i = 2; i < 100; i++){
-  cout<<"Item "<<i<<" is "<<read_value[i]<<endl;
-  }
-  for(int i = 2; i < 100; i++){
-  cout<<"Item "<<2<<" is "<<read_value[2]<<endl;
-  }
-
-  /*if(read_value[0] == 42) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[0] << std::endl;
-
-  if(read_value[1] == 43) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[1] << std::endl;
-
-  if(read_value[2] == 44) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[2] << std::endl;
-
-  if(read_value[3] == 45) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[3] << std::endl;
-
-  if(read_value[4] == 46) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[4] << std::endl;
-
-if(read_value[0] == 42) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[0] << std::endl;
-
-  if(read_value[1] == 43) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[1] << std::endl;
-
-  if(read_value[2] == 44) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[2] << std::endl;
-
-  if(read_value[3] == 45) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[3] << std::endl;
-
-  if(read_value[4] == 46) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[4] << std::endl;
-
-  if(read_value[5] == 100) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[5] << std::endl;
-
-  if(read_value[6] == 100) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[6] << std::endl;
-
-  if(read_value[7] == 100) std::cout<<"Memory Map test success!"<<std::endl;
-  else std::cout << "Memory map failure, read: " << read_value[7] << std::endl;*/
-
-
-
-
 
   return 1;
 }
