@@ -38,13 +38,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="6"/>
-    <Option Name="WTModelSimExportSim" Val="6"/>
-    <Option Name="WTQuestaExportSim" Val="6"/>
-    <Option Name="WTIesExportSim" Val="6"/>
-    <Option Name="WTVcsExportSim" Val="6"/>
-    <Option Name="WTRivieraExportSim" Val="6"/>
-    <Option Name="WTActivehdlExportSim" Val="6"/>
+    <Option Name="WTXSimExportSim" Val="10"/>
+    <Option Name="WTModelSimExportSim" Val="10"/>
+    <Option Name="WTQuestaExportSim" Val="10"/>
+    <Option Name="WTIesExportSim" Val="10"/>
+    <Option Name="WTVcsExportSim" Val="10"/>
+    <Option Name="WTRivieraExportSim" Val="10"/>
+    <Option Name="WTActivehdlExportSim" Val="10"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -60,20 +60,41 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="design_1_rst_ps7_0_100M_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_mem_axi_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_mem_axi_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_mem_axi_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/mem_map.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/config_pkg.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/fixed_pkg_c.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/heap_arr_pkg.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/fixed_float_types_c.vhd"/>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_0/design_1_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hdl/design_1.hwdef"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1.hwh"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mem_axi_0_0/design_1_mem_axi_0_0.xci">
           <Proxy FileSetName="design_1_mem_axi_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hdl/design_1.vhd"/>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1.hwh"/>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hdl/design_1.hwdef"/>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="design_1_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
         <FileInfo>

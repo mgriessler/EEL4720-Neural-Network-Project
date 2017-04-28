@@ -33,7 +33,6 @@ port(
     b_out : buffer array_stdvec(num_outputs-1 downto 0);
     
     initialize : in std_logic;
-    backpropagation : in std_logic;
     clr : in std_logic;
     clk : in std_logic
 );

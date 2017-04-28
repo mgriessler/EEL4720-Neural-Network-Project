@@ -12,29 +12,24 @@
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/design_1/hdl/design_1.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/fixed_float_types_c.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/heap_arr_pkg.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/absfixed.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/sigmablock.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/MAC.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/neuron.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/neural_layer.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/hidden_layer.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/parameter.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/neural_network.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/neural_network_top.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/config_pkg.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/out_ctrl.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/expected_out_splitter.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/ram.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/nn_wrapper.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/addr_gen.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/mem_map.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/controller.vhd" \
-  "../../../bd/design_1/ipshared/4897/src/user_app.vhd" \
-  "../../../bd/design_1/ipshared/4897/hdl/mem_axi_v1_0_S00_AXI.vhd" \
-  "../../../bd/design_1/ipshared/4897/hdl/mem_axi_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/fixed_float_types_c.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/fixed_pkg_c.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/heap_arr_pkg.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/absfixed.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/sigmablock.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/MAC.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/neuron.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/neural_layer.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/hidden_layer.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/neural_network.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/neural_network_top.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/config_pkg.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/nn_wrapper.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/mem_map.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/controller.vhd" \
+  "../../../bd/design_1/ipshared/4265/src/user_app.vhd" \
+  "../../../bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd" \
+  "../../../bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_mem_axi_0_0/sim/design_1_mem_axi_0_0.vhd" \
 -endlib
 -makelib ies/lib_cdc_v1_0_2 \

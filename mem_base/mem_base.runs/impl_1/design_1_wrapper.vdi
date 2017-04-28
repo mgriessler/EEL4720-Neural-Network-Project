@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Apr 28 01:44:55 2017
-# Process ID: 11184
+# Start of session at: Fri Apr 28 06:27:56 2017
+# Process ID: 4832
 # Current directory: C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper.vdi
@@ -16,7 +16,7 @@ INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Matthew/Documents/git/
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 6326 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2381 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z020clg484-1
@@ -34,7 +34,7 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 595.199 ; gain = 384.871
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 523.344 ; gain = 313.473
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -45,83 +45,65 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 605.254 ; gain = 10.055
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 534.727 ; gain = 11.383
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 18c97b7c0
+Implement Debug Cores | Checksum: 19887dc01
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 133a3fbaf
+Phase 1 Retarget | Checksum: 19655846b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1163.254 ; gain = 0.957
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1043.543 ; gain = 0.023
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 12 cells.
-Phase 2 Constant propagation | Checksum: 1c938d8f3
+Phase 2 Constant propagation | Checksum: 17b4f532c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1163.254 ; gain = 0.957
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1043.543 ; gain = 0.023
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 19880 unconnected nets.
-INFO: [Opt 31-11] Eliminated 245 unconnected cells.
-Phase 3 Sweep | Checksum: 14a4b1272
+INFO: [Opt 31-12] Eliminated 7129 unconnected nets.
+INFO: [Opt 31-11] Eliminated 217 unconnected cells.
+Phase 3 Sweep | Checksum: 225149f5b
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1163.254 ; gain = 0.957
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1043.543 ; gain = 0.023
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 1b4da80b5
+Phase 4 BUFG optimization | Checksum: 1ae43d773
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.254 ; gain = 0.957
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1043.543 ; gain = 0.023
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1163.254 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1b4da80b5
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1043.543 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1ae43d773
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.254 ; gain = 0.957
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1043.543 ; gain = 0.023
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
+Ending Power Optimization Task | Checksum: 1ae43d773
 
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 7 Total Ports: 14
-Number of Flops added for Enable Generation: 6
-
-Ending PowerOpt Patch Enables Task | Checksum: 2622186fa
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 2622186fa
-
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1362.309 ; gain = 199.055
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1043.543 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-34 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:59 . Memory (MB): peak = 1362.309 ; gain = 767.109
+opt_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1043.543 ; gain = 520.199
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1043.543 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.309 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_drc_opted.rpt.
-report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.309 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1043.543 ; gain = 0.000
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
 or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
@@ -133,123 +115,94 @@ INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[10] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][6]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[11] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][7]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[12] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][8]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[13] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][9]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[4] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][0]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[5] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][1]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[6] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][2]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[7] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][3]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[8] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][4]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ADDRBWRADDR[9] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/addr_reg[9][5]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ENBWREN (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg_ENBWREN_cooolgate_en_sig_5) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_CNTRL/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ENBWREN (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg_ENBWREN_cooolgate_en_sig_5) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_CNTRL/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ENBWREN (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg_ENBWREN_cooolgate_en_sig_5) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_CNTRL/state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg/ENBWREN (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg_ENBWREN_cooolgate_en_sig_5) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_CNTRL/state_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[10] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][6]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[11] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][7]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[12] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][8]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[13] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][9]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[8] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][4]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg has an input control pin design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg/ADDRBWRADDR[9] (net: design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/addr_reg[9][5]) which is driven by a register (design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_IN_MEMS_ADDR_GEN/addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1362.309 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1043.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1043.543 ; gain = 0.000
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
-WARNING: [Place 30-568] A LUT 'design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_CNTRL/state[31]_P_i_1' is driving clock pin of 32 registers. This could lead to large hold time violations. First few involved registers are:
-	design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/state_reg[0]_P {FDPE}
-	design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/state_reg[10]_P {FDPE}
-	design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/state_reg[11]_P {FDPE}
-	design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/state_reg[12]_P {FDPE}
-	design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/state_reg[13]_P {FDPE}
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f2409b98
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b597bce0
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1067.063 ; gain = 23.520
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 6e13d522
+Phase 1.2 Build Placer Netlist Model | Checksum: 189707b54
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:47 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 6e13d522
+Phase 1.3 Constrain Clocks/Macros | Checksum: 189707b54
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:47 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 6e13d522
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1073.266 ; gain = 29.723
+Phase 1 Placer Initialization | Checksum: 189707b54
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:47 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 101bdb5b2
+Phase 2 Global Placement | Checksum: 1f51dc680
 
-Time (s): cpu = 00:03:09 ; elapsed = 00:02:21 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:52 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 101bdb5b2
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f51dc680
 
-Time (s): cpu = 00:03:11 ; elapsed = 00:02:22 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12a8d3e3e
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1ede74424
 
-Time (s): cpu = 00:03:48 ; elapsed = 00:02:55 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:08 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 5c8f55c0
+Phase 3.3 Area Swap Optimization | Checksum: 1d24d1f3f
 
-Time (s): cpu = 00:03:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:08 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 5c8f55c0
+Phase 3.4 Pipeline Register Optimization | Checksum: 1d24d1f3f
 
-Time (s): cpu = 00:03:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:08 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 99ad07af
+Phase 3.5 Timing Path Optimizer | Checksum: 1d5e04b44
 
-Time (s): cpu = 00:03:53 ; elapsed = 00:02:59 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:09 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 102b9e020
+Phase 3.6 Fast Optimization | Checksum: 1d7dfb4f3
 
-Time (s): cpu = 00:04:01 ; elapsed = 00:03:06 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:15 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 13ea57035
+Phase 3.7 Small Shape Detail Placement | Checksum: 23168a755
 
-Time (s): cpu = 00:04:08 ; elapsed = 00:03:13 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:19 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 69c81727
+Phase 3.8 Re-assign LUT pins | Checksum: 2142b9810
 
-Time (s): cpu = 00:04:11 ; elapsed = 00:03:16 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:20 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 69c81727
+Phase 3.9 Pipeline Register Optimization | Checksum: 2142b9810
 
-Time (s): cpu = 00:04:12 ; elapsed = 00:03:17 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:20 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 7ee11a99
+Phase 3.10 Fast Optimization | Checksum: 1c51bef01
 
-Time (s): cpu = 00:04:27 ; elapsed = 00:03:29 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 7ee11a99
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:25 . Memory (MB): peak = 1073.266 ; gain = 29.723
+Phase 3 Detail Placement | Checksum: 1c51bef01
 
-Time (s): cpu = 00:04:28 ; elapsed = 00:03:30 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:26 . Memory (MB): peak = 1073.266 ; gain = 29.723
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -257,48 +210,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-197.246. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 250511542
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-134.187. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1ee91c2d2
 
-Time (s): cpu = 00:06:37 ; elapsed = 00:05:09 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 250511542
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:55 . Memory (MB): peak = 1110.891 ; gain = 67.348
+Phase 4.1 Post Commit Optimization | Checksum: 1ee91c2d2
 
-Time (s): cpu = 00:06:38 ; elapsed = 00:05:10 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:55 . Memory (MB): peak = 1110.891 ; gain = 67.348
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 250511542
+Phase 4.2 Post Placement Cleanup | Checksum: 1ee91c2d2
 
-Time (s): cpu = 00:06:39 ; elapsed = 00:05:11 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:56 . Memory (MB): peak = 1110.891 ; gain = 67.348
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 250511542
+Phase 4.3 Placer Reporting | Checksum: 1ee91c2d2
 
-Time (s): cpu = 00:06:40 ; elapsed = 00:05:11 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:56 . Memory (MB): peak = 1110.891 ; gain = 67.348
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 291828439
+Phase 4.4 Final Placement Cleanup | Checksum: 1698a15a6
 
-Time (s): cpu = 00:06:40 ; elapsed = 00:05:12 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 291828439
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:56 . Memory (MB): peak = 1110.891 ; gain = 67.348
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1698a15a6
 
-Time (s): cpu = 00:06:40 ; elapsed = 00:05:12 . Memory (MB): peak = 1362.309 ; gain = 0.000
-Ending Placer Task | Checksum: 192719eb4
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:56 . Memory (MB): peak = 1110.891 ; gain = 67.348
+Ending Placer Task | Checksum: ac64b0c3
 
-Time (s): cpu = 00:06:41 ; elapsed = 00:05:12 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:56 . Memory (MB): peak = 1110.891 ; gain = 67.348
 INFO: [Common 17-83] Releasing license: Implementation
-52 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:06:52 ; elapsed = 00:05:18 . Memory (MB): peak = 1362.309 ; gain = 0.000
+place_design: Time (s): cpu = 00:02:22 ; elapsed = 00:02:00 . Memory (MB): peak = 1110.891 ; gain = 67.348
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 1362.309 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1110.891 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 1362.309 ; gain = 0.000
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1362.309 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.300 . Memory (MB): peak = 1362.309 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1362.309 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1110.891 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1110.891 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1110.891 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -310,154 +262,187 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: fb699501 ConstDB: 0 ShapeSum: 970809b3 RouteDB: 0
+Checksum: PlaceDB: aa669545 ConstDB: 0 ShapeSum: 1fe1b7e RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: f755ffb0
+Phase 1 Build RT Design | Checksum: 9c77a124
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:42 . Memory (MB): peak = 1397.719 ; gain = 35.410
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1230.281 ; gain = 119.020
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: f755ffb0
+Phase 2.1 Create Timer | Checksum: 9c77a124
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:44 . Memory (MB): peak = 1398.207 ; gain = 35.898
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:41 . Memory (MB): peak = 1230.281 ; gain = 119.020
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: f755ffb0
+Phase 2.2 Fix Topology Constraints | Checksum: 9c77a124
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1398.973 ; gain = 36.664
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:41 . Memory (MB): peak = 1230.281 ; gain = 119.020
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: f755ffb0
+Phase 2.3 Pre Route Cleanup | Checksum: 9c77a124
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:45 . Memory (MB): peak = 1398.973 ; gain = 36.664
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:41 . Memory (MB): peak = 1230.281 ; gain = 119.020
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1cf149420
+Phase 2.4 Update Timing | Checksum: 1583594b4
 
-Time (s): cpu = 00:01:34 ; elapsed = 00:01:05 . Memory (MB): peak = 1481.320 ; gain = 119.012
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-192.320| TNS=-196410.031| WHS=-0.246 | THS=-19.667|
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:48 . Memory (MB): peak = 1240.547 ; gain = 129.285
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-130.434| TNS=-18945.896| WHS=-0.194 | THS=-15.290|
 
-Phase 2 Router Initialization | Checksum: 1f0ae9b4c
+Phase 2 Router Initialization | Checksum: 1616dfbaf
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:16 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:50 . Memory (MB): peak = 1249.551 ; gain = 138.289
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1af4ad4a4
+Phase 3 Initial Routing | Checksum: 1bc69c606
 
-Time (s): cpu = 00:02:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:58 . Memory (MB): peak = 1249.551 ; gain = 138.289
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 6988
- Number of Nodes with overlaps = 980
- Number of Nodes with overlaps = 130
- Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 3123
+ Number of Nodes with overlaps = 483
+ Number of Nodes with overlaps = 88
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 8
  Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 164e81f59
+Phase 4.1.1 Update Timing | Checksum: 22a9b84a1
 
-Time (s): cpu = 00:04:06 ; elapsed = 00:02:31 . Memory (MB): peak = 1527.750 ; gain = 165.441
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-216.210| TNS=-232043.281| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:24 . Memory (MB): peak = 1249.551 ; gain = 138.289
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-138.752| TNS=-20102.715| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.2 GlobIterForTiming
 
 Phase 4.1.2.1 Update Timing
-Phase 4.1.2.1 Update Timing | Checksum: 1742fa877
+Phase 4.1.2.1 Update Timing | Checksum: 10d6e6c32
 
-Time (s): cpu = 00:04:09 ; elapsed = 00:02:33 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:26 . Memory (MB): peak = 1249.551 ; gain = 138.289
 
 Phase 4.1.2.2 Fast Budgeting
-Phase 4.1.2.2 Fast Budgeting | Checksum: 1ac7ad369
+Phase 4.1.2.2 Fast Budgeting | Checksum: 10d7e0ea2
 
-Time (s): cpu = 00:04:13 ; elapsed = 00:02:37 . Memory (MB): peak = 1527.750 ; gain = 165.441
-Phase 4.1.2 GlobIterForTiming | Checksum: 1ab93ced2
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:27 . Memory (MB): peak = 1249.551 ; gain = 138.289
+Phase 4.1.2 GlobIterForTiming | Checksum: 224243766
 
-Time (s): cpu = 00:04:14 ; elapsed = 00:02:38 . Memory (MB): peak = 1527.750 ; gain = 165.441
-Phase 4.1 Global Iteration 0 | Checksum: 1ab93ced2
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:27 . Memory (MB): peak = 1249.551 ; gain = 138.289
+Phase 4.1 Global Iteration 0 | Checksum: 224243766
 
-Time (s): cpu = 00:04:14 ; elapsed = 00:02:38 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:27 . Memory (MB): peak = 1249.551 ; gain = 138.289
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 635
- Number of Nodes with overlaps = 412
- Number of Nodes with overlaps = 115
- Number of Nodes with overlaps = 52
- Number of Nodes with overlaps = 23
- Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 205
+ Number of Nodes with overlaps = 90
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 22
  Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 12
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: df031890
+Phase 4.2.1 Update Timing | Checksum: 1e61c0043
 
-Time (s): cpu = 00:05:07 ; elapsed = 00:03:14 . Memory (MB): peak = 1527.750 ; gain = 165.441
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-216.563| TNS=-232181.375| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:41 . Memory (MB): peak = 1249.551 ; gain = 138.289
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-138.340| TNS=-20084.084| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 127d22eb4
 
-Time (s): cpu = 00:05:07 ; elapsed = 00:03:14 . Memory (MB): peak = 1527.750 ; gain = 165.441
-Phase 4 Rip-up And Reroute | Checksum: 127d22eb4
+Phase 4.2.2 GlobIterForTiming
 
-Time (s): cpu = 00:05:08 ; elapsed = 00:03:15 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 17f18b1cf
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:41 . Memory (MB): peak = 1249.551 ; gain = 138.289
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 204918cac
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:42 . Memory (MB): peak = 1249.551 ; gain = 138.289
+Phase 4.2.2 GlobIterForTiming | Checksum: aec96a6e
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:43 . Memory (MB): peak = 1249.551 ; gain = 138.289
+Phase 4.2 Global Iteration 1 | Checksum: aec96a6e
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:43 . Memory (MB): peak = 1249.551 ; gain = 138.289
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 234
+ Number of Nodes with overlaps = 74
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 1f3673416
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1249.551 ; gain = 138.289
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-138.356| TNS=-20078.115| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 237b4e8b3
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1249.551 ; gain = 138.289
+Phase 4 Rip-up And Reroute | Checksum: 237b4e8b3
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1249.551 ; gain = 138.289
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 123ce3ba1
+Phase 5.1.1 Update Timing | Checksum: 23b3c22e8
 
-Time (s): cpu = 00:05:13 ; elapsed = 00:03:18 . Memory (MB): peak = 1527.750 ; gain = 165.441
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-216.210| TNS=-231976.172| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:53 . Memory (MB): peak = 1249.551 ; gain = 138.289
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-138.340| TNS=-20081.100| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: cdaf9fab
+Phase 5.1 Delay CleanUp | Checksum: 15d0a54f0
 
-Time (s): cpu = 00:05:20 ; elapsed = 00:03:22 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:59 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: cdaf9fab
+Phase 5.2 Clock Skew Optimization | Checksum: 15d0a54f0
 
-Time (s): cpu = 00:05:20 ; elapsed = 00:03:22 . Memory (MB): peak = 1527.750 ; gain = 165.441
-Phase 5 Delay and Skew Optimization | Checksum: cdaf9fab
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:59 . Memory (MB): peak = 1263.270 ; gain = 152.008
+Phase 5 Delay and Skew Optimization | Checksum: 15d0a54f0
 
-Time (s): cpu = 00:05:20 ; elapsed = 00:03:23 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:53 ; elapsed = 00:02:00 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1268d9b62
+Phase 6.1.1 Update Timing | Checksum: 19a1061a4
 
-Time (s): cpu = 00:05:26 ; elapsed = 00:03:26 . Memory (MB): peak = 1527.750 ; gain = 165.441
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-216.102| TNS=-231926.188| WHS=0.040  | THS=0.000  |
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.270 ; gain = 152.008
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-138.260| TNS=-20072.895| WHS=0.036  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 11cc02815
+Phase 6.1 Hold Fix Iter | Checksum: 19cb0f674
 
-Time (s): cpu = 00:05:26 ; elapsed = 00:03:27 . Memory (MB): peak = 1527.750 ; gain = 165.441
-Phase 6 Post Hold Fix | Checksum: 11cc02815
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.270 ; gain = 152.008
+Phase 6 Post Hold Fix | Checksum: 19cb0f674
 
-Time (s): cpu = 00:05:26 ; elapsed = 00:03:27 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 13.5133 %
-  Global Horizontal Routing Utilization  = 16.7999 %
+  Global Vertical Routing Utilization    = 4.07621 %
+  Global Horizontal Routing Utilization  = 5.12965 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -467,183 +452,141 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 91.8919%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_L_X64Y34 -> INT_L_X64Y34
-South Dir 1x1 Area, Max Cong = 87.3874%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_R_X59Y30 -> INT_R_X59Y30
-East Dir 1x1 Area, Max Cong = 82.3529%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_R_X59Y48 -> INT_R_X59Y48
-   INT_R_X59Y45 -> INT_R_X59Y45
-Phase 7 Route finalize | Checksum: 6f4fe67e
+North Dir 1x1 Area, Max Cong = 61.2613%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 80.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 12cddb692
 
-Time (s): cpu = 00:05:27 ; elapsed = 00:03:27 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 6f4fe67e
+Phase 8 Verifying routed nets | Checksum: 12cddb692
 
-Time (s): cpu = 00:05:27 ; elapsed = 00:03:27 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 14201067d
+Phase 9 Depositing Routes | Checksum: c70d7f5c
 
-Time (s): cpu = 00:05:32 ; elapsed = 00:03:32 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:57 ; elapsed = 00:02:03 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-216.102| TNS=-231926.188| WHS=0.040  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-138.260| TNS=-20072.895| WHS=0.036  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 14201067d
+Phase 10 Post Router Timing | Checksum: c70d7f5c
 
-Time (s): cpu = 00:05:32 ; elapsed = 00:03:33 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:57 ; elapsed = 00:02:03 . Memory (MB): peak = 1263.270 ; gain = 152.008
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:05:37 ; elapsed = 00:03:36 . Memory (MB): peak = 1527.750 ; gain = 165.441
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:04 . Memory (MB): peak = 1263.270 ; gain = 152.008
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-66 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+60 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:05:48 ; elapsed = 00:03:42 . Memory (MB): peak = 1527.750 ; gain = 165.441
+route_design: Time (s): cpu = 00:03:04 ; elapsed = 00:02:07 . Memory (MB): peak = 1263.270 ; gain = 152.379
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:30 ; elapsed = 00:00:11 . Memory (MB): peak = 1527.750 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 1263.270 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 1527.750 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_drc_routed.rpt.
-report_drc: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 1527.750 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1263.270 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
-report_methodology: Time (s): cpu = 00:01:26 ; elapsed = 00:01:10 . Memory (MB): peak = 1527.750 ; gain = 0.000
+report_methodology: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1263.270 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-report_timing_summary: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1527.750 ; gain = 0.000
 Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
-Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-76 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
+70 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1560.223 ; gain = 32.473
 Command: write_bitstream -force -no_partial_bitfile design_1_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
 INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/sig/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/sig/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/sig/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__10 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__10__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__10__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__11 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__11__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__11__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__12__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__13__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__14 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__14__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__14__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__15 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__15/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__15__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__15__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__16__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__17 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__17/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__17__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__17__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__18 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__18/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__18__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__18__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__19__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__1__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__20 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__20__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__20__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__21 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__21__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__21__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__22__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__23 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__23__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__23__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__24 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__24/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__24__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__24__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__25__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__26__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__27 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__27/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__27__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__27__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__28 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__28/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__28__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__28__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__29__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__2__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/par/arg__2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1232 Warnings
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2 input design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2 output design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[0].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[1].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[2].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/hid_layer/GEN2[3].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[0].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[1].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2 multiplier stage design_1_i/mem_axi_0/U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_NN_WRAPPER/nn/neu/out_layer/GEN2[2].neu/MC/arg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 68 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -654,9 +597,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Apr 28 01:58:55 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Apr 28 06:34:18 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-85 Infos, 124 Warnings, 1 Critical Warnings and 0 Errors encountered.
+78 Infos, 69 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:01:05 ; elapsed = 00:00:59 . Memory (MB): peak = 1993.887 ; gain = 433.664
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 28 01:58:56 2017...
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 1674.168 ; gain = 387.656
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 28 06:34:18 2017...

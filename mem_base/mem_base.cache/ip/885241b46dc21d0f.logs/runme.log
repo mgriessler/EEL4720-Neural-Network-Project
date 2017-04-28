@@ -1,0 +1,679 @@
+
+*** Running vivado
+    with args -log design_1_mem_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mem_axi_0_0.tcl
+
+The system cannot find the file specified.
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_mem_axi_0_0.tcl -notrace
+Command: synth_design -top design_1_mem_axi_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13060 
+The system cannot find the file specified.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 291.477 ; gain = 81.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_mem_axi_0_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mem_axi_v1_0' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:5' bound to instance 'U0' of component 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mem_axi_v1_0_S00_AXI' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:5' bound to instance 'mem_axi_v1_0_S00_AXI_inst' of component 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'user_app' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:10' bound to instance 'U_USER_APP' of component 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'mem_map' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/mem_map.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/mem_map.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'controller' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:30]
+WARNING: [Synth 8-614] signal 'epoch_size' is read in the process but is not in the sensitivity list [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'nn_wrapper' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:38]
+INFO: [Synth 8-3491] module 'neural_network_top' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:10' bound to instance 'nn' of component 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:90]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_network' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:35]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_hid bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'hidden_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:19]
+	Parameter input_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MAC' (3#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:19]
+INFO: [Synth 8-3491] module 'sigmablock' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:19]
+INFO: [Synth 8-3491] module 'absfixed' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'absfixed' (4#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sigmablock' (5#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (6#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:23]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (7#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'neural_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:25]
+	Parameter num_inputs bound to: 4 - type: integer 
+	Parameter num_outputs bound to: 3 - type: integer 
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
+	Parameter in_size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'neural_layer' (8#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:25]
+WARNING: [Synth 8-5787] Register state_reg in module neural_network is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (9#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (10#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'nn_wrapper' (11#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'user_app' (12#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0_S00_AXI' (13#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0' (14#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mem_axi_0_0' (15#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port initialize
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port clr
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 332.781 ; gain = 122.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 332.781 ; gain = 122.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.402 . Memory (MB): peak = 655.594 ; gain = 4.133
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reg_go" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_epoch_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_bp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_init" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "iterations" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "in_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 655.594 ; gain = 445.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |neuron                    |           7|     16639|
+|2     |neural_network__GC0       |           1|      1816|
+|3     |neural_network_top__GC0   |           1|       357|
+|4     |user_app__GC0             |           1|      3195|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        86|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 7     
+	   2 Input     52 Bit       Adders := 14    
+	   2 Input     50 Bit       Adders := 14    
+	   2 Input     49 Bit       Adders := 7     
+	   2 Input     34 Bit       Adders := 7     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 42    
+	   4 Input     16 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 15    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 7     
+	   2 Input     52 Bit        Muxes := 14    
+	   2 Input     50 Bit        Muxes := 14    
+	   2 Input     49 Bit        Muxes := 14    
+	   2 Input     34 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 196   
+	   3 Input     16 Bit        Muxes := 21    
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+	  15 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 1     
+Module absfixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sigmablock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     52 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 2     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 2     
+	   2 Input     50 Bit        Muxes := 2     
+	   2 Input     49 Bit        Muxes := 2     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module neuron 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module neural_network 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module neural_network_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module mem_map 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 8     
+Module controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 5     
+Module mem_axi_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/fixed_pkg_c.vhd:2418]
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
+DSP Report: operator MC/arg is absorbed into DSP MC/arg.
+INFO: [Synth 8-5545] ROM "O80" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "in_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_araddr[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_araddr[0]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[30]' (FD_1) to 'neui_0/state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[31]' (FD_1) to 'neui_0/state_reg[29]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[29]' (FD_1) to 'neui_0/state_reg[28]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[28]' (FD_1) to 'neui_0/state_reg[27]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[27]' (FD_1) to 'neui_0/state_reg[26]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[26]' (FD_1) to 'neui_0/state_reg[25]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[25]' (FD_1) to 'neui_0/state_reg[24]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[24]' (FD_1) to 'neui_0/state_reg[23]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[23]' (FD_1) to 'neui_0/state_reg[22]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[22]' (FD_1) to 'neui_0/state_reg[21]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[21]' (FD_1) to 'neui_0/state_reg[20]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[20]' (FD_1) to 'neui_0/state_reg[19]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[19]' (FD_1) to 'neui_0/state_reg[18]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[18]' (FD_1) to 'neui_0/state_reg[17]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[17]' (FD_1) to 'neui_0/state_reg[16]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[16]' (FD_1) to 'neui_0/state_reg[15]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[15]' (FD_1) to 'neui_0/state_reg[14]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[14]' (FD_1) to 'neui_0/state_reg[13]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[13]' (FD_1) to 'neui_0/state_reg[12]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[12]' (FD_1) to 'neui_0/state_reg[11]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[11]' (FD_1) to 'neui_0/state_reg[10]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[10]' (FD_1) to 'neui_0/state_reg[9]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[9]' (FD_1) to 'neui_0/state_reg[8]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[8]' (FD_1) to 'neui_0/state_reg[7]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[7]' (FD_1) to 'neui_0/state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[6]' (FD_1) to 'neui_0/state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[5]' (FD_1) to 'neui_0/state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[4]' (FD_1) to 'neui_0/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[3]' (FD_1) to 'neui_0/state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[2]' (FD_1) to 'neui_0/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[0]' (FD_1) to 'neui_0/state_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (neui_0/\state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[1]' (FDCE) to 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[2]' (FDCE) to 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_USER_APPi_2/\U_MEM_MAP/rd_data_sel_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_3/axi_rresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_3/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_3/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_3/axi_bresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_3/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_3/\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 655.594 ; gain = 445.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sigmablock  | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |neuron                    |           1|      3150|
+|2     |neural_network__GC0       |           1|       176|
+|3     |neural_network_top__GC0   |           1|       285|
+|4     |user_app__GC0             |           1|       705|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|6     |neuron__1                 |           1|      3142|
+|7     |neuron__2                 |           1|      3145|
+|8     |neuron__3                 |           1|      3143|
+|9     |neuron__4                 |           1|      3146|
+|10    |neuron__5                 |           1|      3150|
+|11    |neuron__6                 |           1|      3142|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 680.215 ; gain = 469.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 680.215 ; gain = 469.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |neuron                    |           1|      3150|
+|2     |neural_network__GC0       |           1|       176|
+|3     |neural_network_top__GC0   |           1|       285|
+|4     |user_app__GC0             |           1|       705|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|6     |neuron__1                 |           1|      3142|
+|7     |neuron__2                 |           1|      3145|
+|8     |neuron__3                 |           1|      3143|
+|9     |neuron__4                 |           1|      3146|
+|10    |neuron__5                 |           1|      3150|
+|11    |neuron__6                 |           1|      3142|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:39 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:40 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |  2335|
+|2     |DSP48E1   |    12|
+|3     |DSP48E1_1 |    16|
+|4     |LUT1      |   650|
+|5     |LUT2      |   841|
+|6     |LUT3      |   903|
+|7     |LUT4      |   845|
+|8     |LUT5      |  6400|
+|9     |LUT6      |   706|
+|10    |MUXF7     |    15|
+|11    |FDCE      |   167|
+|12    |FDRE      |   132|
+|13    |FDSE      |    35|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     | 13057|
+|2     |  U0                          |mem_axi_v1_0         | 13029|
+|3     |    mem_axi_v1_0_S00_AXI_inst |mem_axi_v1_0_S00_AXI | 13029|
+|4     |      U_USER_APP              |user_app             | 12968|
+|5     |        U_CNTRL               |controller           |   117|
+|6     |        U_MEM_MAP             |mem_map              |   205|
+|7     |        U_NN_WRAPPER          |nn_wrapper           | 12646|
+|8     |          nn                  |neural_network_top   | 12646|
+|9     |            neu               |neural_network       | 12646|
+|10    |              hid_layer       |hidden_layer         |  7023|
+|11    |                \GEN2[0].neu  |neuron_6             |  1757|
+|12    |                  MC          |MAC_16               |   236|
+|13    |                  sig         |sigmablock_17        |  1521|
+|14    |                \GEN2[1].neu  |neuron_7             |  1757|
+|15    |                  MC          |MAC_14               |   236|
+|16    |                  sig         |sigmablock_15        |  1521|
+|17    |                \GEN2[2].neu  |neuron_8             |  1757|
+|18    |                  MC          |MAC_12               |   236|
+|19    |                  sig         |sigmablock_13        |  1521|
+|20    |                \GEN2[3].neu  |neuron_9             |  1752|
+|21    |                  MC          |MAC_10               |   239|
+|22    |                  sig         |sigmablock_11        |  1513|
+|23    |              out_layer       |neural_layer         |  5264|
+|24    |                \GEN2[0].neu  |neuron               |  1752|
+|25    |                  MC          |MAC_4                |   239|
+|26    |                  sig         |sigmablock_5         |  1513|
+|27    |                \GEN2[1].neu  |neuron_0             |  1757|
+|28    |                  MC          |MAC_2                |   236|
+|29    |                  sig         |sigmablock_3         |  1521|
+|30    |                \GEN2[2].neu  |neuron_1             |  1755|
+|31    |                  MC          |MAC                  |   238|
+|32    |                  sig         |sigmablock           |  1517|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:26 . Memory (MB): peak = 771.375 ; gain = 232.309
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:47 . Memory (MB): peak = 771.375 ; gain = 561.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2363 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+111 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 771.375 ; gain = 555.121
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/design_1_mem_axi_0_0_synth_1/design_1_mem_axi_0_0.dcp' has been generated.

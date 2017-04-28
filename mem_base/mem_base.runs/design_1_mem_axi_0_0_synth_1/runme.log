@@ -15,125 +15,158 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6724 
+INFO: Helper process launched with PID 13060 
 The system cannot find the file specified.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 292.363 ; gain = 82.191
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 291.477 ; gain = 81.215
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-1565] actual for formal port pipeline is neither a static name nor a globally static expression [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:266]
 INFO: [Synth 8-638] synthesizing module 'design_1_mem_axi_0_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'mem_axi_v1_0' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0.vhd:5' bound to instance 'U0' of component 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'mem_axi_v1_0' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:5' bound to instance 'U0' of component 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:49]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 20 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'mem_axi_v1_0_S00_AXI' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0_S00_AXI.vhd:5' bound to instance 'mem_axi_v1_0_S00_AXI_inst' of component 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-3491] module 'mem_axi_v1_0_S00_AXI' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:5' bound to instance 'mem_axi_v1_0_S00_AXI_inst' of component 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mem_axi_v1_0_S00_AXI' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'user_app' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/user_app.vhd:10' bound to instance 'U_USER_APP' of component 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0_S00_AXI.vhd:333]
-INFO: [Synth 8-638] synthesizing module 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/user_app.vhd:25]
-INFO: [Synth 8-638] synthesizing module 'mem_map' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/mem_map.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/mem_map.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'ram_sync_read' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/ram.vhd:117]
-	Parameter num_words bound to: 1024 - type: integer 
-	Parameter word_width bound to: 16 - type: integer 
-	Parameter addr_width bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ram_sync_read' (2#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/ram.vhd:117]
-INFO: [Synth 8-638] synthesizing module 'addr_gen' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/addr_gen.vhd:18]
-	Parameter ADDR_WIDTH bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'addr_gen' (3#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/addr_gen.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'controller' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/controller.vhd:30]
-WARNING: [Synth 8-614] signal 'epoch_size' is read in the process but is not in the sensitivity list [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/controller.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/controller.vhd:30]
-INFO: [Synth 8-638] synthesizing module 'out_ctrl' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/out_ctrl.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'out_ctrl' (5#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/out_ctrl.vhd:17]
-INFO: [Synth 8-638] synthesizing module 'nn_wrapper' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/nn_wrapper.vhd:39]
-INFO: [Synth 8-3491] module 'neural_network_top' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:10' bound to instance 'nn' of component 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/nn_wrapper.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:91]
+INFO: [Synth 8-3491] module 'user_app' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:10' bound to instance 'U_USER_APP' of component 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'user_app' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'mem_map' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/mem_map.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'mem_map' (1#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/mem_map.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'controller' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:30]
+WARNING: [Synth 8-614] signal 'epoch_size' is read in the process but is not in the sensitivity list [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/controller.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'nn_wrapper' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:38]
+INFO: [Synth 8-3491] module 'neural_network_top' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:10' bound to instance 'nn' of component 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'neural_network_top' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:90]
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_hid bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'parameters' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:10' bound to instance 'par' of component 'parameters' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:227]
-INFO: [Synth 8-638] synthesizing module 'parameters' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:42]
-	Parameter num_inputs bound to: 4 - type: integer 
-	Parameter num_hid bound to: 4 - type: integer 
-	Parameter num_outputs bound to: 3 - type: integer 
-	Parameter input_size bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:19]
-	Parameter input_size bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MAC' (6#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:19]
-	Parameter input_size bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:72]
-	Parameter input_size bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:72]
-	Parameter input_size bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:72]
-WARNING: [Synth 8-5787] Register state_reg in module parameters is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'parameters' (7#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:42]
-	Parameter num_inputs bound to: 4 - type: integer 
-	Parameter num_hid bound to: 4 - type: integer 
-	Parameter num_outputs bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'neural_network' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:253]
-INFO: [Synth 8-638] synthesizing module 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network.vhd:35]
+INFO: [Synth 8-3491] module 'neural_network' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:10' bound to instance 'neu' of component 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:35]
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_hid bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 3 - type: integer 
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'hidden_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:25]
+INFO: [Synth 8-3491] module 'hidden_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:10' bound to instance 'hid_layer' of component 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'hidden_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:25]
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 4 - type: integer 
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:23]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:23]
 	Parameter in_size bound to: 4 - type: integer 
 	Parameter input_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:45]
-INFO: [Synth 8-638] synthesizing module 'MAC__parameterized4' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:19]
+INFO: [Synth 8-3491] module 'MAC' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:10' bound to instance 'MC' of component 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MAC' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:19]
 	Parameter input_size bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MAC__parameterized4' (7#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/MAC.vhd:19]
-INFO: [Synth 8-3491] module 'sigmablock' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/sigmablock.vhd:19]
-INFO: [Synth 8-3491] module 'absfixed' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/sigmablock.vhd:30]
-INFO: [Synth 8-638] synthesizing module 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/absfixed.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'absfixed' (8#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/absfixed.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'sigmablock' (9#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/sigmablock.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'neuron' (10#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'MAC' (3#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/MAC.vhd:19]
+INFO: [Synth 8-3491] module 'sigmablock' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:11' bound to instance 'sig' of component 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sigmablock' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:19]
+INFO: [Synth 8-3491] module 'absfixed' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:11' bound to instance 'abso' of component 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'absfixed' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'absfixed' (4#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/absfixed.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sigmablock' (5#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/sigmablock.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'neuron' (6#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:23]
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:42]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:42]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (11#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/hidden_layer.vhd:25]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'hidden_layer' (7#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/hidden_layer.vhd:25]
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'neural_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:25]
+INFO: [Synth 8-3491] module 'neural_layer' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:10' bound to instance 'out_layer' of component 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'neural_layer' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:25]
 	Parameter num_inputs bound to: 4 - type: integer 
 	Parameter num_outputs bound to: 3 - type: integer 
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:42]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:42]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
 	Parameter in_size bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'neural_layer' (12#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_layer.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'neural_network' (13#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (14#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/neural_network_top.vhd:91]
-INFO: [Synth 8-256] done synthesizing module 'nn_wrapper' (15#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/nn_wrapper.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'expected_out_splitter' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/expected_out_splitter.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'expected_out_splitter' (16#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/expected_out_splitter.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'user_app' (17#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/user_app.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0_S00_AXI' (18#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0' (19#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/hdl/mem_axi_v1_0.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'design_1_mem_axi_0_0' (20#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'neuron' declared at 'c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neuron.vhd:10' bound to instance 'neu' of component 'neuron' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'neural_layer' (8#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_layer.vhd:25]
+WARNING: [Synth 8-5787] Register state_reg in module neural_network is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (9#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_top' (10#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/neural_network_top.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'nn_wrapper' (11#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/nn_wrapper.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'user_app' (12#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/user_app.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0_S00_AXI' (13#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'mem_axi_v1_0' (14#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/hdl/mem_axi_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mem_axi_0_0' (15#1) [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/synth/design_1_mem_axi_0_0.vhd:85]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_0[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_1[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port y_2[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[15]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[14]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[13]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[12]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[11]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[10]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[9]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[8]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[7]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[6]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[5]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[4]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[3]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[2]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[1]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port n[0]
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port initialize
+WARNING: [Synth 8-3331] design neural_network_top has unconnected port clr
 WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -147,7 +180,7 @@ WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_A
 WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design mem_axi_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 386.254 ; gain = 176.082
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 332.781 ; gain = 122.520
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -157,7 +190,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 386.254 ; gain = 176.082
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 332.781 ; gain = 122.520
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -169,54 +202,46 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.555 . Memory (MB): peak = 700.324 ; gain = 6.211
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.402 . Memory (MB): peak = 655.594 ; gain = 4.133
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 700.324 ; gain = 490.152
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 700.324 ; gain = 490.152
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 700.324 ; gain = 490.152
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 655.594 ; gain = 445.332
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "reg_go" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_epoch_size" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_bp" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_init" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_input_3" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "iterations" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "weights_out[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "in_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "out_vector[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "new_output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "expected_output_0" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'expected_output_0_reg' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/expected_out_splitter.vhd:22]
-WARNING: [Synth 8-327] inferring latch for variable 'expected_output_1_reg' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/expected_out_splitter.vhd:23]
-WARNING: [Synth 8-327] inferring latch for variable 'expected_output_2_reg' [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/expected_out_splitter.vhd:24]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 700.324 ; gain = 490.152
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 655.594 ; gain = 445.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------------------+------------+----------+
 |      |RTL Partition             |Replication |Instances |
 +------+--------------------------+------------+----------+
-|1     |parameters__GB0           |           1|     26981|
-|2     |parameters__GB1           |           1|      4906|
-|3     |neuron                    |           7|     16639|
-|4     |neural_network__GC0       |           1|      1778|
-|5     |neural_network_top__GC0   |           1|       358|
-|6     |user_app__GC0             |           1|      3274|
-|7     |mem_axi_v1_0_S00_AXI__GC0 |           1|        86|
+|1     |neuron                    |           7|     16639|
+|2     |neural_network__GC0       |           1|      1816|
+|3     |neural_network_top__GC0   |           1|       357|
+|4     |user_app__GC0             |           1|      3195|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        86|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -228,26 +253,17 @@ Detailed RTL Component Info :
 	   2 Input     50 Bit       Adders := 14    
 	   2 Input     49 Bit       Adders := 7     
 	   2 Input     34 Bit       Adders := 7     
-	   2 Input     32 Bit       Adders := 2     
-	   2 Input     17 Bit       Adders := 105   
-	   3 Input     17 Bit       Adders := 7     
-	   3 Input     16 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 42    
 	   4 Input     16 Bit       Adders := 7     
-	   2 Input     10 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 5     
+	               32 Bit    Registers := 3     
 	               20 Bit    Registers := 1     
-	               16 Bit    Registers := 53    
-	               10 Bit    Registers := 2     
+	               16 Bit    Registers := 15    
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 9     
-+---Multipliers : 
-	                 9x48  Multipliers := 28    
-	                16x32  Multipliers := 28    
-+---RAMs : 
-	              16K Bit         RAMs := 7     
 +---Muxes : 
 	   2 Input     53 Bit        Muxes := 7     
 	   2 Input     52 Bit        Muxes := 14    
@@ -255,17 +271,16 @@ Detailed RTL Component Info :
 	   2 Input     49 Bit        Muxes := 14    
 	   2 Input     34 Bit        Muxes := 7     
 	   2 Input     32 Bit        Muxes := 3     
-	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 7     
-	   2 Input     16 Bit        Muxes := 617   
-	   3 Input     16 Bit        Muxes := 56    
-	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 196   
+	   3 Input     16 Bit        Muxes := 21    
 	   2 Input      4 Bit        Muxes := 8     
-	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 4     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 76    
-	   3 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
 	  15 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -274,41 +289,7 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module MAC__1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     16 Bit       Adders := 1     
-Module MAC__2 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     16 Bit       Adders := 1     
-Module MAC__3 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     16 Bit       Adders := 1     
 Module MAC 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     16 Bit       Adders := 1     
-Module parameters 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     17 Bit       Adders := 63    
-	   3 Input     17 Bit       Adders := 7     
-+---Registers : 
-	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 35    
-+---Multipliers : 
-	                 9x48  Multipliers := 28    
-	                16x32  Multipliers := 28    
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 420   
-	   3 Input     16 Bit        Muxes := 35    
-	   2 Input      1 Bit        Muxes := 39    
-	   3 Input      1 Bit        Muxes := 1     
-Module MAC__parameterized4 
 Detailed RTL Component Info : 
 +---Adders : 
 	   4 Input     16 Bit       Adders := 1     
@@ -353,8 +334,10 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 11    
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 7     
-	   3 Input      1 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
 Module neural_network_top 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -363,62 +346,13 @@ Module mem_map
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   4 Input     32 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 4     
-Module ram_sync_read__1 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module ram_sync_read__2 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module ram_sync_read__3 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module ram_sync_read__4 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module ram_sync_read__5 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module ram_sync_read__6 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module addr_gen__1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-Module addr_gen 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 8     
 Module controller 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -428,19 +362,6 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 1     
 	  15 Input      1 Bit        Muxes := 5     
-Module ram_sync_read 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              16K Bit         RAMs := 1     
-Module expected_out_splitter 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   4 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
 Module mem_axi_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -467,303 +388,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 DSP Report: Generating DSP arg, operation Mode is: A*B.
 DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "O190" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "weights_out[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (D-A)*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2505]
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: operator arg is absorbed into DSP arg.
-DSP Report: Generating DSP arg, operation Mode is: A*B.
-DSP Report: operator arg is absorbed into DSP arg.
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/fixed_pkg_c.vhd:2418]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4265/src/fixed_pkg_c.vhd:2418]
 DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
 DSP Report: operator MC/arg is absorbed into DSP MC/arg.
 DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
@@ -772,10 +397,9 @@ DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
 DSP Report: operator MC/arg is absorbed into DSP MC/arg.
 DSP Report: Generating DSP MC/arg, operation Mode is: A*B.
 DSP Report: operator MC/arg is absorbed into DSP MC/arg.
-INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "hid_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "out_vector[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "new_output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "O80" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "in_vector[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[2]
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[1]
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_awprot[0]
@@ -788,231 +412,62 @@ WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[2]
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[1]
 WARNING: [Synth 8-3331] design design_1_mem_axi_0_0 has unconnected port s00_axi_arprot[0]
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_INPUT_0/memory_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_INPUT_1/memory_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_INPUT_2/memory_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_INPUT_3/memory_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_EXPECTED_OUTPUT/memory_reg to conserve power
-INFO: [Synth 8-5784] Optimized 14 bits of RAM "U_OUTPUT/memory_reg" due to constant propagation. Old ram width 16 bits, new ram width 2 bits.
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_OUTPUT/memory_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM U_MEMTEST/memory_reg to conserve power
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[0]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[1]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[2]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[3]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[4]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[5]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[6]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[7]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[9]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[10]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[11]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[12]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[13]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[14]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_2_reg[15]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[0]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[1]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[2]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[3]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[4]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[5]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[6]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[7]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[9]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[10]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[11]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[12]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[13]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[14]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_1_reg[15]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[0]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[1]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[2]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[3]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[4]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[5]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[6]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[7]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[9]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[10]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[11]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[12]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[13]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[14]' (LD) to 'U_USER_APPi_4/U_SPLITTER/expected_output_0_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_USER_APPi_4/\U_SPLITTER/expected_output_0_reg[15] )
-INFO: [Synth 8-3886] merging instance 'U_USER_APPi_4/U_MEM_MAP/rd_data_sel_reg[1]' (FDCE) to 'U_USER_APPi_4/U_MEM_MAP/rd_data_sel_reg[2]'
-INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_5/axi_rresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_5/axi_rresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_5/\axi_rresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_5/axi_bresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_5/axi_bresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_5/\axi_bresp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[30]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[31]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[29]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[28]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[27]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[26]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[25]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[24]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[23]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[22]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[21]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[20]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[19]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[18]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[17]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[16]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[15]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[14]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[13]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[12]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[11]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[10]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[9]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[8]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[7]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[6]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[5]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[4]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[3]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[2]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[1]_C )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (pari_0/\state_reg[0]_C )
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[30]' (FD_1) to 'neui_0/state_reg[31]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[31]' (FD_1) to 'neui_0/state_reg[29]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[29]' (FD_1) to 'neui_0/state_reg[28]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[28]' (FD_1) to 'neui_0/state_reg[27]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[27]' (FD_1) to 'neui_0/state_reg[26]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[26]' (FD_1) to 'neui_0/state_reg[25]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[25]' (FD_1) to 'neui_0/state_reg[24]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[24]' (FD_1) to 'neui_0/state_reg[23]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[23]' (FD_1) to 'neui_0/state_reg[22]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[22]' (FD_1) to 'neui_0/state_reg[21]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[21]' (FD_1) to 'neui_0/state_reg[20]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[20]' (FD_1) to 'neui_0/state_reg[19]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[19]' (FD_1) to 'neui_0/state_reg[18]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[18]' (FD_1) to 'neui_0/state_reg[17]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[17]' (FD_1) to 'neui_0/state_reg[16]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[16]' (FD_1) to 'neui_0/state_reg[15]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[15]' (FD_1) to 'neui_0/state_reg[14]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[14]' (FD_1) to 'neui_0/state_reg[13]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[13]' (FD_1) to 'neui_0/state_reg[12]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[12]' (FD_1) to 'neui_0/state_reg[11]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[11]' (FD_1) to 'neui_0/state_reg[10]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[10]' (FD_1) to 'neui_0/state_reg[9]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[9]' (FD_1) to 'neui_0/state_reg[8]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[8]' (FD_1) to 'neui_0/state_reg[7]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[7]' (FD_1) to 'neui_0/state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[6]' (FD_1) to 'neui_0/state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[5]' (FD_1) to 'neui_0/state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[4]' (FD_1) to 'neui_0/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[3]' (FD_1) to 'neui_0/state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[2]' (FD_1) to 'neui_0/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'neui_0/state_reg[0]' (FD_1) to 'neui_0/state_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (neui_0/\state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[1]' (FDCE) to 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[2]' (FDCE) to 'U_USER_APPi_2/U_MEM_MAP/rd_data_sel_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_USER_APPi_2/\U_MEM_MAP/rd_data_sel_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_3/axi_rresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_3/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_3/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mem_axi_v1_0_S00_AXI_insti_3/axi_bresp_reg[0]' (FDRE) to 'mem_axi_v1_0_S00_AXI_insti_3/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_axi_v1_0_S00_AXI_insti_3/\axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 700.324 ; gain = 490.152
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 655.594 ; gain = 445.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
-Block RAM: Preliminary Mapping  Report (see note below)
-+--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|ram_sync_read | memory_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-+--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
-
 DSP: Preliminary Mapping  Report (see note below)
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | (D-A)*B        | 16     | 16     | -      | 16     | 33     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|parameters           | (D-A)*B        | 16     | 16     | -      | 16     | 33     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|parameters           | (D-A)*B        | 16     | 16     | -      | 16     | 33     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|parameters           | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_mem_axi_0_0 | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|sigmablock           | A*B            | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|MAC                  | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sigmablock  | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1023,13 +478,17 @@ Report RTL Partitions:
 +------+--------------------------+------------+----------+
 |      |RTL Partition             |Replication |Instances |
 +------+--------------------------+------------+----------+
-|1     |parameters__GB0           |           1|     11827|
-|2     |parameters__GB1           |           1|      1408|
-|3     |neuron                    |           7|      7070|
-|4     |neural_network__GC0       |           1|       408|
-|5     |neural_network_top__GC0   |           1|       286|
-|6     |user_app__GC0             |           1|       851|
-|7     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|1     |neuron                    |           1|      3150|
+|2     |neural_network__GC0       |           1|       176|
+|3     |neural_network_top__GC0   |           1|       285|
+|4     |user_app__GC0             |           1|       705|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|6     |neuron__1                 |           1|      3142|
+|7     |neuron__2                 |           1|      3145|
+|8     |neuron__3                 |           1|      3143|
+|9     |neuron__4                 |           1|      3146|
+|10    |neuron__5                 |           1|      3150|
+|11    |neuron__6                 |           1|      3142|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1038,76 +497,33 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 726.355 ; gain = 516.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 680.215 ; gain = 469.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 726.355 ; gain = 516.184
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 680.215 ; gain = 469.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------------------+------------+----------+
 |      |RTL Partition             |Replication |Instances |
 +------+--------------------------+------------+----------+
-|1     |parameters__GB0           |           1|     11827|
-|2     |parameters__GB1           |           1|      1408|
-|3     |neuron                    |           7|      7070|
-|4     |neural_network__GC0       |           1|       408|
-|5     |neural_network_top__GC0   |           1|       286|
-|6     |user_app__GC0             |           1|       851|
-|7     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|1     |neuron                    |           1|      3150|
+|2     |neural_network__GC0       |           1|       176|
+|3     |neural_network_top__GC0   |           1|       285|
+|4     |user_app__GC0             |           1|       705|
+|5     |mem_axi_v1_0_S00_AXI__GC0 |           1|        76|
+|6     |neuron__1                 |           1|      3142|
+|7     |neuron__2                 |           1|      3145|
+|8     |neuron__3                 |           1|      3143|
+|9     |neuron__4                 |           1|      3146|
+|10    |neuron__5                 |           1|      3150|
+|11    |neuron__6                 |           1|      3142|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:78]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ipshared/4897/src/parameter.vhd:68]
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_0/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_1/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_2/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_INPUT_3/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_EXPECTED_OUTPUT/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_OUTPUT/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/mem_axi_v1_0_S00_AXI_inst/U_USER_APP/U_MEMTEST/memory_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1131,7 +547,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:39 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1144,7 +560,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:40 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1156,25 +572,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:01:51 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:02:17 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:02:17 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1190,106 +606,79 @@ Report Cell Usage:
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |CARRY4    |  6170|
-|2     |DSP48E1   |    95|
-|3     |DSP48E1_2 |    12|
-|4     |DSP48E1_3 |    28|
-|5     |DSP48E1_4 |     3|
-|6     |LUT1      |  2698|
-|7     |LUT2      |  2795|
-|8     |LUT3      |  2663|
-|9     |LUT4      |  2117|
-|10    |LUT5      | 16882|
-|11    |LUT6      |  2089|
-|12    |MUXF7     |    10|
-|13    |RAMB18E1  |     7|
-|14    |FDCE      |   689|
-|15    |FDPE      |    32|
-|16    |FDRE      |   168|
-|17    |LD        |     3|
-|18    |LDC       |    32|
+|1     |CARRY4    |  2335|
+|2     |DSP48E1   |    12|
+|3     |DSP48E1_1 |    16|
+|4     |LUT1      |   650|
+|5     |LUT2      |   841|
+|6     |LUT3      |   903|
+|7     |LUT4      |   845|
+|8     |LUT5      |  6400|
+|9     |LUT6      |   706|
+|10    |MUXF7     |    15|
+|11    |FDCE      |   167|
+|12    |FDRE      |   132|
+|13    |FDSE      |    35|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+------------------------------+-----------------------+------+
-|      |Instance                      |Module                 |Cells |
-+------+------------------------------+-----------------------+------+
-|1     |top                           |                       | 36493|
-|2     |  U0                          |mem_axi_v1_0           | 27590|
-|3     |    mem_axi_v1_0_S00_AXI_inst |mem_axi_v1_0_S00_AXI   | 27590|
-|4     |      U_USER_APP              |user_app               | 27529|
-|5     |        U_CNTRL               |controller             |   132|
-|6     |        U_EXPECTED_OUTPUT     |ram_sync_read          |     7|
-|7     |        U_INPUT_0             |ram_sync_read_0        |     2|
-|8     |        U_INPUT_1             |ram_sync_read_1        |     3|
-|9     |        U_INPUT_2             |ram_sync_read_2        |     2|
-|10    |        U_INPUT_3             |ram_sync_read_3        |     2|
-|11    |        U_IN_MEMS_ADDR_GEN    |addr_gen               |    21|
-|12    |        U_MEMTEST             |ram_sync_read_4        |     3|
-|13    |        U_MEM_MAP             |mem_map                |   717|
-|14    |        U_NN_WRAPPER          |nn_wrapper             | 26615|
-|15    |          nn                  |neural_network_top     | 26615|
-|16    |            neu               |neural_network         | 21114|
-|17    |              hid_layer       |hidden_layer           | 11313|
-|18    |                \GEN2[0].neu  |neuron_16              |  2828|
-|19    |                  MC          |MAC__parameterized4_26 |   238|
-|20    |                  sig         |sigmablock_27          |  2556|
-|21    |                \GEN2[1].neu  |neuron_17              |  2828|
-|22    |                  MC          |MAC__parameterized4_24 |   238|
-|23    |                  sig         |sigmablock_25          |  2556|
-|24    |                \GEN2[2].neu  |neuron_18              |  2828|
-|25    |                  MC          |MAC__parameterized4_22 |   238|
-|26    |                  sig         |sigmablock_23          |  2556|
-|27    |                \GEN2[3].neu  |neuron_19              |  2829|
-|28    |                  MC          |MAC__parameterized4_20 |   239|
-|29    |                  sig         |sigmablock_21          |  2556|
-|30    |              out_layer       |neural_layer           |  9526|
-|31    |                \GEN2[0].neu  |neuron                 |  2828|
-|32    |                  MC          |MAC__parameterized4_14 |   238|
-|33    |                  sig         |sigmablock_15          |  2556|
-|34    |                \GEN2[1].neu  |neuron_10              |  2828|
-|35    |                  MC          |MAC__parameterized4_12 |   238|
-|36    |                  sig         |sigmablock_13          |  2556|
-|37    |                \GEN2[2].neu  |neuron_11              |  3870|
-|38    |                  MC          |MAC__parameterized4    |   316|
-|39    |                  sig         |sigmablock             |  3520|
-|40    |            par               |parameters             |  5501|
-|41    |              \gen3[0].MC     |MAC                    |    37|
-|42    |              \gen3[1].MC     |MAC_7                  |    37|
-|43    |              \gen3[2].MC     |MAC_8                  |   249|
-|44    |              \gen3[3].MC     |MAC_9                  |    44|
-|45    |        U_OUTPUT              |ram_sync_read_5        |     1|
-|46    |        U_OUT_MEM_ADDR_GEN    |addr_gen_6             |    21|
-|47    |        U_SPLITTER            |expected_out_splitter  |     3|
-+------+------------------------------+-----------------------+------+
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     | 13057|
+|2     |  U0                          |mem_axi_v1_0         | 13029|
+|3     |    mem_axi_v1_0_S00_AXI_inst |mem_axi_v1_0_S00_AXI | 13029|
+|4     |      U_USER_APP              |user_app             | 12968|
+|5     |        U_CNTRL               |controller           |   117|
+|6     |        U_MEM_MAP             |mem_map              |   205|
+|7     |        U_NN_WRAPPER          |nn_wrapper           | 12646|
+|8     |          nn                  |neural_network_top   | 12646|
+|9     |            neu               |neural_network       | 12646|
+|10    |              hid_layer       |hidden_layer         |  7023|
+|11    |                \GEN2[0].neu  |neuron_6             |  1757|
+|12    |                  MC          |MAC_16               |   236|
+|13    |                  sig         |sigmablock_17        |  1521|
+|14    |                \GEN2[1].neu  |neuron_7             |  1757|
+|15    |                  MC          |MAC_14               |   236|
+|16    |                  sig         |sigmablock_15        |  1521|
+|17    |                \GEN2[2].neu  |neuron_8             |  1757|
+|18    |                  MC          |MAC_12               |   236|
+|19    |                  sig         |sigmablock_13        |  1521|
+|20    |                \GEN2[3].neu  |neuron_9             |  1752|
+|21    |                  MC          |MAC_10               |   239|
+|22    |                  sig         |sigmablock_11        |  1513|
+|23    |              out_layer       |neural_layer         |  5264|
+|24    |                \GEN2[0].neu  |neuron               |  1752|
+|25    |                  MC          |MAC_4                |   239|
+|26    |                  sig         |sigmablock_5         |  1513|
+|27    |                \GEN2[1].neu  |neuron_0             |  1757|
+|28    |                  MC          |MAC_2                |   236|
+|29    |                  sig         |sigmablock_3         |  1521|
+|30    |                \GEN2[2].neu  |neuron_1             |  1755|
+|31    |                  MC          |MAC                  |   238|
+|32    |                  sig         |sigmablock           |  1517|
++------+------------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 830.176 ; gain = 620.004
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 771.375 ; gain = 561.113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:44 ; elapsed = 00:02:04 . Memory (MB): peak = 830.176 ; gain = 299.906
-Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 830.176 ; gain = 620.004
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:26 . Memory (MB): peak = 771.375 ; gain = 232.309
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:47 . Memory (MB): peak = 771.375 ; gain = 561.113
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6350 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2363 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 35 instances were transformed.
-  LD => LDCE: 3 instances
-  LDC => LDCE: 32 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-261 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+111 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:30 . Memory (MB): peak = 830.176 ; gain = 613.977
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 771.375 ; gain = 555.121
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/design_1_mem_axi_0_0_synth_1/design_1_mem_axi_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 830.176 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 830.176 ; gain = 0.000
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/design_1_mem_axi_0_0.xci
-INFO: [Coretcl 2-1174] Renamed 46 cell refs.
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.runs/design_1_mem_axi_0_0_synth_1/design_1_mem_axi_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 830.176 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.215 . Memory (MB): peak = 830.176 ; gain = 0.000
-write_verilog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 830.176 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 830.176 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 28 01:44:05 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 771.375 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 28 06:26:56 2017...

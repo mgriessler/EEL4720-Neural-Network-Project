@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Fri Apr 28 01:43:35 2017
+// Date        : Fri Apr 28 06:26:53 2017
 // Host        : matt-samsung running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Users/Matthew/Documents/git/NN-Project/mem_base/mem_base.srcs/sources_1/bd/design_1/ip/design_1_mem_axi_0_0/design_1_mem_axi_0_0_stub.v
