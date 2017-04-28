@@ -20,7 +20,8 @@ entity mem_map is
         go : out std_logic;
         epoch_size : out std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
         done : in std_logic;
-
+        backprop : out std_logic;
+        init : out std_logic;
         --memory
         mem_in_addr : out DBL_ADDR;
         mem_out_addr : out DBL_ADDR;
@@ -39,9 +40,7 @@ entity mem_map is
 
         expected_output_wr_en : out std_logic;
 
-        output_out_data : in DBL_DATA;
-        output_wr_en : out std_logic
-
+        output_out_data : in DBL_DATA
     );
 end mem_map;
 
@@ -50,6 +49,8 @@ architecture BHV of mem_map is
     signal rd_data_sel : std_logic_vector(2 downto 0);
     signal reg_go : std_logic;
     signal reg_epoch_size : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
+    signal reg_bp : std_logic;
+    signal reg_init : std_logic;
 
     constant C_RD_DATA_SEL_REG     : std_logic_vector := "000";
     constant C_RD_DATA_SEL_MEMTEST_OUT : std_logic_vector := "001";
@@ -65,17 +66,18 @@ begin
     input_2_wr_en   <= '1' when wr_en = '1' and unsigned(wr_addr) >= unsigned(C_INPUT_2_START_ADDR) and unsigned(wr_addr) <= unsigned(C_INPUT_2_END_ADDR) else '0';
     input_3_wr_en   <= '1' when wr_en = '1' and unsigned(wr_addr) >= unsigned(C_INPUT_3_START_ADDR) and unsigned(wr_addr) <= unsigned(C_INPUT_3_END_ADDR) else '0';
     expected_output_wr_en   <= '1' when wr_en = '1' and unsigned(wr_addr) >= unsigned(C_EXPECTED_OUTPUT_START_ADDR) and unsigned(wr_addr) <= unsigned(C_EXPECTED_OUTPUT_END_ADDR) else '0';
-    output_wr_en   <= '1' when wr_en = '1' and unsigned(wr_addr) >= unsigned(C_OUTPUT_START_ADDR) and unsigned(wr_addr) <= unsigned(C_OUTPUT_END_ADDR) else '0';
 
 	process(clk, rst)
 	begin
 		if(rst = '1') then
             reg_go <= '0';
             reg_epoch_size <= (others => '0');
+            reg_bp <= '0';
+            reg_init <= '0';
             rd_data_sel <= (others => '0');
             reg_rd_data <= (others => '0');
 		elsif(rising_edge(clk)) then
-            reg_go <= '0';
+            --reg_go <= '0';
             
             if(wr_en = '1') then
                 case wr_addr is
@@ -83,6 +85,12 @@ begin
                         reg_go <= wr_data(0);
                     when C_EPOCH_SIZE_ADDR =>
                         reg_epoch_size <= wr_data(epoch_size'range);
+                    when C_BP_ADDR =>
+                            reg_bp <= wr_data(0);
+                    when C_INIT_ADDR =>
+                            reg_init <= wr_data(0);
+                    when others => null;
+                    
                 end case;
             end if;
 
@@ -106,6 +114,10 @@ begin
                         reg_rd_data(epoch_size'range) <= reg_epoch_size;
                     when C_DONE_ADDR =>
                         reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & done;
+                    when C_BP_ADDR =>
+                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_bp;
+                    when C_INIT_ADDR =>
+                        reg_rd_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH-1)) & reg_init;
                     when others => null;
                 end case;
 			end if;
@@ -114,6 +126,8 @@ begin
 	
 	go <= reg_go;
 	epoch_size <= reg_epoch_size;
+	backprop <= reg_bp;
+	init <= reg_init;
     
 	process(rd_data_sel, reg_rd_data, memtest_out_data, output_out_data)
 	begin

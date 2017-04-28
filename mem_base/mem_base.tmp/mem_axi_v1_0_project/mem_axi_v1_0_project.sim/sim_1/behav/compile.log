@@ -1,0 +1,53 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/fixed_float_types_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/fixed_pkg_c.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/heap_arr_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/absfixed.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity absfixed
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/sigmablock.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity sigmablock
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/MAC.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity MAC
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/neuron.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neuron
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/neural_layer.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_layer
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/hidden_layer.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity hidden_layer
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/parameter.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity parameters
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/neural_network.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_network
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/neural_network_top.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity neural_network_top
+WARNING: [VRFC 10-280] actual for formal port pipeline is neither a static name nor a globally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/neural_network_top.vhd:266]
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/config_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/out_ctrl.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity out_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/expected_out_splitter.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity expected_out_splitter
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/expected_out_splitter.vhd:21]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/expected_out_splitter.vhd:25]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/expected_out_splitter.vhd:29]
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity mem_map
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:84]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:86]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:88]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:90]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:110]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:112]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:115]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:117]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/mem_map.vhd:119]
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/nn_wrapper.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity nn_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/addr_gen.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity addr_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/ram.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/controller.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity controller
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/ip_repo/mem_axi_1.0/src/user_app.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity user_app
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/matthew/documents/git/nn-project/HDL2/user_app/user_app_tb.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity user_app_tb

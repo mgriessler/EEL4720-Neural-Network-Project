@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/fixed_float_types_c.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/fixed_pkg_c.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/heap_arr_pkg.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/absfixed.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/sigmablock.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/MAC.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/neuron.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/neural_layer.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/hidden_layer.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/parameter.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/neural_network.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/neural_network_top.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/config_pkg.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/out_ctrl.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/expected_out_splitter.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/mem_map.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/nn_wrapper.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/addr_gen.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/ram.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/controller.vhd"
+vhdl work  "../../../../../../ip_repo/mem_axi_1.0/src/user_app.vhd"
+vhdl work  "../../../../../../HDL2/user_app/user_app_tb.vhd"
+
+# Do not sort compile order
+nosort

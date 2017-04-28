@@ -25,7 +25,9 @@ package config_pkg is
     -- Memory Map address definitions    
     subtype addr_type is integer range 0 to 2**C_MMAP_ADDR_WIDTH-1;
     constant MEM_ADDR_WIDTH : positive := 10;
-    constant MEM_DATA_WIDTH : positive := 32;
+    constant MEM_DATA_WIDTH : positive := 16;
+    constant C_INIT_ADDR         : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-8, C_MMAP_ADDR_WIDTH));
+    constant C_BP_ADDR         : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-7, C_MMAP_ADDR_WIDTH));
     constant C_GO_EPOCH_ADDR   : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-6, C_MMAP_ADDR_WIDTH));
     constant C_EPOCH_SIZE_ADDR : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-5, C_MMAP_ADDR_WIDTH));
     constant C_DONE_ADDR       : std_logic_vector(MMAP_ADDR_RANGE) := std_logic_vector(to_unsigned(2**C_MMAP_ADDR_WIDTH-4, C_MMAP_ADDR_WIDTH));
@@ -46,5 +48,9 @@ package config_pkg is
     
     subtype DBL_ADDR is std_logic_vector(MEM_ADDR_WIDTH-1 downto 0);
     subtype DBL_DATA is std_logic_vector(MEM_DATA_WIDTH-1 downto 0);
+    
+    constant C_RES_OUTPUT_0 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0) := std_logic_vector(to_unsigned(0, MEM_DATA_WIDTH));
+    constant C_RES_OUTPUT_1 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0) := std_logic_vector(to_unsigned(1, MEM_DATA_WIDTH));
+    constant C_RES_OUTPUT_2 : std_logic_vector(MEM_DATA_WIDTH-1 downto 0) := std_logic_vector(to_unsigned(2, MEM_DATA_WIDTH));
     
 end config_pkg;

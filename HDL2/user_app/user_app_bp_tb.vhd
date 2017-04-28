@@ -8,10 +8,10 @@ use work.fixed_pkg.all;
 
 USE work.heap_arr_pkg.all;
 
-entity user_app_tb is
-end user_app_tb;
+entity user_app_bp_tb is
+end user_app_bp_tb;
 
-architecture TB of user_app_tb is
+architecture TB of user_app_bp_tb is
     constant TEST_SIZE : integer := 90;
     signal clk : std_logic := '0';
     signal rst : std_logic := '1';
@@ -115,18 +115,22 @@ begin
             mmap_wr_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH));
             wait until rising_edge(clk);
             mmap_wr_en <= '0';
-        mmap_wr_addr <= std_logic_vector(unsigned(C_BP_ADDR));
-            mmap_wr_en   <= '1';
-            mmap_wr_data <= std_logic_vector(to_unsigned(0, C_MMAP_DATA_WIDTH));
-            wait until rising_edge(clk);
-            mmap_wr_en <= '0';
+
+	    mmap_wr_addr <= std_logic_vector(unsigned(C_BP_ADDR));
+                    mmap_wr_en   <= '1';
+                    mmap_wr_data <= std_logic_vector(to_unsigned(1, C_MMAP_DATA_WIDTH));
+                    wait until rising_edge(clk);
+                    mmap_wr_en <= '0';
+
 	    mmap_wr_addr <= std_logic_vector(unsigned(C_GO_EPOCH_ADDR));
             mmap_wr_en   <= '1';
             mmap_wr_data <= std_logic_vector(to_unsigned(1, C_MMAP_DATA_WIDTH));
             wait until rising_edge(clk);
             mmap_wr_en <= '0';
-
-	    wait for 2000 ns;
+            
+        
+            
+	    wait for 8000 ns;
 
 	    mmap_rd_addr <= std_logic_vector(unsigned(C_DONE_ADDR));
             mmap_rd_en   <= '1';
@@ -135,7 +139,7 @@ begin
             mmap_rd_en <= '0';
 
 
-        for i in 0 to TEST_SIZE-1 loop
+        for i in 1 to TEST_SIZE loop
             mmap_rd_addr <= std_logic_vector(unsigned(C_OUTPUT_START_ADDR)+i);
             mmap_rd_en   <= '1';
             result := mmap_rd_data;

@@ -1,0 +1,1 @@
+-wto "19a7b5b39f7741d6b525111110a36181" --debug "typical" --relax --mt "2" -L "work" -L "secureip" --snapshot "user_app_tb_behav" "work.user_app_tb" -log "elaborate.log" 

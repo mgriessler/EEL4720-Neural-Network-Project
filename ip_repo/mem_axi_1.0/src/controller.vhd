@@ -13,10 +13,10 @@ port(
     go : in std_logic;
     epoch_size : in std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0);
     done : out std_logic;
+    bp : in std_logic;
     
     --neural network control signals
-    nn_bp : in std_logic;
-    nn_init : out std_logic;
+    nn_bp : out std_logic;
     nn_en : out std_logic;
     
     --memory control signals
@@ -28,32 +28,38 @@ port(
 end controller;
 
 architecture cont of controller is
-    type STATE_TYPE is (S_START, S_START_2, S_LOAD, S_FP, S_BP, S_FP_END_1, S_FP_END_2, S_DONE);
+    type STATE_TYPE is (S_START, S_START_2, S_LOAD, S_FP, S_BP, S_FP_END_1, S_FP_END_2, S_DONE, S_BP_DELAY_1, S_BP_DELAY_2, S_BP_DELAY_3, S_BP_DELAY_4, S_BP_INITIAL_DELAY_1, S_BP_INITIAL_DELAY_2, S_BP_INITIAL_DELAY_3);
     signal state, next_state : STATE_TYPE;
-signal count : integer := 0;
+    signal iterations, next_iterations : std_logic_vector(C_MMAP_DATA_WIDTH-1 downto 0) := (others => '0');
 begin
     process(clk, rst)
     begin
         if(rst = '1') then
             state <= S_START;
+            iterations <= (others => '0');
         elsif(rising_edge(clk)) then
             state <= next_state;
+            if(next_state = S_BP or next_state = S_FP) then
+                iterations <= std_logic_vector(unsigned(iterations) + 1);
+            elsif(next_state = S_START_2) then
+                iterations <= (others => '0');
+            end if;
         end if;
     end process;
-    
-    process(state, nn_bp, go)
-        variable iterations : natural := 0;
+    process(state, bp, go, iterations)
+        
         variable first : std_logic := '1';
 
     begin
-        nn_init <= '0';
         nn_en <= '0';
         input_mems_rd_addr_inc <= '0';
         output_mem_wr_addr_rst <= '0';
         input_mems_rd_addr_rst <= '0';
         done <= '0';
+        nn_bp <= '0';
         case state is
             when S_START =>
+                done <= '0';
                 if(go = '1') then
                     next_state <= S_START_2;
                 else
@@ -62,26 +68,66 @@ begin
             when S_START_2 =>
                 output_mem_wr_addr_rst <= '1';
                 input_mems_rd_addr_rst <= '1';
-                nn_init <= '1';
-                iterations := 0;
-                next_state <= S_FP;
+                if(bp = '1') then
+                    next_state <= S_BP_INITIAL_DELAY_1;
+                else
+                    next_state <= S_FP;
+                end if;
             when S_FP =>
                 nn_en <= '1';                
-                iterations := iterations + 1;
-                if(iterations = unsigned(epoch_size)) then
+                if(iterations >= epoch_size) then
                     next_state <= S_FP_END_1;
                 else
                     next_state <= S_FP;
                 end if;
                 input_mems_rd_addr_inc <= '1';
+            when S_BP_INITIAL_DELAY_1 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP_INITIAL_DELAY_2;
+            when S_BP_INITIAL_DELAY_2 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP_INITIAL_DELAY_3;
+            when S_BP_INITIAL_DELAY_3 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP;
             when S_BP =>
-                nn_en <= '1';                
-                -- do back prop
-                next_state <= S_DONE; --temp
+                nn_bp <= '1';
+                nn_en <= '1';
+                if(iterations >= epoch_size) then
+                    next_state <= S_FP_END_1;
+                else
+                    next_state <= S_BP_DELAY_1;
+                end if;
+                input_mems_rd_addr_inc <= '1';
+            when S_BP_DELAY_1 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP_DELAY_2;
+            when S_BP_DELAY_2 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP_DELAY_3;
+            when S_BP_DELAY_3 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP_DELAY_4;
+            when S_BP_DELAY_4 =>
+                nn_bp <= '1';
+                nn_en <= '1';
+                next_state <= S_BP;
             when S_FP_END_1 =>
+                if(bp = '1') then
+                    nn_bp <= '1';
+                end if;
                 nn_en <= '1';
                 next_state <= S_FP_END_2;
             when S_FP_END_2 =>
+                if(bp = '1') then
+                    nn_bp <= '1';
+                end if;
                 nn_en <= '1';
                 next_state <= S_DONE;
             when S_DONE =>
@@ -91,6 +137,8 @@ begin
                 else
                     next_state <= S_DONE;
                 end if;
-            end case;
+            when others =>
+                next_state <= S_START;
+        end case;
     end process;
 end cont;
